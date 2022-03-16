@@ -8,7 +8,7 @@ const path = require("path");
 const fs = require("fs");
 
 const areaPods = require("./areaPods");
-const issueLabelTasks = require("./issueLabelTasks");
+const issueAndPullRequestTasks = require("./issueAndPullRequestTasks");
 const projectBoardTasks = require("./projectBoardTasks");
 
 const generatedFolder = path.resolve(path.join(__dirname, "..", "generated"));
@@ -31,9 +31,21 @@ const triagedLabels = {
   "machinelearning":  ["needs-author-action"]
 };
 
+const commonIssueAndPullRequestTasks = (repo) => [
+  ...issueAndPullRequestTasks.untriaged(triagedLabels[repo]),
+  ...issueAndPullRequestTasks.inPr(),
+  ...issueAndPullRequestTasks.assignTeamAuthor(),
+  ...issueAndPullRequestTasks.communityContribution(),
+  ...issueAndPullRequestTasks.needsAuthorAction(),
+  ...issueAndPullRequestTasks.noRecentActivity(14),
+  ...issueAndPullRequestTasks.closeInactiveDrafts(30),
+  ...issueAndPullRequestTasks.lockStaleIssuesAndPullRequests(30)
+];
+
 const repoIssueLabelTasks = {
-  "fabricbot-config": [issueLabelTasks.untriaged(triagedLabels["fabricbot-config"])],
-  "machinelearning": [issueLabelTasks.untriaged(triagedLabels["machinelearning"])]
+  "fabricbot-config": commonIssueAndPullRequestTasks("fabricbot-config"),
+  "runtime": commonIssueAndPullRequestTasks("runtime"),
+  "machinelearning": commonIssueAndPullRequestTasks("machinelearning")
 };
 
 for (const repo of repos) {
