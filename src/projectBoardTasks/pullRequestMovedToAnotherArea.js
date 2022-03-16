@@ -1,5 +1,5 @@
 // This task is only applicable if the area pod has specific areas specified
-module.exports = (pod, areas) => (Array.isArray(areas) && {
+module.exports = ({podName, podAreas}) => (Array.isArray(podAreas) && {
   "taskType": "trigger",
   "capabilityId": "IssueResponder",
   "subCapability": "PullRequestResponder",
@@ -14,21 +14,21 @@ module.exports = (pod, areas) => (Array.isArray(areas) && {
             {
               "name": "isInProjectColumn",
               "parameters": {
-              "projectName": `Area Pod: ${pod} - PRs`,
+              "projectName": `Area Pod: ${podName} - PRs`,
               "columnName": "Done",
               "isOrgProject": true
               }
             }
           ]
         },
-        (Array.isArray(areas) && {
+        (Array.isArray(podAreas) && {
           "operator": "and",
-          "operands": areas.map(area => ({
+          "operands": podAreas.map(label => ({
             "operator": "not",
             "operands": [
               {
                 "name": "hasLabel",
-                "parameters": { "label": area }
+                "parameters": { label }
               }
             ]
           }))
@@ -41,13 +41,13 @@ module.exports = (pod, areas) => (Array.isArray(areas) && {
       "issues",
       "project_card"
     ],
-    "taskName": `[Area Pod: ${pod} - PRs] Moved to Another Area`,
+    "taskName": `[Area Pod: ${podName} - PRs] Moved to Another Area`,
     "actions": [
       {
         "name": "addToProject",
         "parameters":
         {
-          "projectName": `Area Pod: ${pod} - PRs`,
+          "projectName": `Area Pod: ${podName} - PRs`,
           "columnName": "Done",
           "isOrgProject": true
         }

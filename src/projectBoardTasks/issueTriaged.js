@@ -1,6 +1,6 @@
 const isTriaged = require("../rules/isTriaged");
 
-module.exports = (pod, areas, triagedLabels) => ({
+module.exports = ({podName, triagedLabels}) => ({
   "taskType": "trigger",
   "capabilityId": "IssueResponder",
   "subCapability": "IssuesOnlyResponder",
@@ -15,7 +15,7 @@ module.exports = (pod, areas, triagedLabels) => ({
         {
           "name": "isInProject",
           "parameters": {
-            "projectName": `Area Pod: ${pod} - Issue Triage`,
+            "projectName": `Area Pod: ${podName} - Issue Triage`,
             "isOrgProject": true
           }
         },
@@ -31,14 +31,14 @@ module.exports = (pod, areas, triagedLabels) => ({
       "issues",
       "project_card"
     ],
-    "taskName": `[Area Pod: ${pod} - Issue Triage] Triaged`,
+    "taskName": `[Area Pod: ${podName} - Issue Triage] Triaged`,
     "actions":
     [
       {
         "name": "addToProject",
         "parameters":
         {
-          "projectName": `Area Pod: ${pod} - Issue Triage`,
+          "projectName": `Area Pod: ${podName} - Issue Triage`,
           "columnName": "Triaged",
           "isOrgProject": true
         }

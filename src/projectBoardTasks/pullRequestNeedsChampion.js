@@ -1,4 +1,4 @@
-module.exports = (pod, areas) => ({
+module.exports = ({podName, podAreas}) => ({
   "taskType": "trigger",
   "capabilityId": "IssueResponder",
   "subCapability": "PullRequestResponder",
@@ -7,11 +7,11 @@ module.exports = (pod, areas) => ({
     "conditions": {
       "operator": "and",
       "operands": [
-        (Array.isArray(areas) && {
+        (Array.isArray(podAreas) && {
           "operator": "or",
-          "operands": areas.map(area => ({
+          "operands": podAreas.map(label => ({
             "name": "hasLabel",
-            "parameters": { "label": area }
+            "parameters": { label }
           }))
         }),
         {
@@ -20,7 +20,7 @@ module.exports = (pod, areas) => ({
             {
               "name": "isInProject",
               "parameters": {
-                "projectName": `Area Pod: ${pod} - PRs`,
+                "projectName": `Area Pod: ${podName} - PRs`,
                 "isOrgProject": true
               }
             }
@@ -34,12 +34,12 @@ module.exports = (pod, areas) => ({
       "issues",
       "project_card"
     ],
-    "taskName": `[Area Pod: ${pod} - PRs] Needs Champion`,
+    "taskName": `[Area Pod: ${podName} - PRs] Needs Champion`,
     "actions": [
       {
         "name": "addToProject",
         "parameters": {
-          "projectName": `Area Pod: ${pod} - PRs`,
+          "projectName": `Area Pod: ${podName} - PRs`,
           "columnName": "Needs Champion",
           "isOrgProject": true
         }
