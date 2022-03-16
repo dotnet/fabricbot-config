@@ -78,6 +78,18 @@ module.exports = (pod, areas) => ({
     "taskName": `[Area Pod: ${pod} - Issue Triage] Needs Further Triage`,
     "actions":
     [
+      // Archived cards need to be removed/added instead of just added.
+      // There's no means for detecting/handling archive state, so this
+      // workaround is applied for all cards that need to be moved to
+      // the "Needs Triage" column.
+      {
+        "name": "removeFromProject",
+        "parameters":
+        {
+          "projectName": `Area Pod: ${pod} - Issue Triage`,
+          "isOrgProject": true
+        }
+      },
       {
         "name": "addToProject",
         "parameters":

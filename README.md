@@ -25,9 +25,14 @@ The generated files themselves have no impact on live FabricBot configuration. T
 
 *NodeJS is required.*
 
-* PowerShell: `./merge.ps1 generatedConfig repositoryConfig`
-    * Example: `./merge.ps1 .\generated\runtime.json D:\git\dotnet\runtime\.github\fabricbot.json`
-* Bash: `./merge.sh generatedConfig repositoryConfig`
-    * Example: `./merge.sh ./generated/runtime.json ~/git/dotnet/runtime/.github/fabricbot.json`
+```bash
+node ./src/merge.js generatedConfig repositoryConfig
+```
+
+*Example*
+
+```bash
+node ./src/merge.js ./generated/runtime.json ~/git/dotnet/runtime/.github/fabricbot.json
+```
 
 The merge script detects the Area Pod configuration tasks based on naming convention, and overwrites those tasks with the generated tasks; other tasks will remain unchanged.

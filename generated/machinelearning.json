@@ -77,6 +77,13 @@
       "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Needs Triage",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
@@ -149,6 +156,13 @@
       ],
       "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Needs Further Triage",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {

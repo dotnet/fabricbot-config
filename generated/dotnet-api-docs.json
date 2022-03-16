@@ -301,6 +301,13 @@
       "taskName": "[Area Pod: Adam / David - Issue Triage] Needs Triage",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Adam / David - Issue Triage",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Adam / David - Issue Triage",
@@ -420,6 +427,13 @@
       ],
       "taskName": "[Area Pod: Adam / David - Issue Triage] Needs Further Triage",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Adam / David - Issue Triage",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -1108,6 +1122,13 @@
       "taskName": "[Area Pod: Buyaa / Jose / Steve - Issue Triage] Needs Triage",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Buyaa / Jose / Steve - Issue Triage",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Buyaa / Jose / Steve - Issue Triage",
@@ -1251,6 +1272,13 @@
       ],
       "taskName": "[Area Pod: Buyaa / Jose / Steve - Issue Triage] Needs Further Triage",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Buyaa / Jose / Steve - Issue Triage",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -1938,6 +1966,13 @@
       "taskName": "[Area Pod: Carlos / Jeremy - Issue Triage] Needs Triage",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Carlos / Jeremy - Issue Triage",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Carlos / Jeremy - Issue Triage",
@@ -2063,6 +2098,13 @@
       ],
       "taskName": "[Area Pod: Carlos / Jeremy - Issue Triage] Needs Further Triage",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Carlos / Jeremy - Issue Triage",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -2630,6 +2672,13 @@
       "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Needs Triage",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
@@ -2737,6 +2786,13 @@
       ],
       "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Needs Further Triage",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -3230,6 +3286,13 @@
       "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - Issue Triage] Needs Triage",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eirik / Krzysztof / Layomi - Issue Triage",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Eirik / Krzysztof / Layomi - Issue Triage",
@@ -3331,6 +3394,13 @@
       ],
       "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - Issue Triage] Needs Further Triage",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eirik / Krzysztof / Layomi - Issue Triage",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -3738,6 +3808,13 @@
       "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Needs Triage",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Eric / Jeff - Issue Triage",
@@ -3821,6 +3898,13 @@
       ],
       "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Needs Further Triage",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -4453,6 +4537,13 @@
       "taskName": "[Area Pod: Eric / Maryam / Tarek - Issue Triage] Needs Triage",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Maryam / Tarek - Issue Triage",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Eric / Maryam / Tarek - Issue Triage",
@@ -4608,6 +4699,13 @@
       ],
       "taskName": "[Area Pod: Eric / Maryam / Tarek - Issue Triage] Needs Further Triage",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Maryam / Tarek - Issue Triage",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -5260,6 +5358,13 @@
       "taskName": "[Area Pod: Jeremy / Levi - Issue Triage] Needs Triage",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Jeremy / Levi - Issue Triage",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Jeremy / Levi - Issue Triage",
@@ -5367,6 +5472,13 @@
       ],
       "taskName": "[Area Pod: Jeremy / Levi - Issue Triage] Needs Further Triage",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Jeremy / Levi - Issue Triage",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
