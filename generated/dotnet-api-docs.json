@@ -349,6 +349,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Adam / David - Issue Triage] Triage Started",
@@ -393,6 +394,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Adam / David - Issue Triage] Triage Started",
@@ -1420,6 +1422,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Buyaa / Jose / Steve - Issue Triage] Triage Started",
@@ -1464,6 +1467,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Buyaa / Jose / Steve - Issue Triage] Triage Started",
@@ -1508,6 +1512,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Buyaa / Jose / Steve - Issue Triage] Triage Started",
@@ -2636,6 +2641,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Carlos / Jeremy - Issue Triage] Triage Started",
@@ -2680,6 +2686,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Carlos / Jeremy - Issue Triage] Triage Started",
@@ -3592,6 +3599,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Triage Started",
@@ -3636,6 +3644,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Triage Started",
@@ -3680,6 +3689,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Triage Started",
@@ -4578,6 +4588,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - Issue Triage] Triage Started",
@@ -4622,6 +4633,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - Issue Triage] Triage Started",
@@ -4666,6 +4678,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - Issue Triage] Triage Started",
@@ -5472,6 +5485,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Triage Started",
@@ -5516,6 +5530,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Triage Started",
@@ -6451,6 +6466,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Eric / Maryam / Tarek - Issue Triage] Triage Started",
@@ -6495,6 +6511,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Eric / Maryam / Tarek - Issue Triage] Triage Started",
@@ -6539,6 +6556,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Eric / Maryam / Tarek - Issue Triage] Triage Started",
@@ -7644,6 +7662,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Jeremy / Levi - Issue Triage] Triage Started",
@@ -7688,6 +7707,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Jeremy / Levi - Issue Triage] Triage Started",
