@@ -38,6 +38,13 @@ module.exports = ({podName, podAreas}) => (Array.isArray(podAreas) ? [{
           "parameters": {
             "action": "unlabeled"
           }
+        },
+        {
+          "name": "isInProject",
+          "parameters": {
+            "projectName": `Area Pod: ${podName} - Issue Triage`,
+            "isOrgProject": true
+          }
         }
       ]
     },
