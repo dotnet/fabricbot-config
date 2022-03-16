@@ -32,7 +32,14 @@ module.exports = ({podName, podAreas}) => (Array.isArray(podAreas) ? [{
               }
             ]
           }))
-        })
+        }),
+        {
+          "name": "isInProject",
+          "parameters": {
+            "projectName": `Area Pod: ${podName} - PRs`,
+            "isOrgProject": true
+          }
+        }
       ].filter(op => !!op) // We will have a falsy element in the array of we're not filtering by area label
     },
     "eventType": "pull_request",

@@ -622,6 +622,13 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Adam / David - PRs",
+              "isOrgProject": true
+            }
           }
         ]
       },
@@ -1517,6 +1524,13 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
+              "isOrgProject": true
+            }
           }
         ]
       },
@@ -2316,6 +2330,13 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Carlos / Jeremy - PRs",
+              "isOrgProject": true
+            }
           }
         ]
       },
@@ -2977,6 +2998,13 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+              "isOrgProject": true
+            }
           }
         ]
       },
@@ -3580,6 +3608,13 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
+              "isOrgProject": true
+            }
           }
         ]
       },
@@ -4057,6 +4092,13 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Jeff - PRs",
+              "isOrgProject": true
+            }
           }
         ]
       },
@@ -4996,6 +5038,13 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
+              "isOrgProject": true
+            }
           }
         ]
       },
@@ -5687,6 +5736,13 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Jeremy / Levi - PRs",
+              "isOrgProject": true
+            }
           }
         ]
       },
