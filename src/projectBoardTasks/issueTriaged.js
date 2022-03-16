@@ -1,4 +1,6 @@
-module.exports = (pod, areas) => ({
+const isTriaged = require("../rules/isTriaged");
+
+module.exports = (pod, areas, triagedLabels) => ({
   "taskType": "trigger",
   "capabilityId": "IssueResponder",
   "subCapability": "IssuesOnlyResponder",
@@ -19,35 +21,7 @@ module.exports = (pod, areas) => ({
         },
         {
           "operator": "or",
-          "operands":
-          [
-            {
-              "name": "addedToMilestone",
-              "parameters":
-              {}
-            },
-            {
-              "name": "labelAdded",
-              "parameters":
-              {
-                "label": "needs-author-action"
-              }
-            },
-            {
-              "name": "labelAdded",
-              "parameters":
-              {
-                "label": "api-ready-for-review"
-              }
-            },
-            {
-              "name": "isAction",
-              "parameters":
-              {
-                "action": "closed"
-              }
-            }
-          ]
+          "operands": isTriaged(triagedLabels)
         }
       ]
     },
