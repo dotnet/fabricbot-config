@@ -1770,5 +1770,107 @@
         }
       ]
     }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "PullRequestResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Jeff - PRs",
+              "columnName": "Needs Champion",
+              "isOrgProject": true
+            }
+          },
+          {
+            "name": "isAction",
+            "parameters": {
+              "action": "assigned"
+            }
+          },
+          {
+            "name": "isAssignedToUser",
+            "parameters": {
+              "user": "ericstj"
+            }
+          }
+        ]
+      },
+      "eventType": "pull_request",
+      "eventNames": [
+        "pull_request",
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Eric / Jeff - PRs] Champion Assigned",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - PRs",
+            "columnName": "ericstj",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "PullRequestResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Jeff - PRs",
+              "columnName": "Needs Champion",
+              "isOrgProject": true
+            }
+          },
+          {
+            "name": "isAction",
+            "parameters": {
+              "action": "assigned"
+            }
+          },
+          {
+            "name": "isAssignedToUser",
+            "parameters": {
+              "user": "jeffhandley"
+            }
+          }
+        ]
+      },
+      "eventType": "pull_request",
+      "eventNames": [
+        "pull_request",
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Eric / Jeff - PRs] Champion Assigned",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - PRs",
+            "columnName": "jeffhandley",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
   }
 ]

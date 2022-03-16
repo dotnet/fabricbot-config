@@ -1,4 +1,4 @@
-module.exports = ({podName, podAreas}) => ({
+module.exports = ({podName, podAreas}) => [{
   "taskType": "trigger",
   "capabilityId": "IssueResponder",
   "subCapability": "IssuesOnlyResponder",
@@ -127,4 +127,4 @@ module.exports = ({podName, podAreas}) => ({
       }
     ]
   }
-});
+}];

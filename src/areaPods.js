@@ -73,59 +73,67 @@ const podAreas = {
 
 module.exports = [
   {
-    "pod": "Adam / David",
-    "repos": {
+    podName: "Adam / David",
+    champions: [ "adamsitnik", "jozkee" ],
+    repos: {
       "runtime": podAreas["adam-david"],
       "dotnet-api-docs": podAreas["adam-david"]
-    }
+    },
   },
   {
-    "pod": "Buyaa / Jose / Steve",
-    "repos": {
+    podName: "Buyaa / Jose / Steve",
+    champions: [ "buyaa-n", "joperezr", "steveharter" ],
+    repos: {
       "runtime": podAreas["buyaa-jose-steve"],
       "dotnet-api-docs": podAreas["buyaa-jose-steve"]
     }
   },
   {
-    "pod": "Carlos / Jeremy",
-    "repos": {
+    podName: "Carlos / Jeremy",
+    champions: [ "carlossanlop", "bartonjs" ],
+    repos: {
       "runtime": podAreas["carlos-jeremy"],
       "dotnet-api-docs": podAreas["carlos-jeremy"]
     }
   },
   {
-    "pod": "Drew / Michael / Tanner",
-    "repos": {
+    podName: "Drew / Michael / Tanner",
+    champions: [ "dakersnar", "michaelgsharp", "tannergooding" ],
+    repos: {
       "machinelearning": true,
       "runtime": podAreas["drew-michael-tanner"],
       "dotnet-api-docs": podAreas["drew-michael-tanner"]
     }
   },
   {
-    "pod": "Eirik / Krzysztof / Layomi",
-    "repos": {
+    podName: "Eirik / Krzysztof / Layomi",
+    champions: [ "eiriktsarpalis", "krwq", "layomia" ],
+    repos: {
       "runtime": podAreas["eirik-krzysztof-layomi"],
       "dotnet-api-docs": podAreas["eirik-krzysztof-layomi"]
     }
   },
   {
-    "pod": "Eric / Jeff",
-    "repos": {
+    podName: "Eric / Jeff",
+    champions: [ "ericstj", "jeffhandley" ],
+    repos: {
       "fabricbot-config": true,
       "runtime": podAreas["eric-jeff"],
       "dotnet-api-docs": podAreas["eric-jeff"]
     }
   },
   {
-    "pod": "Eric / Maryam / Tarek",
-    "repos": {
+    podName: "Eric / Maryam / Tarek",
+    champions: [ "eerhardt", "maryamariyan", "tarekgh" ],
+    repos: {
       "runtime": podAreas["eric-maryam-tarek"],
       "dotnet-api-docs": podAreas["eric-maryam-tarek"]
     }
   },
   {
-    "pod": "Jeremy / Levi",
-    "repos": {
+    podName: "Jeremy / Levi",
+    champions: [ "bartonjs", "GrabYourPitchForks" ],
+    repos: {
       "runtime": podAreas["jeremy-levi"],
       "dotnet-api-docs": podAreas["jeremy-levi"]
     }

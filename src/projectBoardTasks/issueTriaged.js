@@ -1,6 +1,6 @@
 const isTriaged = require("../rules/isTriaged");
 
-module.exports = ({podName, triagedLabels}) => ({
+module.exports = ({podName, triagedLabels}) => [{
   "taskType": "trigger",
   "capabilityId": "IssueResponder",
   "subCapability": "IssuesOnlyResponder",
@@ -51,4 +51,4 @@ module.exports = ({podName, triagedLabels}) => ({
       }
     ]
   }
-});
+}];
