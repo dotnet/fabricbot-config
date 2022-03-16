@@ -16,14 +16,39 @@ module.exports = ({podName, users}) => users.map((user) => ({
           }
         },
         {
-          "name": "isAction",
-          "parameters": {
-            "action": "assigned"
-          }
-        },
-        {
-          "name": "isAssignedToUser",
-          "parameters": { user }
+          "operator": "or",
+          "operands": [
+            {
+              "operator": "and",
+              "operands": [
+                {
+                  "name": "isAction",
+                  "parameters": {
+                    "action": "assigned"
+                  }
+                },
+                {
+                  "name": "isAssignedToUser",
+                  "parameters": { user }
+                }
+              ]
+            },
+            {
+              "operator": "and",
+              "operands": [
+                {
+                  "name": "isAction",
+                  "parameters": {
+                    "action": "opened"
+                  }
+                },
+                {
+                  "name": "isActivitySender",
+                  "parameters": { user }
+                }
+              ]
+            }
+          ]
         }
       ]
     },

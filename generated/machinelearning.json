@@ -1888,16 +1888,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "dakersnar"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "dakersnar"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "dakersnar"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -1939,16 +1966,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "michaelgsharp"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "michaelgsharp"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "michaelgsharp"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -1990,16 +2044,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "tannergooding"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "tannergooding"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "tannergooding"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
