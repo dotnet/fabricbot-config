@@ -74,7 +74,7 @@ const podAreas = {
 module.exports = [
   {
     podName: "Adam / David",
-    champions: [ "adamsitnik", "jozkee" ],
+    users: [ "adamsitnik", "jozkee" ],
     repos: {
       "runtime": podAreas["adam-david"],
       "dotnet-api-docs": podAreas["adam-david"]
@@ -82,7 +82,7 @@ module.exports = [
   },
   {
     podName: "Buyaa / Jose / Steve",
-    champions: [ "buyaa-n", "joperezr", "steveharter" ],
+    users: [ "buyaa-n", "joperezr", "steveharter" ],
     repos: {
       "runtime": podAreas["buyaa-jose-steve"],
       "dotnet-api-docs": podAreas["buyaa-jose-steve"]
@@ -90,7 +90,7 @@ module.exports = [
   },
   {
     podName: "Carlos / Jeremy",
-    champions: [ "carlossanlop", "bartonjs" ],
+    users: [ "carlossanlop", "bartonjs" ],
     repos: {
       "runtime": podAreas["carlos-jeremy"],
       "dotnet-api-docs": podAreas["carlos-jeremy"]
@@ -98,7 +98,7 @@ module.exports = [
   },
   {
     podName: "Drew / Michael / Tanner",
-    champions: [ "dakersnar", "michaelgsharp", "tannergooding" ],
+    users: [ "dakersnar", "michaelgsharp", "tannergooding" ],
     repos: {
       "machinelearning": true,
       "runtime": podAreas["drew-michael-tanner"],
@@ -107,7 +107,7 @@ module.exports = [
   },
   {
     podName: "Eirik / Krzysztof / Layomi",
-    champions: [ "eiriktsarpalis", "krwq", "layomia" ],
+    users: [ "eiriktsarpalis", "krwq", "layomia" ],
     repos: {
       "runtime": podAreas["eirik-krzysztof-layomi"],
       "dotnet-api-docs": podAreas["eirik-krzysztof-layomi"]
@@ -115,7 +115,7 @@ module.exports = [
   },
   {
     podName: "Eric / Jeff",
-    champions: [ "ericstj", "jeffhandley" ],
+    users: [ "ericstj", "jeffhandley" ],
     repos: {
       "fabricbot-config": true,
       "runtime": podAreas["eric-jeff"],
@@ -124,7 +124,7 @@ module.exports = [
   },
   {
     podName: "Eric / Maryam / Tarek",
-    champions: [ "eerhardt", "maryamariyan", "tarekgh" ],
+    users: [ "eerhardt", "maryamariyan", "tarekgh" ],
     repos: {
       "runtime": podAreas["eric-maryam-tarek"],
       "dotnet-api-docs": podAreas["eric-maryam-tarek"]
@@ -132,7 +132,7 @@ module.exports = [
   },
   {
     podName: "Jeremy / Levi",
-    champions: [ "bartonjs", "GrabYourPitchForks" ],
+    users: [ "bartonjs", "GrabYourPitchForks" ],
     repos: {
       "runtime": podAreas["jeremy-levi"],
       "dotnet-api-docs": podAreas["jeremy-levi"]
