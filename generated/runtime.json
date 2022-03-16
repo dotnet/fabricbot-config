@@ -1789,6 +1789,94 @@
     "taskSource": "fabricbot-config",
     "taskType": "trigger",
     "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Adam / David - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "adamsitnik"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Adam / David - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Adam / David - Issue Triage",
+            "columnName": "Triage: adamsitnik",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Adam / David - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "jozkee"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Adam / David - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Adam / David - Issue Triage",
+            "columnName": "Triage: jozkee",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
     "subCapability": "IssueCommentResponder",
     "version": "1.0",
     "config": {
@@ -2243,7 +2331,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Adam / David - PRs",
-            "columnName": "adamsitnik",
+            "columnName": "Champion: adamsitnik",
             "isOrgProject": true
           }
         }
@@ -2294,7 +2382,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Adam / David - PRs",
-            "columnName": "jozkee",
+            "columnName": "Champion: jozkee",
             "isOrgProject": true
           }
         }
@@ -2708,6 +2796,138 @@
           "parameters": {
             "projectName": "Area Pod: Buyaa / Jose / Steve - Issue Triage",
             "columnName": "Needs Triage",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Buyaa / Jose / Steve - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "buyaa-n"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Buyaa / Jose / Steve - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Buyaa / Jose / Steve - Issue Triage",
+            "columnName": "Triage: buyaa-n",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Buyaa / Jose / Steve - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "joperezr"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Buyaa / Jose / Steve - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Buyaa / Jose / Steve - Issue Triage",
+            "columnName": "Triage: joperezr",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Buyaa / Jose / Steve - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "steveharter"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Buyaa / Jose / Steve - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Buyaa / Jose / Steve - Issue Triage",
+            "columnName": "Triage: steveharter",
             "isOrgProject": true
           }
         }
@@ -3264,7 +3484,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
-            "columnName": "buyaa-n",
+            "columnName": "Champion: buyaa-n",
             "isOrgProject": true
           }
         }
@@ -3315,7 +3535,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
-            "columnName": "joperezr",
+            "columnName": "Champion: joperezr",
             "isOrgProject": true
           }
         }
@@ -3366,7 +3586,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
-            "columnName": "steveharter",
+            "columnName": "Champion: steveharter",
             "isOrgProject": true
           }
         }
@@ -3711,6 +3931,94 @@
           "parameters": {
             "projectName": "Area Pod: Carlos / Jeremy - Issue Triage",
             "columnName": "Needs Triage",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Carlos / Jeremy - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "carlossanlop"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Carlos / Jeremy - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Carlos / Jeremy - Issue Triage",
+            "columnName": "Triage: carlossanlop",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Carlos / Jeremy - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "bartonjs"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Carlos / Jeremy - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Carlos / Jeremy - Issue Triage",
+            "columnName": "Triage: bartonjs",
             "isOrgProject": true
           }
         }
@@ -4198,7 +4506,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Carlos / Jeremy - PRs",
-            "columnName": "carlossanlop",
+            "columnName": "Champion: carlossanlop",
             "isOrgProject": true
           }
         }
@@ -4249,7 +4557,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Carlos / Jeremy - PRs",
-            "columnName": "bartonjs",
+            "columnName": "Champion: bartonjs",
             "isOrgProject": true
           }
         }
@@ -4525,6 +4833,138 @@
           "parameters": {
             "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
             "columnName": "Needs Triage",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "dakersnar"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+            "columnName": "Triage: dakersnar",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "michaelgsharp"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+            "columnName": "Triage: michaelgsharp",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "tannergooding"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+            "columnName": "Triage: tannergooding",
             "isOrgProject": true
           }
         }
@@ -4943,7 +5383,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
-            "columnName": "dakersnar",
+            "columnName": "Champion: dakersnar",
             "isOrgProject": true
           }
         }
@@ -4994,7 +5434,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
-            "columnName": "michaelgsharp",
+            "columnName": "Champion: michaelgsharp",
             "isOrgProject": true
           }
         }
@@ -5045,7 +5485,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
-            "columnName": "tannergooding",
+            "columnName": "Champion: tannergooding",
             "isOrgProject": true
           }
         }
@@ -5298,6 +5738,138 @@
           "parameters": {
             "projectName": "Area Pod: Eirik / Krzysztof / Layomi - Issue Triage",
             "columnName": "Needs Triage",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Eirik / Krzysztof / Layomi - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "eiriktsarpalis"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Eirik / Krzysztof / Layomi - Issue Triage",
+            "columnName": "Triage: eiriktsarpalis",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Eirik / Krzysztof / Layomi - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "krwq"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Eirik / Krzysztof / Layomi - Issue Triage",
+            "columnName": "Triage: krwq",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Eirik / Krzysztof / Layomi - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "layomia"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Eirik / Krzysztof / Layomi - Issue Triage",
+            "columnName": "Triage: layomia",
             "isOrgProject": true
           }
         }
@@ -5693,7 +6265,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
-            "columnName": "eiriktsarpalis",
+            "columnName": "Champion: eiriktsarpalis",
             "isOrgProject": true
           }
         }
@@ -5744,7 +6316,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
-            "columnName": "krwq",
+            "columnName": "Champion: krwq",
             "isOrgProject": true
           }
         }
@@ -5795,7 +6367,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
-            "columnName": "layomia",
+            "columnName": "Champion: layomia",
             "isOrgProject": true
           }
         }
@@ -5979,6 +6551,94 @@
           "parameters": {
             "projectName": "Area Pod: Eric / Jeff - Issue Triage",
             "columnName": "Needs Triage",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "ericstj"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+            "columnName": "Triage: ericstj",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "jeffhandley"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+            "columnName": "Triage: jeffhandley",
             "isOrgProject": true
           }
         }
@@ -6305,7 +6965,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Eric / Jeff - PRs",
-            "columnName": "ericstj",
+            "columnName": "Champion: ericstj",
             "isOrgProject": true
           }
         }
@@ -6356,7 +7016,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Eric / Jeff - PRs",
-            "columnName": "jeffhandley",
+            "columnName": "Champion: jeffhandley",
             "isOrgProject": true
           }
         }
@@ -6816,6 +7476,138 @@
           "parameters": {
             "projectName": "Area Pod: Eric / Maryam / Tarek - Issue Triage",
             "columnName": "Needs Triage",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Maryam / Tarek - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "eerhardt"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Eric / Maryam / Tarek - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Maryam / Tarek - Issue Triage",
+            "columnName": "Triage: eerhardt",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Maryam / Tarek - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "maryamariyan"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Eric / Maryam / Tarek - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Maryam / Tarek - Issue Triage",
+            "columnName": "Triage: maryamariyan",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Maryam / Tarek - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "tarekgh"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Eric / Maryam / Tarek - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Maryam / Tarek - Issue Triage",
+            "columnName": "Triage: tarekgh",
             "isOrgProject": true
           }
         }
@@ -7418,7 +8210,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
-            "columnName": "eerhardt",
+            "columnName": "Champion: eerhardt",
             "isOrgProject": true
           }
         }
@@ -7469,7 +8261,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
-            "columnName": "maryamariyan",
+            "columnName": "Champion: maryamariyan",
             "isOrgProject": true
           }
         }
@@ -7520,7 +8312,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
-            "columnName": "tarekgh",
+            "columnName": "Champion: tarekgh",
             "isOrgProject": true
           }
         }
@@ -7796,6 +8588,94 @@
           "parameters": {
             "projectName": "Area Pod: Jeremy / Levi - Issue Triage",
             "columnName": "Needs Triage",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Jeremy / Levi - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "bartonjs"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Jeremy / Levi - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Jeremy / Levi - Issue Triage",
+            "columnName": "Triage: bartonjs",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Jeremy / Levi - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "GrabYourPitchForks"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "taskName": "[Area Pod: Jeremy / Levi - Issue Triage] Triage Started",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Jeremy / Levi - Issue Triage",
+            "columnName": "Triage: GrabYourPitchForks",
             "isOrgProject": true
           }
         }
@@ -8214,7 +9094,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Jeremy / Levi - PRs",
-            "columnName": "bartonjs",
+            "columnName": "Champion: bartonjs",
             "isOrgProject": true
           }
         }
@@ -8265,7 +9145,7 @@
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": "Area Pod: Jeremy / Levi - PRs",
-            "columnName": "GrabYourPitchForks",
+            "columnName": "Champion: GrabYourPitchForks",
             "isOrgProject": true
           }
         }

@@ -1,7 +1,7 @@
 module.exports = ({podName, users}) => users.map((user) => ({
   "taskType": "trigger",
   "capabilityId": "IssueResponder",
-  "subCapability": "PullRequestResponder",
+  "subCapability": "IssuesOnlyResponder",
   "version": "1.0",
   "config": {
     "conditions": {
@@ -10,36 +10,29 @@ module.exports = ({podName, users}) => users.map((user) => ({
         {
           "name": "isInProjectColumn",
           "parameters": {
-            "projectName": `Area Pod: ${podName} - PRs`,
-            "columnName": "Needs Champion",
-            "isOrgProject": true
+            "projectName": `Area Pod: ${podName} - Issue Triage`,
+            "isOrgProject": true,
+            "columnName": "Needs Triage"
           }
         },
         {
-          "name": "isAction",
-          "parameters": {
-            "action": "assigned"
-          }
-        },
-        {
-          "name": "isAssignedToUser",
+          "name": "isActivitySender",
           "parameters": { user }
         }
       ]
     },
-    "eventType": "pull_request",
+    "eventType": "issue",
     "eventNames": [
-      "pull_request",
       "issues",
       "project_card"
     ],
-    "taskName": `[Area Pod: ${podName} - PRs] Champion Assigned`,
+    "taskName": `[Area Pod: ${podName} - Issue Triage] Triage Started`,
     "actions": [
       {
         "name": "moveToProjectColumn",
         "parameters": {
-          "projectName": `Area Pod: ${podName} - PRs`,
-          "columnName": `Champion: ${user}`,
+          "projectName": `Area Pod: ${podName} - Issue Triage`,
+          "columnName": `Triage: ${user}`,
           "isOrgProject": true
         }
       }
