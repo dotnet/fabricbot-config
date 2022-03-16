@@ -1574,6 +1574,13 @@
             "parameters": {
               "action": "unlabeled"
             }
+          },
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Adam / David - Issue Triage",
+              "isOrgProject": true
+            }
           }
         ]
       },
@@ -2359,6 +2366,13 @@
             "name": "isAction",
             "parameters": {
               "action": "unlabeled"
+            }
+          },
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Buyaa / Jose / Steve - Issue Triage",
+              "isOrgProject": true
             }
           }
         ]
@@ -3253,6 +3267,13 @@
             "parameters": {
               "action": "unlabeled"
             }
+          },
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Carlos / Jeremy - Issue Triage",
+              "isOrgProject": true
+            }
           }
         ]
       },
@@ -4008,6 +4029,13 @@
             "parameters": {
               "action": "unlabeled"
             }
+          },
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+              "isOrgProject": true
+            }
           }
         ]
       },
@@ -4647,6 +4675,13 @@
             "parameters": {
               "action": "unlabeled"
             }
+          },
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Eirik / Krzysztof / Layomi - Issue Triage",
+              "isOrgProject": true
+            }
           }
         ]
       },
@@ -5217,6 +5252,13 @@
             "name": "isAction",
             "parameters": {
               "action": "unlabeled"
+            }
+          },
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+              "isOrgProject": true
             }
           }
         ]
@@ -5815,6 +5857,13 @@
             "name": "isAction",
             "parameters": {
               "action": "unlabeled"
+            }
+          },
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Maryam / Tarek - Issue Triage",
+              "isOrgProject": true
             }
           }
         ]
@@ -6745,6 +6794,13 @@
             "name": "isAction",
             "parameters": {
               "action": "unlabeled"
+            }
+          },
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Jeremy / Levi - Issue Triage",
+              "isOrgProject": true
             }
           }
         ]
