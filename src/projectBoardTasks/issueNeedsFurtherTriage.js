@@ -68,7 +68,7 @@ module.exports = ({podName, podAreas}) => [{
             }
           ]
         }
-      ].filter(op => !!op) // We will have a falsy element in the array of we"re not filtering by area label
+      ].filter(op => !!op) // We will have a falsy element in the array of we're not filtering by area label
     },
     "eventType": "issue",
     "eventNames":
