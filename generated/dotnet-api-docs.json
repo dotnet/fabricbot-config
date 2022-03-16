@@ -841,16 +841,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "adamsitnik"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "adamsitnik"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "adamsitnik"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -892,16 +919,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "jozkee"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "jozkee"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "jozkee"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -1994,16 +2048,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "buyaa-n"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "buyaa-n"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "buyaa-n"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -2045,16 +2126,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "joperezr"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "joperezr"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "joperezr"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -2096,16 +2204,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "steveharter"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "steveharter"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "steveharter"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -3016,16 +3151,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "carlossanlop"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "carlossanlop"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "carlossanlop"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -3067,16 +3229,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "bartonjs"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "bartonjs"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "bartonjs"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -3893,16 +4082,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "dakersnar"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "dakersnar"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "dakersnar"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -3944,16 +4160,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "michaelgsharp"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "michaelgsharp"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "michaelgsharp"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -3995,16 +4238,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "tannergooding"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "tannergooding"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "tannergooding"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -4775,16 +5045,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "eiriktsarpalis"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "eiriktsarpalis"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "eiriktsarpalis"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -4826,16 +5123,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "krwq"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "krwq"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "krwq"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -4877,16 +5201,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "layomia"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "layomia"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "layomia"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -5475,16 +5826,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "ericstj"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "ericstj"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "ericstj"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -5526,16 +5904,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "jeffhandley"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "jeffhandley"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "jeffhandley"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -6720,16 +7125,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "eerhardt"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "eerhardt"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "eerhardt"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -6771,16 +7203,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "maryamariyan"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "maryamariyan"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "maryamariyan"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -6822,16 +7281,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "tarekgh"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "tarekgh"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "tarekgh"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -7604,16 +8090,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "bartonjs"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "bartonjs"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "bartonjs"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -7655,16 +8168,43 @@
             }
           },
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "assigned"
-            }
-          },
-          {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "GrabYourPitchForks"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "GrabYourPitchForks"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "GrabYourPitchForks"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
