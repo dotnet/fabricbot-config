@@ -24,6 +24,7 @@ module.exports = ({podName, users}) => users.map((user) => ({
     "eventType": "issue",
     "eventNames": [
       "issues",
+      "issue_comment",
       "project_card"
     ],
     "taskName": `[Area Pod: ${podName} - Issue Triage] Triage Started`,

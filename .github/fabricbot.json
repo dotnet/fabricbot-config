@@ -1600,6 +1600,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Triage Started",
@@ -1644,6 +1645,7 @@
       "eventType": "issue",
       "eventNames": [
         "issues",
+        "issue_comment",
         "project_card"
       ],
       "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Triage Started",
