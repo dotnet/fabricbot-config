@@ -58,11 +58,12 @@ for (const repo of repos) {
       // Filter to the area pods that have areas in this repo
       .filter(areaPod => !!areaPod.repos[repo])
       // Get a flat array of project board tasks for this pod in this repo
-      .flatMap(areaPod => projectBoardTasks.map(task => task({
-        podName: areaPod.pod,
-        podAreas: areaPod.repos[repo],
+      .flatMap(({podName, champions, repos}) => projectBoardTasks({
+        podName,
+        champions,
+        podAreas: repos[repo],
         triagedLabels: triagedLabels[repo]
-      })))
+      }))
       // Filter out any empty/falsy tasks (that were not applicable for a pod in this repo)
       .filter(task => !!task)
   ].map(task => ({

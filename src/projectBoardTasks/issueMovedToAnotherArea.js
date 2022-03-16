@@ -1,5 +1,5 @@
 // This task is only applicable if the area pod has specific areas specified
-module.exports = ({podName, podAreas}) => (Array.isArray(podAreas) && {
+module.exports = ({podName, podAreas}) => (Array.isArray(podAreas) ? [{
   "taskType": "trigger",
   "capabilityId": "IssueResponder",
   "subCapability": "IssuesOnlyResponder",
@@ -59,4 +59,4 @@ module.exports = ({podName, podAreas}) => (Array.isArray(podAreas) && {
       }
     ]
   }
-});
+}] : []);
