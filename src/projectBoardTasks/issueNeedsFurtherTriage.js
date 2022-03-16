@@ -1,4 +1,4 @@
-module.exports = (pod, areas) => ({
+module.exports = ({podName, podAreas}) => ({
   "taskType": "trigger",
   "capabilityId": "IssueResponder",
   "subCapability": "IssueCommentResponder",
@@ -10,11 +10,11 @@ module.exports = (pod, areas) => ({
       "operator": "and",
       "operands":
       [
-        (Array.isArray(areas) && {
+        (Array.isArray(podAreas) && {
           "operator": "or",
-          "operands": areas.map(area => ({
+          "operands": podAreas.map(label => ({
             "name": "hasLabel",
-            "parameters": { "label": area }
+            "parameters": { label }
           }))
         }),
         {
@@ -51,7 +51,7 @@ module.exports = (pod, areas) => ({
                   "name": "isInProject",
                   "parameters":
                   {
-                    "projectName": `Area Pod: ${pod} - Issue Triage`,
+                    "projectName": `Area Pod: ${podName} - Issue Triage`,
                     "isOrgProject": true
                   }
                 }
@@ -61,7 +61,7 @@ module.exports = (pod, areas) => ({
               "name": "isInProjectColumn",
               "parameters":
               {
-                "projectName": `Area Pod: ${pod} - Issue Triage`,
+                "projectName": `Area Pod: ${podName} - Issue Triage`,
                 "columnName": "Triaged",
                 "isOrgProject": true
               }
@@ -75,7 +75,7 @@ module.exports = (pod, areas) => ({
     [
       "issue_comment"
     ],
-    "taskName": `[Area Pod: ${pod} - Issue Triage] Needs Further Triage`,
+    "taskName": `[Area Pod: ${podName} - Issue Triage] Needs Further Triage`,
     "actions":
     [
       // Archived cards need to be removed/added instead of just added.
@@ -86,7 +86,7 @@ module.exports = (pod, areas) => ({
         "name": "removeFromProject",
         "parameters":
         {
-          "projectName": `Area Pod: ${pod} - Issue Triage`,
+          "projectName": `Area Pod: ${podName} - Issue Triage`,
           "isOrgProject": true
         }
       },
@@ -94,7 +94,7 @@ module.exports = (pod, areas) => ({
         "name": "addToProject",
         "parameters":
         {
-          "projectName": `Area Pod: ${pod} - Issue Triage`,
+          "projectName": `Area Pod: ${podName} - Issue Triage`,
           "columnName": "Needs Triage",
           "isOrgProject": true
         }

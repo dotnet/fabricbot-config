@@ -1,5 +1,64 @@
 [
   {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "taskName": "Add untriaged label to new issues",
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isAction",
+            "parameters": {
+              "action": "opened"
+            }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "actions": [
+        {
+          "name": "addLabel",
+          "parameters": {
+            "label": "untriaged"
+          }
+        }
+      ],
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
     "taskType": "trigger",
     "capabilityId": "IssueResponder",
     "subCapability": "IssuesOnlyResponder",
@@ -95,6 +154,7 @@
     }
   },
   {
+    "taskSource": "fabricbot-config",
     "taskType": "trigger",
     "capabilityId": "IssueResponder",
     "subCapability": "IssueCommentResponder",
@@ -175,6 +235,7 @@
     }
   },
   {
+    "taskSource": "fabricbot-config",
     "taskType": "trigger",
     "capabilityId": "IssueResponder",
     "subCapability": "IssuesOnlyResponder",
@@ -201,12 +262,6 @@
                 "name": "labelAdded",
                 "parameters": {
                   "label": "needs-author-action"
-                }
-              },
-              {
-                "name": "labelAdded",
-                "parameters": {
-                  "label": "api-ready-for-review"
                 }
               },
               {
@@ -244,6 +299,7 @@
     }
   },
   {
+    "taskSource": "fabricbot-config",
     "taskType": "trigger",
     "capabilityId": "IssueResponder",
     "subCapability": "PullRequestResponder",

@@ -1,4 +1,4 @@
-module.exports = (pod, areas) => ({
+module.exports = ({podName, podAreas}) => ({
   "taskType": "trigger",
   "capabilityId": "IssueResponder",
   "subCapability": "IssuesOnlyResponder",
@@ -18,11 +18,11 @@ module.exports = (pod, areas) => ({
               "operator": "and",
               "operands":
               [
-                (Array.isArray(areas) && {
+                (Array.isArray(podAreas) && {
                   "operator": "or",
-                  "operands": areas.map(area => ({
+                  "operands": podAreas.map(label => ({
                     "name": "hasLabel",
-                    "parameters": { "label": area }
+                    "parameters": { label }
                   }))
                 }),
                 {
@@ -50,11 +50,11 @@ module.exports = (pod, areas) => ({
                 }
               ].filter(op => !!op) // We will have a falsy element in the array of we"re not filtering by area label
             },
-            (Array.isArray(areas) && {
+            (Array.isArray(podAreas) && {
               "operator": "or",
-              "operands": areas.map(area => ({
+              "operands": podAreas.map(label => ({
                 "name": "labelAdded",
-                "parameters": { "label": area }
+                "parameters": { label }
               }))
             })
           ].filter(op => !!op) // We will have a falsy element in the array of we"re not filtering by area label
@@ -76,7 +76,7 @@ module.exports = (pod, areas) => ({
                   "name": "isInProject",
                   "parameters":
                   {
-                    "projectName": `Area Pod: ${pod} - Issue Triage`,
+                    "projectName": `Area Pod: ${podName} - Issue Triage`,
                     "isOrgProject": true
                   }
                 }
@@ -86,7 +86,7 @@ module.exports = (pod, areas) => ({
               "name": "isInProjectColumn",
               "parameters":
               {
-                "projectName": `Area Pod: ${pod} - Issue Triage`,
+                "projectName": `Area Pod: ${podName} - Issue Triage`,
                 "isOrgProject": true,
                 "columnName": "Triaged"
               }
@@ -101,7 +101,7 @@ module.exports = (pod, areas) => ({
       "issues",
       "project_card"
     ],
-    "taskName": `[Area Pod: ${pod} - Issue Triage] Needs Triage`,
+    "taskName": `[Area Pod: ${podName} - Issue Triage] Needs Triage`,
     "actions":
     [
       // Archived cards need to be removed/added instead of just added.
@@ -112,7 +112,7 @@ module.exports = (pod, areas) => ({
         "name": "removeFromProject",
         "parameters":
         {
-          "projectName": `Area Pod: ${pod} - Issue Triage`,
+          "projectName": `Area Pod: ${podName} - Issue Triage`,
           "isOrgProject": true
         }
       },
@@ -120,7 +120,7 @@ module.exports = (pod, areas) => ({
         "name": "addToProject",
         "parameters":
         {
-          "projectName": `Area Pod: ${pod} - Issue Triage`,
+          "projectName": `Area Pod: ${podName} - Issue Triage`,
           "columnName": "Needs Triage",
           "isOrgProject": true
         }
