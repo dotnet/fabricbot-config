@@ -25,14 +25,17 @@ module.exports = ({podName, podAreas}) => [{
               }
             }
           ]
+        },
+        {
+          "name": "isOpen",
+          "parameters": {}
         }
       ].filter(op => !!op) // We will have a falsy element in the array of we're not filtering by area label
     },
     "eventType": "pull_request",
     "eventNames": [
       "pull_request",
-      "issues",
-      "project_card"
+      "issues"
     ],
     "taskName": `[Area Pod: ${podName} - PRs] Needs Champion`,
     "actions": [

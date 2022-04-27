@@ -720,14 +720,17 @@
                 }
               }
             ]
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
           }
         ]
       },
       "eventType": "pull_request",
       "eventNames": [
         "pull_request",
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Adam / David - PRs] Needs Champion",
       "actions": [
@@ -1647,14 +1650,17 @@
                 }
               }
             ]
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
           }
         ]
       },
       "eventType": "pull_request",
       "eventNames": [
         "pull_request",
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Buyaa / Jose / Steve - PRs] Needs Champion",
       "actions": [
@@ -2436,14 +2442,17 @@
                 }
               }
             ]
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
           }
         ]
       },
       "eventType": "pull_request",
       "eventNames": [
         "pull_request",
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Carlos / Viktor - PRs] Needs Champion",
       "actions": [
@@ -3087,14 +3096,17 @@
                 }
               }
             ]
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
           }
         ]
       },
       "eventType": "pull_request",
       "eventNames": [
         "pull_request",
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Drew / Michael / Tanner - PRs] Needs Champion",
       "actions": [
@@ -3692,14 +3704,17 @@
                 }
               }
             ]
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
           }
         ]
       },
       "eventType": "pull_request",
       "eventNames": [
         "pull_request",
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - PRs] Needs Champion",
       "actions": [
@@ -4159,14 +4174,17 @@
                 }
               }
             ]
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
           }
         ]
       },
       "eventType": "pull_request",
       "eventNames": [
         "pull_request",
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Eric / Jeff - PRs] Needs Champion",
       "actions": [
@@ -5178,14 +5196,17 @@
                 }
               }
             ]
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
           }
         ]
       },
       "eventType": "pull_request",
       "eventNames": [
         "pull_request",
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Eric / Maryam / Tarek - PRs] Needs Champion",
       "actions": [
@@ -5829,14 +5850,17 @@
                 }
               }
             ]
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
           }
         ]
       },
       "eventType": "pull_request",
       "eventNames": [
         "pull_request",
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Jeremy / Levi - PRs] Needs Champion",
       "actions": [
