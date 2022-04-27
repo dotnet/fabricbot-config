@@ -1743,14 +1743,17 @@
                 }
               }
             ]
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
           }
         ]
       },
       "eventType": "pull_request",
       "eventNames": [
         "pull_request",
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Eric / Jeff - PRs] Needs Champion",
       "actions": [

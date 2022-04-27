@@ -1709,14 +1709,17 @@
                 }
               }
             ]
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
           }
         ]
       },
       "eventType": "pull_request",
       "eventNames": [
         "pull_request",
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Drew / Michael / Tanner - PRs] Needs Champion",
       "actions": [
