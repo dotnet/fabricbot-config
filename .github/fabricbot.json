@@ -1565,57 +1565,13 @@
     "version": "1.0",
     "config": {
       "conditions": {
-        "operator": "and",
+        "operator": "not",
         "operands": [
           {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "isCloseAndComment",
-                "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "or",
-            "operands": [
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "isInProject",
-                    "parameters": {
-                      "projectName": "Area Pod: Eric / Jeff - Issue Triage",
-                      "isOrgProject": true
-                    }
-                  }
-                ]
-              },
-              {
-                "operator": "and",
-                "operands": [
-                  {
-                    "name": "isInProjectColumn",
-                    "parameters": {
-                      "projectName": "Area Pod: Eric / Jeff - Issue Triage",
-                      "columnName": "Triaged",
-                      "isOrgProject": true
-                    }
-                  },
-                  {
-                    "operator": "not",
-                    "operands": [
-                      {
-                        "name": "activitySenderHasPermissions",
-                        "parameters": {
-                          "permissions": "write"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "name": "activitySenderHasPermissions",
+            "parameters": {
+              "permissions": "write"
+            }
           }
         ]
       },
@@ -1623,21 +1579,40 @@
       "eventNames": [
         "issue_comment"
       ],
-      "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Needs Further Triage",
+      "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Actor does not have write permission",
       "actions": [
         {
-          "name": "removeFromProject",
+          "name": "addReactionToIssueComment",
           "parameters": {
-            "projectName": "Area Pod: Eric / Jeff - Issue Triage",
-            "isOrgProject": true
+            "reaction": "-1"
           }
-        },
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssueCommentResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "name": "activitySenderHasPermissions",
+        "parameters": {
+          "permissions": "write"
+        }
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issue_comment"
+      ],
+      "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Actor does have write permission",
+      "actions": [
         {
-          "name": "addToProject",
+          "name": "addReactionToIssueComment",
           "parameters": {
-            "projectName": "Area Pod: Eric / Jeff - Issue Triage",
-            "columnName": "Needs Triage",
-            "isOrgProject": true
+            "reaction": "+1"
           }
         }
       ]
