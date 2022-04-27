@@ -304,8 +304,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Adam / David - Issue Triage] Needs Triage",
       "actions": [
@@ -394,12 +393,11 @@
             ]
           },
           {
-            "operator": "not",
             "operands": [
               {
                 "name": "activitySenderHasPermissions",
                 "parameters": {
-                  "permissions": "write"
+                  "permissions": "read"
                 }
               }
             ]
@@ -1145,8 +1143,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Buyaa / Jose / Steve - Issue Triage] Needs Triage",
       "actions": [
@@ -1259,12 +1256,11 @@
             ]
           },
           {
-            "operator": "not",
             "operands": [
               {
                 "name": "activitySenderHasPermissions",
                 "parameters": {
-                  "permissions": "write"
+                  "permissions": "read"
                 }
               }
             ]
@@ -2009,8 +2005,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Carlos / Viktor - Issue Triage] Needs Triage",
       "actions": [
@@ -2105,12 +2100,11 @@
             ]
           },
           {
-            "operator": "not",
             "operands": [
               {
                 "name": "activitySenderHasPermissions",
                 "parameters": {
-                  "permissions": "write"
+                  "permissions": "read"
                 }
               }
             ]
@@ -2735,8 +2729,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Needs Triage",
       "actions": [
@@ -2813,12 +2806,11 @@
             ]
           },
           {
-            "operator": "not",
             "operands": [
               {
                 "name": "activitySenderHasPermissions",
                 "parameters": {
-                  "permissions": "write"
+                  "permissions": "read"
                 }
               }
             ]
@@ -3369,8 +3361,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - Issue Triage] Needs Triage",
       "actions": [
@@ -3441,12 +3432,11 @@
             ]
           },
           {
-            "operator": "not",
             "operands": [
               {
                 "name": "activitySenderHasPermissions",
                 "parameters": {
-                  "permissions": "write"
+                  "permissions": "read"
                 }
               }
             ]
@@ -3911,8 +3901,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Needs Triage",
       "actions": [
@@ -3965,12 +3954,11 @@
             ]
           },
           {
-            "operator": "not",
             "operands": [
               {
                 "name": "activitySenderHasPermissions",
                 "parameters": {
-                  "permissions": "write"
+                  "permissions": "read"
                 }
               }
             ]
@@ -4660,8 +4648,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Eric / Maryam / Tarek - Issue Triage] Needs Triage",
       "actions": [
@@ -4786,12 +4773,11 @@
             ]
           },
           {
-            "operator": "not",
             "operands": [
               {
                 "name": "activitySenderHasPermissions",
                 "parameters": {
-                  "permissions": "write"
+                  "permissions": "read"
                 }
               }
             ]
@@ -5501,8 +5487,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Jeremy / Levi - Issue Triage] Needs Triage",
       "actions": [
@@ -5579,12 +5564,11 @@
             ]
           },
           {
-            "operator": "not",
             "operands": [
               {
                 "name": "activitySenderHasPermissions",
                 "parameters": {
-                  "permissions": "write"
+                  "permissions": "read"
                 }
               }
             ]

@@ -98,8 +98,7 @@ module.exports = ({podName, podAreas}) => [{
     "eventType": "issue",
     "eventNames":
     [
-      "issues",
-      "project_card"
+      "issues"
     ],
     "taskName": `[Area Pod: ${podName} - Issue Triage] Needs Triage`,
     "actions":

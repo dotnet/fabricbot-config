@@ -29,12 +29,11 @@ module.exports = ({podName, podAreas}) => [{
           ]
         },
         {
-          "operator": "not",
           "operands": [
             {
               "name": "activitySenderHasPermissions",
               "parameters": {
-                "permissions": "write"
+                "permissions": "read"
               }
             }
           ]
