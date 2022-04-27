@@ -1588,25 +1588,12 @@
             ]
           },
           {
-            "operator": "or",
+            "operator": "not",
             "operands": [
               {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "isInProject",
-                    "parameters": {
-                      "projectName": "Area Pod: Eric / Jeff - Issue Triage",
-                      "isOrgProject": true
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "isInProjectColumn",
+                "name": "isInProject",
                 "parameters": {
                   "projectName": "Area Pod: Eric / Jeff - Issue Triage",
-                  "columnName": "Triaged",
                   "isOrgProject": true
                 }
               }
