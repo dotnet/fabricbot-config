@@ -15,7 +15,7 @@
               {
                 "name": "activitySenderHasPermissions",
                 "parameters": {
-                  "permissions": "write"
+                  "permissions": "read"
                 }
               }
             ]
@@ -26,7 +26,7 @@
       "eventNames": [
         "issue_comment"
       ],
-      "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Actor does not have write permission",
+      "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Actor does not have Read permission",
       "actions": [
         {
           "name": "addReactionToIssueComment",
@@ -50,7 +50,7 @@
           {
             "name": "activitySenderHasPermissions",
             "parameters": {
-              "permissions": "write"
+              "permissions": "read"
             }
           }
         ]
@@ -59,7 +59,7 @@
       "eventNames": [
         "issue_comment"
       ],
-      "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Actor does have write permission",
+      "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Actor has Read permission",
       "actions": [
         {
           "name": "addReactionToIssueComment",
