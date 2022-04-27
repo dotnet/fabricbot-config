@@ -1520,43 +1520,14 @@
             "parameters": {}
           },
           {
-            "operator": "or",
+            "operator": "not",
             "operands": [
               {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "isInProject",
-                    "parameters": {
-                      "projectName": "Area Pod: Eric / Jeff - Issue Triage",
-                      "isOrgProject": true
-                    }
-                  }
-                ]
-              },
-              {
-                "operator": "and",
-                "operands": [
-                  {
-                    "operator": "not",
-                    "operands": [
-                      {
-                        "name": "activitySenderHasPermissions",
-                        "parameters": {
-                          "permissions": "write"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "isInProjectColumn",
-                    "parameters": {
-                      "projectName": "Area Pod: Eric / Jeff - Issue Triage",
-                      "isOrgProject": true,
-                      "columnName": "Triaged"
-                    }
-                  }
-                ]
+                "name": "isInProject",
+                "parameters": {
+                  "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+                  "isOrgProject": true
+                }
               }
             ]
           }
