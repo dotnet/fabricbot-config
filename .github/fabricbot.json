@@ -1535,12 +1535,28 @@
                 ]
               },
               {
-                "name": "isInProjectColumn",
-                "parameters": {
-                  "projectName": "Area Pod: Eric / Jeff - Issue Triage",
-                  "isOrgProject": true,
-                  "columnName": "Triaged"
-                }
+                "operator": "and",
+                "operands": [
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "activitySenderHasPermissions",
+                        "parameters": {
+                          "permissions": "write"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isInProjectColumn",
+                    "parameters": {
+                      "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+                      "isOrgProject": true,
+                      "columnName": "Triaged"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -1548,8 +1564,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Needs Triage",
       "actions": [
