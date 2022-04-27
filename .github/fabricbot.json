@@ -1577,17 +1577,6 @@
             ]
           },
           {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "activitySenderHasPermissions",
-                "parameters": {
-                  "permissions": "write"
-                }
-              }
-            ]
-          },
-          {
             "operator": "or",
             "operands": [
               {
@@ -1603,12 +1592,28 @@
                 ]
               },
               {
-                "name": "isInProjectColumn",
-                "parameters": {
-                  "projectName": "Area Pod: Eric / Jeff - Issue Triage",
-                  "columnName": "Triaged",
-                  "isOrgProject": true
-                }
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isInProjectColumn",
+                    "parameters": {
+                      "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+                      "columnName": "Triaged",
+                      "isOrgProject": true
+                    }
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "activitySenderHasPermissions",
+                        "parameters": {
+                          "permissions": "write"
+                        }
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
