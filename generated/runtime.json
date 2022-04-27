@@ -1858,14 +1858,10 @@
             ]
           },
           {
-            "operands": [
-              {
-                "name": "activitySenderHasPermissions",
-                "parameters": {
-                  "permissions": "read"
-                }
-              }
-            ]
+            "name": "activitySenderHasPermissions",
+            "parameters": {
+              "permissions": "read"
+            }
           },
           {
             "operator": "or",
@@ -2721,14 +2717,10 @@
             ]
           },
           {
-            "operands": [
-              {
-                "name": "activitySenderHasPermissions",
-                "parameters": {
-                  "permissions": "read"
-                }
-              }
-            ]
+            "name": "activitySenderHasPermissions",
+            "parameters": {
+              "permissions": "read"
+            }
           },
           {
             "operator": "or",
@@ -3565,14 +3557,10 @@
             ]
           },
           {
-            "operands": [
-              {
-                "name": "activitySenderHasPermissions",
-                "parameters": {
-                  "permissions": "read"
-                }
-              }
-            ]
+            "name": "activitySenderHasPermissions",
+            "parameters": {
+              "permissions": "read"
+            }
           },
           {
             "operator": "or",
@@ -4271,14 +4259,10 @@
             ]
           },
           {
-            "operands": [
-              {
-                "name": "activitySenderHasPermissions",
-                "parameters": {
-                  "permissions": "read"
-                }
-              }
-            ]
+            "name": "activitySenderHasPermissions",
+            "parameters": {
+              "permissions": "read"
+            }
           },
           {
             "operator": "or",
@@ -4897,14 +4881,10 @@
             ]
           },
           {
-            "operands": [
-              {
-                "name": "activitySenderHasPermissions",
-                "parameters": {
-                  "permissions": "read"
-                }
-              }
-            ]
+            "name": "activitySenderHasPermissions",
+            "parameters": {
+              "permissions": "read"
+            }
           },
           {
             "operator": "or",
@@ -5419,14 +5399,10 @@
             ]
           },
           {
-            "operands": [
-              {
-                "name": "activitySenderHasPermissions",
-                "parameters": {
-                  "permissions": "read"
-                }
-              }
-            ]
+            "name": "activitySenderHasPermissions",
+            "parameters": {
+              "permissions": "read"
+            }
           },
           {
             "operator": "or",
@@ -6238,14 +6214,10 @@
             ]
           },
           {
-            "operands": [
-              {
-                "name": "activitySenderHasPermissions",
-                "parameters": {
-                  "permissions": "read"
-                }
-              }
-            ]
+            "name": "activitySenderHasPermissions",
+            "parameters": {
+              "permissions": "read"
+            }
           },
           {
             "operator": "or",
@@ -7029,14 +7001,10 @@
             ]
           },
           {
-            "operands": [
-              {
-                "name": "activitySenderHasPermissions",
-                "parameters": {
-                  "permissions": "read"
-                }
-              }
-            ]
+            "name": "activitySenderHasPermissions",
+            "parameters": {
+              "permissions": "read"
+            }
           },
           {
             "operator": "or",
