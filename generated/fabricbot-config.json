@@ -1548,8 +1548,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Needs Triage",
       "actions": [
@@ -1591,12 +1590,11 @@
             ]
           },
           {
-            "operator": "not",
             "operands": [
               {
                 "name": "activitySenderHasPermissions",
                 "parameters": {
-                  "permissions": "write"
+                  "permissions": "read"
                 }
               }
             ]
