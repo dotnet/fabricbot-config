@@ -10,15 +10,10 @@
         "operator": "and",
         "operands": [
           {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "activitySenderHasPermissions",
-                "parameters": {
-                  "permissions": "read"
-                }
-              }
-            ]
+            "name": "activitySenderHasPermissions",
+            "parameters": {
+              "permissions": "read"
+            }
           }
         ]
       },
@@ -26,12 +21,12 @@
       "eventNames": [
         "issue_comment"
       ],
-      "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Actor does not have Read permission",
+      "taskName": "Read",
       "actions": [
         {
-          "name": "addReactionToIssueComment",
+          "name": "addReply",
           "parameters": {
-            "reaction": "-1"
+            "comment": "${contextualAuthor} has \"Read\" permissions"
           }
         }
       ]
@@ -50,7 +45,7 @@
           {
             "name": "activitySenderHasPermissions",
             "parameters": {
-              "permissions": "read"
+              "permissions": "write"
             }
           }
         ]
@@ -59,12 +54,111 @@
       "eventNames": [
         "issue_comment"
       ],
-      "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Actor has Read permission",
+      "taskName": "Write",
       "actions": [
         {
-          "name": "addReactionToIssueComment",
+          "name": "addReply",
           "parameters": {
-            "reaction": "+1"
+            "comment": "${contextualAuthor} has \"Write\" permissions"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssueCommentResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "activitySenderHasPermissions",
+            "parameters": {
+              "permissions": "maintain"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issue_comment"
+      ],
+      "taskName": "Maintain",
+      "actions": [
+        {
+          "name": "addReply",
+          "parameters": {
+            "comment": "${contextualAuthor} has \"Maintain\" permissions"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssueCommentResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "activitySenderHasPermissions",
+            "parameters": {
+              "permissions": "admin"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issue_comment"
+      ],
+      "taskName": "Admin",
+      "actions": [
+        {
+          "name": "addReply",
+          "parameters": {
+            "comment": "${contextualAuthor} has \"Admin\" permissions"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssueCommentResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "activitySenderHasPermissions",
+            "parameters": {
+              "permissions": "triage"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issue_comment"
+      ],
+      "taskName": "Triage",
+      "actions": [
+        {
+          "name": "addReply",
+          "parameters": {
+            "comment": "${contextualAuthor} has \"Triage\" permissions"
           }
         }
       ]
