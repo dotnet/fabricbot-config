@@ -1760,6 +1760,69 @@
         "operator": "and",
         "operands": [
           {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+              "isOrgProject": true
+            }
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                  "columnName": "Done",
+                  "isOrgProject": true
+                }
+              }
+            ]
+          },
+          {
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isOpen",
+                    "parameters": {}
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "eventType": "pull_request",
+      "eventNames": [
+        "pull_request"
+      ],
+      "taskName": "[Area Pod: Drew / Michael / Tanner - PRs] Closed, Merged, or Moved",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+            "columnName": "Done",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "PullRequestResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
             "operator": "not",
             "operands": [
               {
