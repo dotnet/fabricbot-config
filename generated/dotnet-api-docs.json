@@ -480,12 +480,6 @@
                 }
               },
               {
-                "name": "labelAdded",
-                "parameters": {
-                  "label": "needs-more-info"
-                }
-              },
-              {
                 "name": "isAction",
                 "parameters": {
                   "action": "closed"
@@ -497,8 +491,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Adam / David - Issue Triage] Triaged",
       "actions": [
@@ -1342,12 +1335,6 @@
                 }
               },
               {
-                "name": "labelAdded",
-                "parameters": {
-                  "label": "needs-more-info"
-                }
-              },
-              {
                 "name": "isAction",
                 "parameters": {
                   "action": "closed"
@@ -1359,8 +1346,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Buyaa / Jose / Steve - Issue Triage] Triaged",
       "actions": [
@@ -2185,12 +2171,6 @@
                 }
               },
               {
-                "name": "labelAdded",
-                "parameters": {
-                  "label": "needs-more-info"
-                }
-              },
-              {
                 "name": "isAction",
                 "parameters": {
                   "action": "closed"
@@ -2202,8 +2182,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Carlos / Viktor - Issue Triage] Triaged",
       "actions": [
@@ -2890,12 +2869,6 @@
                 }
               },
               {
-                "name": "labelAdded",
-                "parameters": {
-                  "label": "needs-more-info"
-                }
-              },
-              {
                 "name": "isAction",
                 "parameters": {
                   "action": "closed"
@@ -2907,8 +2880,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Triaged",
       "actions": [
@@ -3515,12 +3487,6 @@
                 }
               },
               {
-                "name": "labelAdded",
-                "parameters": {
-                  "label": "needs-more-info"
-                }
-              },
-              {
                 "name": "isAction",
                 "parameters": {
                   "action": "closed"
@@ -3532,8 +3498,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - Issue Triage] Triaged",
       "actions": [
@@ -4036,12 +4001,6 @@
                 }
               },
               {
-                "name": "labelAdded",
-                "parameters": {
-                  "label": "needs-more-info"
-                }
-              },
-              {
                 "name": "isAction",
                 "parameters": {
                   "action": "closed"
@@ -4053,8 +4012,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Triaged",
       "actions": [
@@ -4854,12 +4812,6 @@
                 }
               },
               {
-                "name": "labelAdded",
-                "parameters": {
-                  "label": "needs-more-info"
-                }
-              },
-              {
                 "name": "isAction",
                 "parameters": {
                   "action": "closed"
@@ -4871,8 +4823,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Eric / Maryam / Tarek - Issue Triage] Triaged",
       "actions": [
@@ -5644,12 +5595,6 @@
                 }
               },
               {
-                "name": "labelAdded",
-                "parameters": {
-                  "label": "needs-more-info"
-                }
-              },
-              {
                 "name": "isAction",
                 "parameters": {
                   "action": "closed"
@@ -5661,8 +5606,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Jeremy / Levi - Issue Triage] Triaged",
       "actions": [
