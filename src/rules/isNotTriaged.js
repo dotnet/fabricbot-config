@@ -12,7 +12,7 @@ module.exports = (triagedLabels) => [
       }
     ]
   },
-  ...triagedLabels.map(label => ({
+  ...(triagedLabels ? triagedLabels.map(label => ({
     operator: "not",
     operands: [
       {
@@ -20,5 +20,5 @@ module.exports = (triagedLabels) => [
         parameters: { label }
       }
     ]
-  }))
+  })) : [])
 ];

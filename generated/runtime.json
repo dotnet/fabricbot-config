@@ -6,15 +6,30 @@
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
-      "taskName": "Add untriaged label to new issues",
+      "taskName": "Add untriaged label to new/reopened issues without a milestone",
       "conditions": {
         "operator": "and",
         "operands": [
           {
-            "name": "isAction",
-            "parameters": {
-              "action": "opened"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "name": "isAction",
+                "parameters": {
+                  "action": "opened"
+                }
+              },
+              {
+                "name": "isAction",
+                "parameters": {
+                  "action": "reopened"
+                }
+              },
+              {
+                "name": "removedFromMilestone",
+                "parameters": {}
+              }
+            ]
           },
           {
             "name": "isOpen",
@@ -35,36 +50,72 @@
               {
                 "name": "hasLabel",
                 "parameters": {
-                  "label": "needs-author-action"
-                }
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "api-ready-for-review"
+                  "label": "untriaged"
                 }
               }
             ]
           }
         ]
+      }
+    },
+    "actions": [
+      {
+        "name": "addLabel",
+        "parameters": {
+          "label": "untriaged"
+        }
+      }
+    ],
+    "eventType": "issue",
+    "eventNames": [
+      "issues"
+    ]
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "operator": "or",
+            "operands": [
+              {
+                "name": "isAction",
+                "parameters": {
+                  "action": "closed"
+                }
+              },
+              {
+                "name": "addedToMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "name": "hasLabel",
+            "parameters": {
+              "label": "untriaged"
+            }
+          }
+        ]
       },
+      "eventType": "issue",
+      "eventNames": [
+        "issues"
+      ],
+      "taskName": "Remove untriaged label from issues when closed or added to a milestone",
       "actions": [
         {
-          "name": "addLabel",
+          "name": "removeLabel",
           "parameters": {
             "label": "untriaged"
           }
         }
-      ],
-      "eventType": "issue",
-      "eventNames": [
-        "issues",
-        "project_card"
       ]
     }
   },
@@ -1962,8 +2013,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Adam / David - Issue Triage] Triaged",
       "actions": [
@@ -2824,8 +2874,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Buyaa / Jose / Steve - Issue Triage] Triaged",
       "actions": [
@@ -3667,8 +3716,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Carlos / Viktor - Issue Triage] Triaged",
       "actions": [
@@ -4372,8 +4420,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Triaged",
       "actions": [
@@ -4997,8 +5044,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - Issue Triage] Triaged",
       "actions": [
@@ -5518,8 +5564,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Triaged",
       "actions": [
@@ -6336,8 +6381,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Eric / Maryam / Tarek - Issue Triage] Triaged",
       "actions": [
@@ -7126,8 +7170,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "[Area Pod: Jeremy / Levi - Issue Triage] Triaged",
       "actions": [

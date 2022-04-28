@@ -24,34 +24,33 @@ const repos = [
   "machinelearning"
 ];
 
-const triagedLabels = {
-  "fabricbot-config": ["needs-author-action", "approved", "rejected"],
-  "runtime":          ["needs-author-action", "api-ready-for-review"],
-  "dotnet-api-docs":  ["needs-author-action", "needs-more-info"],
-  "machinelearning":  ["needs-author-action"]
-};
-
-const commonIssueAndPullRequestTasks = (repo) => [
-  ...issueAndPullRequestTasks.untriaged(triagedLabels[repo]),
-  ...issueAndPullRequestTasks.inPr(),
+const commonIssueAndPullRequestTasks = [
+  ...issueAndPullRequestTasks.trackUntriaged(),
+  ...issueAndPullRequestTasks.addInPrLabel(),
   ...issueAndPullRequestTasks.assignTeamAuthor(),
-  ...issueAndPullRequestTasks.communityContribution(),
-  ...issueAndPullRequestTasks.needsAuthorAction(),
-  ...issueAndPullRequestTasks.noRecentActivity(14),
-  ...issueAndPullRequestTasks.closeInactiveDrafts(30),
-  ...issueAndPullRequestTasks.lockStaleIssuesAndPullRequests(30)
+  ...issueAndPullRequestTasks.addCommunityContributionLabel(),
+  ...issueAndPullRequestTasks.trackNeedsAuthorAction(),
+  ...issueAndPullRequestTasks.trackNoRecentActivity(14),
+  ...issueAndPullRequestTasks.trackInactiveDrafts(30),
+  ...issueAndPullRequestTasks.trackStaleIssuesAndPullRequests(30),
 ];
 
-const repoIssueLabelTasks = {
-  "fabricbot-config": commonIssueAndPullRequestTasks("fabricbot-config"),
-  "runtime": commonIssueAndPullRequestTasks("runtime"),
-  "machinelearning": commonIssueAndPullRequestTasks("machinelearning")
+const repoWideTasks = {
+  "fabricbot-config": commonIssueAndPullRequestTasks,
+  "runtime": commonIssueAndPullRequestTasks,
+  "machinelearning": commonIssueAndPullRequestTasks
+};
+
+const areaPodTriagedLabels = {
+  "fabricbot-config": ["needs-author-action"],
+  "runtime":          ["needs-author-action", "api-ready-for-review"],
+  "dotnet-api-docs":  ["needs-author-action"],
+  "machinelearning":  ["needs-author-action"]
 };
 
 for (const repo of repos) {
   const generatedTasks = [
-    // Repository-Wide Issue Labeling Tasks
-    ...(repoIssueLabelTasks[repo] || []),
+    ...(repoWideTasks[repo] || []),
 
     // Area Pod Project Board Tasks
     ...areaPods
@@ -62,7 +61,7 @@ for (const repo of repos) {
         podName,
         users,
         podAreas: repos[repo],
-        triagedLabels: triagedLabels[repo]
+        triagedLabels: areaPodTriagedLabels[repo]
       }))
       // Filter out any empty/falsy tasks (that were not applicable for a pod in this repo)
       .filter(task => !!task)

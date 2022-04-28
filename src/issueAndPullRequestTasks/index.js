@@ -1,10 +1,10 @@
 module.exports = {
-    untriaged: require("./untriaged"),
-    inPr: require("./inPr"),
+    addCommunityContributionLabel: require("./addCommunityContributionLabel"),
+    addInPrLabel: require("./addInPrLabel"),
     assignTeamAuthor: require("./assignTeamAuthor"),
-    communityContribution: require("./communityContribution"),
-    needsAuthorAction: require("./needsAuthorAction"),
-    noRecentActivity: require("./noRecentActivity"),
-    closeInactiveDrafts: require("./closeInactiveDrafts"),
-    lockStaleIssuesAndPullRequests: require("./lockStaleIssuesAndPullRequests")
+    trackInactiveDrafts: require("./trackInactiveDrafts"),
+    trackNeedsAuthorAction: require("./trackNeedsAuthorAction"),
+    trackNoRecentActivity: require("./trackNoRecentActivity"),
+    trackStaleIssuesAndPullRequests: require("./trackStaleIssuesAndPullRequests"),
+    trackUntriaged: require("./trackUntriaged")
 };
