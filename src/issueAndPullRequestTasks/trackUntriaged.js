@@ -1,5 +1,3 @@
-const isNotTriaged = require("../rules/isNotTriaged");
-
 module.exports = () => [
   {
     "taskType": "trigger",

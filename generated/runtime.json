@@ -2054,6 +2054,41 @@
             "parameters": {
               "user": "adamsitnik"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -2097,6 +2132,41 @@
             "parameters": {
               "user": "adamsitnik"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -2140,6 +2210,41 @@
             "parameters": {
               "user": "jozkee"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -2183,6 +2288,41 @@
             "parameters": {
               "user": "jozkee"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -3369,6 +3509,41 @@
             "parameters": {
               "user": "buyaa-n"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -3412,6 +3587,41 @@
             "parameters": {
               "user": "buyaa-n"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -3455,6 +3665,41 @@
             "parameters": {
               "user": "joperezr"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -3498,6 +3743,41 @@
             "parameters": {
               "user": "joperezr"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -3541,6 +3821,41 @@
             "parameters": {
               "user": "steveharter"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -3584,6 +3899,41 @@
             "parameters": {
               "user": "steveharter"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -3627,6 +3977,41 @@
             "parameters": {
               "user": "stephentoub"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -3670,6 +4055,41 @@
             "parameters": {
               "user": "stephentoub"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -5199,6 +5619,41 @@
             "parameters": {
               "user": "carlossanlop"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -5242,6 +5697,41 @@
             "parameters": {
               "user": "carlossanlop"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -5285,6 +5775,41 @@
             "parameters": {
               "user": "viktorhofer"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -5328,6 +5853,41 @@
             "parameters": {
               "user": "viktorhofer"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -6369,6 +6929,41 @@
             "parameters": {
               "user": "dakersnar"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -6412,6 +7007,41 @@
             "parameters": {
               "user": "dakersnar"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -6455,6 +7085,41 @@
             "parameters": {
               "user": "michaelgsharp"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -6498,6 +7163,41 @@
             "parameters": {
               "user": "michaelgsharp"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -6541,6 +7241,41 @@
             "parameters": {
               "user": "tannergooding"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -6584,6 +7319,41 @@
             "parameters": {
               "user": "tannergooding"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -7630,6 +8400,41 @@
             "parameters": {
               "user": "eiriktsarpalis"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -7673,6 +8478,41 @@
             "parameters": {
               "user": "eiriktsarpalis"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -7716,6 +8556,41 @@
             "parameters": {
               "user": "krwq"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -7759,6 +8634,41 @@
             "parameters": {
               "user": "krwq"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -7802,6 +8712,41 @@
             "parameters": {
               "user": "layomia"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -7845,6 +8790,41 @@
             "parameters": {
               "user": "layomia"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -8769,6 +9749,41 @@
             "parameters": {
               "user": "ericstj"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -8812,6 +9827,41 @@
             "parameters": {
               "user": "ericstj"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -8855,6 +9905,41 @@
             "parameters": {
               "user": "jeffhandley"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -8898,6 +9983,41 @@
             "parameters": {
               "user": "jeffhandley"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -9968,6 +11088,41 @@
             "parameters": {
               "user": "eerhardt"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -10011,6 +11166,41 @@
             "parameters": {
               "user": "eerhardt"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -10054,6 +11244,41 @@
             "parameters": {
               "user": "maryamariyan"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -10097,6 +11322,41 @@
             "parameters": {
               "user": "maryamariyan"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -10140,6 +11400,41 @@
             "parameters": {
               "user": "tarekgh"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -10183,6 +11478,41 @@
             "parameters": {
               "user": "tarekgh"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -11538,6 +12868,41 @@
             "parameters": {
               "user": "bartonjs"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -11581,6 +12946,41 @@
             "parameters": {
               "user": "bartonjs"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -11624,6 +13024,41 @@
             "parameters": {
               "user": "GrabYourPitchForks"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
@@ -11667,6 +13102,41 @@
             "parameters": {
               "user": "GrabYourPitchForks"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "api-ready-for-review"
+                }
+              }
+            ]
           }
         ]
       },
