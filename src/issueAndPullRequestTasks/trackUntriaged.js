@@ -57,20 +57,20 @@ module.exports = () => [
             ]
           }
         ]
-      }
-    },
-    "actions": [
-      {
-        "name": "addLabel",
-        "parameters": {
-          "label": "untriaged"
+      },
+      "actions": [
+        {
+          "name": "addLabel",
+          "parameters": {
+            "label": "untriaged"
+          }
         }
-      }
-    ],
-    "eventType": "issue",
-    "eventNames": [
-      "issues"
-    ]
+      ],
+      "eventType": "issue",
+      "eventNames": [
+        "issues"
+      ]
+    }
   },
   {
     "taskType": "trigger",
