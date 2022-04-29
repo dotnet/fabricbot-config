@@ -1769,6 +1769,30 @@
             "parameters": {
               "user": "dakersnar"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
           }
         ]
       },
@@ -1812,6 +1836,30 @@
             "parameters": {
               "user": "dakersnar"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
           }
         ]
       },
@@ -1855,6 +1903,30 @@
             "parameters": {
               "user": "michaelgsharp"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
           }
         ]
       },
@@ -1898,6 +1970,30 @@
             "parameters": {
               "user": "michaelgsharp"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
           }
         ]
       },
@@ -1941,6 +2037,30 @@
             "parameters": {
               "user": "tannergooding"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
           }
         ]
       },
@@ -1984,6 +2104,30 @@
             "parameters": {
               "user": "tannergooding"
             }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-author-action"
+                }
+              }
+            ]
           }
         ]
       },

@@ -1,4 +1,6 @@
-module.exports = ({podName, podMembers}) => podMembers.flatMap(({name, user}) => [
+const isNotTriaged = require("../rules/isNotTriaged");
+
+module.exports = ({podName, podMembers, triagedLabels}) => podMembers.flatMap(({name, user}) => [
   {
     "taskType": "trigger",
     "capabilityId": "IssueResponder",
@@ -19,7 +21,8 @@ module.exports = ({podName, podMembers}) => podMembers.flatMap(({name, user}) =>
           {
             "name": "isActivitySender",
             "parameters": { user }
-          }
+          },
+          ...isNotTriaged(triagedLabels)
         ]
       },
       "eventType": "issue",
@@ -59,7 +62,8 @@ module.exports = ({podName, podMembers}) => podMembers.flatMap(({name, user}) =>
           {
             "name": "isActivitySender",
             "parameters": { user }
-          }
+          },
+          ...isNotTriaged(triagedLabels)
         ]
       },
       "eventType": "issue",
