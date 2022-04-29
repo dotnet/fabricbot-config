@@ -6,6 +6,454 @@
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
+      "taskName": "Add untriaged label to new/reopened issues without a milestone",
+      "actions": [
+        {
+          "name": "addLabel",
+          "parameters": {
+            "label": "untriaged"
+          }
+        }
+      ],
+      "eventType": "issue",
+      "eventNames": [
+        "issues"
+      ],
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "operator": "or",
+            "operands": [
+              {
+                "name": "isAction",
+                "parameters": {
+                  "action": "opened"
+                }
+              },
+              {
+                "name": "isAction",
+                "parameters": {
+                  "action": "reopened"
+                }
+              },
+              {
+                "name": "removedFromMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "untriaged"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "taskName": "Remove untriaged label from issues when closed or added to a milestone",
+      "actions": [
+        {
+          "name": "removeLabel",
+          "parameters": {
+            "label": "untriaged"
+          }
+        }
+      ],
+      "eventType": "issue",
+      "eventNames": [
+        "issues"
+      ],
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "operator": "or",
+            "operands": [
+              {
+                "name": "isAction",
+                "parameters": {
+                  "action": "closed"
+                }
+              },
+              {
+                "name": "addedToMilestone",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "name": "hasLabel",
+            "parameters": {
+              "label": "untriaged"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "PullRequestResponder",
+    "version": "1.0",
+    "config": {
+      "taskName": "Assign Team PRs to author",
+      "actions": [
+        {
+          "name": "assignToUser",
+          "parameters": {
+            "user": {
+              "type": "prAuthor"
+            }
+          }
+        }
+      ],
+      "eventType": "pull_request",
+      "eventNames": [
+        "pull_request"
+      ],
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isAction",
+            "parameters": {
+              "action": "opened"
+            }
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "activitySenderHasPermissions",
+                "parameters": {
+                  "permissions": "read"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "taskName": "Needs-author-action notification",
+      "actions": [
+        {
+          "name": "addReply",
+          "parameters": {
+            "comment": "This issue has been marked `needs-author-action` since it may be missing important information. Please refer to our [contribution guidelines](https://github.com/dotnet/runtime/blob/main/CONTRIBUTING.md#writing-a-good-bug-report) for tips on how to report issues effectively."
+          }
+        }
+      ],
+      "eventType": "issue",
+      "eventNames": [
+        "issues"
+      ],
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "labelAdded",
+            "parameters": {
+              "label": "needs-author-action"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "PullRequestReviewResponder",
+    "version": "1.0",
+    "config": {
+      "taskName": "PR reviews with \"changes requested\" applies the needs-author-action label",
+      "actions": [
+        {
+          "name": "addLabel",
+          "parameters": {
+            "label": "needs-author-action"
+          }
+        }
+      ],
+      "eventType": "pull_request",
+      "eventNames": [
+        "pull_request_review"
+      ],
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "activitySenderHasPermissions",
+                "parameters": {
+                  "state": "changes_requested",
+                  "permissions": "read"
+                }
+              }
+            ]
+          },
+          {
+            "name": "isAction",
+            "parameters": {
+              "action": "submitted"
+            }
+          },
+          {
+            "name": "isReviewState",
+            "parameters": {
+              "state": "changes_requested"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssueCommentResponder",
+    "version": "1.0",
+    "config": {
+      "taskName": "Replace `needs-author-action` label with `needs-further-triage` label when the author comments on an issue",
+      "actions": [
+        {
+          "name": "addLabel",
+          "parameters": {
+            "label": "needs-further-triage"
+          }
+        },
+        {
+          "name": "removeLabel",
+          "parameters": {
+            "label": "needs-author-action"
+          }
+        }
+      ],
+      "eventType": "issue",
+      "eventNames": [
+        "issue_comment"
+      ],
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isAction",
+            "parameters": {
+              "action": "created"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": {
+                "type": "author"
+              }
+            }
+          },
+          {
+            "name": "hasLabel",
+            "parameters": {
+              "label": "needs-author-action"
+            }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          }
+        ]
+      }
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "PullRequestResponder",
+    "version": "1.0",
+    "config": {
+      "taskName": "Pushing changes to PR branch removes the needs-author-action label",
+      "actions": [
+        {
+          "name": "removeLabel",
+          "parameters": {
+            "label": "needs-author-action"
+          }
+        }
+      ],
+      "eventType": "pull_request",
+      "eventNames": [
+        "pull_request"
+      ],
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isAction",
+            "parameters": {
+              "action": "synchronize"
+            }
+          },
+          {
+            "name": "hasLabel",
+            "parameters": {
+              "label": "needs-author-action"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "PullRequestCommentResponder",
+    "version": "1.0",
+    "config": {
+      "taskName": "Author commenting in PR removes the needs-author-action label",
+      "actions": [
+        {
+          "name": "removeLabel",
+          "parameters": {
+            "label": "needs-author-action"
+          }
+        }
+      ],
+      "eventType": "pull_request",
+      "eventNames": [
+        "issue_comment"
+      ],
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": {
+                "type": "author"
+              }
+            }
+          },
+          {
+            "name": "isAction",
+            "parameters": {
+              "action": "created"
+            }
+          },
+          {
+            "name": "hasLabel",
+            "parameters": {
+              "label": "needs-author-action"
+            }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          }
+        ]
+      }
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "PullRequestReviewResponder",
+    "version": "1.0",
+    "config": {
+      "taskName": "Author responding to a pull request review comment removes the needs-author-action label",
+      "actions": [
+        {
+          "name": "removeLabel",
+          "parameters": {
+            "label": "needs-author-action"
+          }
+        }
+      ],
+      "eventType": "pull_request",
+      "eventNames": [
+        "pull_request_review"
+      ],
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": {
+                "type": "author"
+              }
+            }
+          },
+          {
+            "name": "hasLabel",
+            "parameters": {
+              "label": "needs-author-action"
+            }
+          },
+          {
+            "name": "isAction",
+            "parameters": {
+              "action": "submitted"
+            }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          }
+        ]
+      }
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
       "taskName": "[Area Pod: Adam / David - Issue Triage] Moved to Another Area",
       "actions": [
         {

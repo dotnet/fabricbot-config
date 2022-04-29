@@ -40,10 +40,14 @@ const repoWideTasks = {
   "fabricbot-config": commonIssueAndPullRequestTasks,
   "runtime": commonIssueAndPullRequestTasks,
   "machinelearning": commonIssueAndPullRequestTasks,
-  "roslyn-analyzers": [
+  "dotnet-api-docs": [
     ...issueAndPullRequestTasks.trackUntriaged(),
     ...issueAndPullRequestTasks.assignTeamAuthor(),
-    ...issueAndPullRequestTasks.addCommunityContributionLabel(),
+    ...issueAndPullRequestTasks.trackNeedsAuthorAction()
+  ],
+  "roslyn-analyzers": [
+    ...issueAndPullRequestTasks.trackUntriaged(),
+    ...issueAndPullRequestTasks.assignTeamAuthor()
   ]
 };
 
