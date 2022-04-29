@@ -5,6 +5,19 @@ module.exports = ({podName, podAreas}) => [
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
+      "taskName": `[Area Pod: ${podName} - PRs] Closed, Merged, or Moved`,
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": `Area Pod: ${podName} - PRs`,
+            "columnName": "Done",
+            "isOrgProject": true
+          }
+        }
+      ],
+      "eventType": "pull_request",
+      "eventNames": ["pull_request"],
       "conditions": {
         "operator": "and",
         "operands": [
@@ -55,22 +68,7 @@ module.exports = ({podName, podAreas}) => [
             ].filter(op => !!op) // We will have a falsy element in the array of we're not filtering by area label
           }
         ]
-      },
-      "eventType": "pull_request",
-      "eventNames": [
-        "pull_request"
-      ],
-      "taskName": `[Area Pod: ${podName} - PRs] Closed, Merged, or Moved`,
-      "actions": [
-        {
-          "name": "moveToProjectColumn",
-          "parameters": {
-            "projectName": `Area Pod: ${podName} - PRs`,
-            "columnName": "Done",
-            "isOrgProject": true
-          }
-        }
-      ]
+      }
     }
   }
 ];

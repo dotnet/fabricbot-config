@@ -4,6 +4,19 @@ module.exports = ({podName, podAreas, podMembers}) => [{
   "subCapability": "PullRequestResponder",
   "version": "1.0",
   "config": {
+    "taskName": `[Area Pod: ${podName} - PRs] Needs Champion`,
+    "actions": [
+      {
+        "name": "addToProject",
+        "parameters": {
+          "projectName": `Area Pod: ${podName} - PRs`,
+          "columnName": "Needs Champion",
+          "isOrgProject": true
+        }
+      }
+    ],
+    "eventType": "pull_request",
+    "eventNames": ["pull_request"],
     "conditions": {
       "operator": "and",
       "operands": [
@@ -38,21 +51,6 @@ module.exports = ({podName, podAreas, podMembers}) => [{
           "parameters": {}
         }
       ].filter(op => !!op) // We will have a falsy element in the array of we're not filtering by area label
-    },
-    "eventType": "pull_request",
-    "eventNames": [
-      "pull_request"
-    ],
-    "taskName": `[Area Pod: ${podName} - PRs] Needs Champion`,
-    "actions": [
-      {
-        "name": "addToProject",
-        "parameters": {
-          "projectName": `Area Pod: ${podName} - PRs`,
-          "columnName": "Needs Champion",
-          "isOrgProject": true
-        }
-      }
-    ]
+    }
   }
 }];

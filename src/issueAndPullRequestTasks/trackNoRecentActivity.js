@@ -6,6 +6,20 @@ module.exports = (days) => [
     "version": "1.1",
     "config": {
       "taskName": "Add no-recent-activity label to issues",
+      "actions": [
+        {
+          "name": "addLabel",
+          "parameters": {
+            "label": "no-recent-activity"
+          }
+        },
+        {
+          "name": "addReply",
+          "parameters": {
+            "comment": `This issue has been automatically marked \`no-recent-activity\` because it has not had any activity for ${days} days. It will be closed if no further activity occurs within ${days} more days. Any new comment (by anyone, not necessarily the author) will remove \`no-recent-activity\`.`
+          }
+        }
+      ],
       "frequency": [
         {
           "weekDay": 0,
@@ -103,7 +117,16 @@ module.exports = (days) => [
             "label": "no-recent-activity"
           }
         }
-      ],
+      ]
+    }
+  },
+  {
+    "taskType": "scheduled",
+    "capabilityId": "ScheduledSearch",
+    "subCapability": "ScheduledSearch",
+    "version": "1.1",
+    "config": {
+      "taskName": "Add no-recent-activity label to PRs",
       "actions": [
         {
           "name": "addLabel",
@@ -114,20 +137,10 @@ module.exports = (days) => [
         {
           "name": "addReply",
           "parameters": {
-            "comment": `This issue has been automatically marked \`no-recent-activity\` because it has not had any activity for ${days} days. It will be closed if no further activity occurs within ${days} more days. Any new comment (by anyone, not necessarily the author) will remove \`no-recent-activity\`.`
+            "comment": `This pull request has been automatically marked \`no-recent-activity\` because it has not had any activity for ${days} days. It will be closed if no further activity occurs within ${days} more days. Any new comment (by anyone, not necessarily the author) will remove \`no-recent-activity\`.`
           }
         }
-      ]
-    },
-    "disabled": false
-  },
-  {
-    "taskType": "scheduled",
-    "capabilityId": "ScheduledSearch",
-    "subCapability": "ScheduledSearch",
-    "version": "1.1",
-    "config": {
-      "taskName": "Add no-recent-activity label to PRs",
+      ],
       "frequency": [
         {
           "weekDay": 0,
@@ -225,23 +238,8 @@ module.exports = (days) => [
             "label": "no-recent-activity"
           }
         }
-      ],
-      "actions": [
-        {
-          "name": "addLabel",
-          "parameters": {
-            "label": "no-recent-activity"
-          }
-        },
-        {
-          "name": "addReply",
-          "parameters": {
-            "comment": `This pull request has been automatically marked \`no-recent-activity\` because it has not had any activity for ${days} days. It will be closed if no further activity occurs within ${days} more days. Any new comment (by anyone, not necessarily the author) will remove \`no-recent-activity\`.`
-          }
-        }
       ]
-    },
-    "disabled": false
+    }
   },
   {
     "taskType": "trigger",
@@ -250,6 +248,16 @@ module.exports = (days) => [
     "version": "1.0",
     "config": {
       "taskName": "Remove `no-recent-activity` label from issues when issue is modified",
+      "actions": [
+        {
+          "name": "removeLabel",
+          "parameters": {
+            "label": "no-recent-activity"
+          }
+        }
+      ],
+      "eventType": "issue",
+      "eventNames": ["issues"],
       "conditions": {
         "operator": "and",
         "operands": [
@@ -282,20 +290,7 @@ module.exports = (days) => [
             ]
           }
         ]
-      },
-      "actions": [
-        {
-          "name": "removeLabel",
-          "parameters": {
-            "label": "no-recent-activity"
-          }
-        }
-      ],
-      "eventType": "issue",
-      "eventNames": [
-        "issues",
-        "project_card"
-      ]
+      }
     }
   },
   {
@@ -305,6 +300,16 @@ module.exports = (days) => [
     "version": "1.0",
     "config": {
       "taskName": "Remove `no-recent-activity` label when an issue is commented on",
+      "actions": [
+        {
+          "name": "removeLabel",
+          "parameters": {
+            "label": "no-recent-activity"
+          }
+        }
+      ],
+      "eventType": "issue",
+      "eventNames": ["issue_comment"],
       "conditions": {
         "operator": "and",
         "operands": [
@@ -315,19 +320,7 @@ module.exports = (days) => [
             }
           }
         ]
-      },
-      "actions": [
-        {
-          "name": "removeLabel",
-          "parameters": {
-            "label": "no-recent-activity"
-          }
-        }
-      ],
-      "eventType": "issue",
-      "eventNames": [
-        "issue_comment"
-      ]
+      }
     }
   },
   {
@@ -336,6 +329,17 @@ module.exports = (days) => [
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
+      "taskName": "Remove `no-recent-activity` label from PRs when modified",
+      "actions": [
+        {
+          "name": "removeLabel",
+          "parameters": {
+            "label": "no-recent-activity"
+          }
+        }
+      ],
+      "eventType": "pull_request",
+      "eventNames": ["pull_request"],
       "conditions": {
         "operator": "and",
         "operands": [
@@ -361,20 +365,7 @@ module.exports = (days) => [
             ]
           }
         ]
-      },
-      "eventType": "pull_request",
-      "eventNames": [
-        "pull_request"
-      ],
-      "taskName": "Remove `no-recent-activity` label from PRs when modified",
-      "actions": [
-        {
-          "name": "removeLabel",
-          "parameters": {
-            "label": "no-recent-activity"
-          }
-        }
-      ]
+      }
     }
   },
   {
@@ -383,25 +374,6 @@ module.exports = (days) => [
     "subCapability": "PullRequestCommentResponder",
     "version": "1.0",
     "config": {
-      "conditions": {
-        "operator": "and",
-        "operands": [
-          {
-            "name": "hasLabel",
-            "parameters": {
-              "label": "no-recent-activity"
-            }
-          },
-          {
-            "name": "isOpen",
-            "parameters": {}
-          }
-        ]
-      },
-      "eventType": "pull_request",
-      "eventNames": [
-        "issue_comment"
-      ],
       "taskName": "Remove `no-recent-activity` label from PRs when commented on",
       "actions": [
         {
@@ -410,15 +382,9 @@ module.exports = (days) => [
             "label": "no-recent-activity"
           }
         }
-      ]
-    }
-  },
-  {
-    "taskType": "trigger",
-    "capabilityId": "IssueResponder",
-    "subCapability": "PullRequestReviewResponder",
-    "version": "1.0",
-    "config": {
+      ],
+      "eventType": "pull_request",
+      "eventNames": ["issue_comment"],
       "conditions": {
         "operator": "and",
         "operands": [
@@ -433,11 +399,15 @@ module.exports = (days) => [
             "parameters": {}
           }
         ]
-      },
-      "eventType": "pull_request",
-      "eventNames": [
-        "pull_request_review"
-      ],
+      }
+    }
+  },
+  {
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "PullRequestReviewResponder",
+    "version": "1.0",
+    "config": {
       "taskName": "Remove `no-recent-activity` label from PRs when new review is added",
       "actions": [
         {
@@ -446,7 +416,24 @@ module.exports = (days) => [
             "label": "no-recent-activity"
           }
         }
-      ]
+      ],
+      "eventType": "pull_request",
+      "eventNames": ["pull_request_review"],
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "hasLabel",
+            "parameters": {
+              "label": "no-recent-activity"
+            }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          }
+        ]
+      }
     }
   },
   {
@@ -456,6 +443,18 @@ module.exports = (days) => [
     "version": "1.1",
     "config": {
       "taskName": "Close issues with no recent activity",
+      "actions": [
+        {
+          "name": "addReply",
+          "parameters": {
+            "comment": `This issue will now be closed since it had been marked \`no-recent-activity\` but received no further activity in the past ${days} days. It is still possible to reopen or comment on the issue, but please note that the issue will be locked if it remains inactive for another 30 days.`
+          }
+        },
+        {
+          "name": "closeIssue",
+          "parameters": {}
+        }
+      ],
       "frequency": [
         {
           "weekDay": 0,
@@ -547,18 +546,6 @@ module.exports = (days) => [
           "name": "noActivitySince",
           "parameters": { days }
         }
-      ],
-      "actions": [
-        {
-          "name": "addReply",
-          "parameters": {
-            "comment": `This issue will now be closed since it had been marked \`no-recent-activity\` but received no further activity in the past ${days} days. It is still possible to reopen or comment on the issue, but please note that the issue will be locked if it remains inactive for another 30 days.`
-          }
-        },
-        {
-          "name": "closeIssue",
-          "parameters": {}
-        }
       ]
     }
   },
@@ -569,6 +556,18 @@ module.exports = (days) => [
     "version": "1.1",
     "config": {
       "taskName": "Close PRs with no-recent-activity",
+      "actions": [
+        {
+          "name": "addReply",
+          "parameters": {
+            "comment": `This pull request will now be closed since it had been marked \`no-recent-activity\` but received no further activity in the past ${days} days. It is still possible to reopen or comment on the pull request, but please note that it will be locked if it remains inactive for another 30 days.`
+          }
+        },
+        {
+          "name": "closeIssue",
+          "parameters": {}
+        }
+      ],
       "frequency": [
         {
           "weekDay": 0,
@@ -659,18 +658,6 @@ module.exports = (days) => [
         {
           "name": "noActivitySince",
           "parameters": { days }
-        }
-      ],
-      "actions": [
-        {
-          "name": "addReply",
-          "parameters": {
-            "comment": `This pull request will now be closed since it had been marked \`no-recent-activity\` but received no further activity in the past ${days} days. It is still possible to reopen or comment on the pull request, but please note that it will be locked if it remains inactive for another 30 days.`
-          }
-        },
-        {
-          "name": "closeIssue",
-          "parameters": {}
         }
       ]
     }

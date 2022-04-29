@@ -5,6 +5,19 @@ module.exports = ({podName, podAreas}) => (Array.isArray(podAreas) ? [{
   "subCapability": "IssuesOnlyResponder",
   "version": "1.0",
   "config": {
+    "taskName": `[Area Pod: ${podName} - Issue Triage] Moved to Another Area`,
+    "actions": [
+      {
+        "name": "addToProject",
+        "parameters": {
+          "projectName": `Area Pod: ${podName} - Issue Triage`,
+          "columnName": "Triaged",
+          "isOrgProject": true
+        }
+      }
+    ],
+    "eventType": "issue",
+    "eventNames": ["issues"],
     "conditions": {
       "operator": "and",
       "operands": [
@@ -47,23 +60,6 @@ module.exports = ({podName, podAreas}) => (Array.isArray(podAreas) ? [{
           }
         }
       ]
-    },
-    "eventType": "issue",
-    "eventNames": [
-      "issues",
-      "project_card"
-    ],
-    "taskName": `[Area Pod: ${podName} - Issue Triage] Moved to Another Area`,
-    "actions": [
-      {
-        "name": "addToProject",
-        "parameters":
-        {
-          "projectName": `Area Pod: ${podName} - Issue Triage`,
-          "columnName": "Triaged",
-          "isOrgProject": true
-        }
-      }
-    ]
+    }
   }
 }] : []);

@@ -5,6 +5,19 @@ module.exports = (days) => [
     "subCapability": "ScheduledSearch",
     "version": "1.1",
     "config": {
+      "taskName": "Close inactive Draft PRs",
+      "actions": [
+        {
+          "name": "closeIssue",
+          "parameters": {}
+        },
+        {
+          "name": "addReply",
+          "parameters": {
+            "comment": `Draft Pull Request was automatically closed for ${days} days of inactivity. Please [let us know](https://github.com/dotnet/runtime/blob/main/docs/area-owners.md) if you'd like to reopen it.`
+          }
+        }
+      ],
       "frequency": [
         {
           "weekDay": 0,
@@ -91,19 +104,6 @@ module.exports = (days) => [
         {
           "name": "noActivitySince",
           "parameters": { days }
-        }
-      ],
-      "taskName": "Close inactive Draft PRs",
-      "actions": [
-        {
-          "name": "closeIssue",
-          "parameters": {}
-        },
-        {
-          "name": "addReply",
-          "parameters": {
-            "comment": `Draft Pull Request was automatically closed for ${days} days of inactivity. Please [let us know](https://github.com/dotnet/runtime/blob/main/docs/area-owners.md) if you'd like to reopen it.`
-          }
         }
       ]
     }

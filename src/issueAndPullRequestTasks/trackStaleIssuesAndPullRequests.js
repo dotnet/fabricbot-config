@@ -5,6 +5,16 @@ module.exports = (days) => [
     "subCapability": "ScheduledSearch",
     "version": "1.1",
     "config": {
+      "taskName": "Lock stale issues and PRs",
+      "actions": [
+        {
+          "name": "lockIssue",
+          "parameters": {
+            "reason": "resolved",
+            "label": "will_lock_this"
+          }
+        }
+      ],
       "frequency": [
         {
           "weekDay": 0,
@@ -90,17 +100,7 @@ module.exports = (days) => [
           "name": "isUnlocked",
           "parameters": {}
         }
-      ],
-      "actions": [
-        {
-          "name": "lockIssue",
-          "parameters": {
-            "reason": "resolved",
-            "label": "will_lock_this"
-          }
-        }
-      ],
-      "taskName": "Lock stale issues and PR's"
+      ]
     }
   }
 ];

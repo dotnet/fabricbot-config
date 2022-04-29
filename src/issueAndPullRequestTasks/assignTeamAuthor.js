@@ -5,6 +5,19 @@ module.exports = () => [
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
+      "taskName": "Assign Team PRs to author",
+      "actions": [
+        {
+          "name": "assignToUser",
+          "parameters": {
+            "user": {
+              "type": "prAuthor"
+            }
+          }
+        }
+      ],
+      "eventType": "pull_request",
+      "eventNames": ["pull_request"],
       "conditions": {
         "operator": "and",
         "operands": [
@@ -26,23 +39,7 @@ module.exports = () => [
             ]
           }
         ]
-      },
-      "eventType": "pull_request",
-      "eventNames": [
-        "pull_request"
-      ],
-      "taskName": "Assign Team PRs to author",
-      "actions": [
-        {
-          "name": "assignToUser",
-          "parameters": {
-            "user": {
-              "type": "prAuthor"
-            }
-          }
-        }
-      ]
-    },
-    "disabled": false
+      }
+    }
   }
 ];

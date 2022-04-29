@@ -5,6 +5,17 @@ module.exports = () => [
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
+      "taskName": "Label community PRs",
+      "actions": [
+        {
+          "name": "addLabel",
+          "parameters": {
+            "label": "community-contribution"
+          }
+        }
+      ],
+      "eventType": "pull_request",
+      "eventNames": ["pull_request"],
       "conditions": {
         "operator": "and",
         "operands": [
@@ -119,21 +130,7 @@ module.exports = () => [
             ]
           }
         ]
-      },
-      "eventType": "pull_request",
-      "eventNames": [
-        "pull_request"
-      ],
-      "taskName": "Label community PRs",
-      "actions": [
-        {
-          "name": "addLabel",
-          "parameters": {
-            "label": "community-contribution"
-          }
-        }
-      ]
-    },
-    "disabled": false
+      }
+    }
   }
 ];
