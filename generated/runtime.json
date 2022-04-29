@@ -14622,6 +14622,13 @@
       "taskName": "[Area Pod: Libraries Analyzers - PRs] Needs Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Libraries Analyzers - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Libraries Analyzers - PRs",
@@ -14637,6 +14644,10 @@
       "conditions": {
         "operator": "and",
         "operands": [
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
           {
             "operator": "or",
             "operands": [
@@ -14655,37 +14666,56 @@
             ]
           },
           {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInProject",
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "buyaa-n"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "carlossanlop"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInProject",
+                    "parameters": {
+                      "projectName": "Area Pod: Libraries Analyzers - PRs",
+                      "isOrgProject": true
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "isInProjectColumn",
                 "parameters": {
                   "projectName": "Area Pod: Libraries Analyzers - PRs",
+                  "columnName": "Done",
                   "isOrgProject": true
                 }
               }
             ]
-          },
-          {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "buyaa-n"
-                }
-              },
-              {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "carlossanlop"
-                }
-              }
-            ]
-          },
-          {
-            "name": "isOpen",
-            "parameters": {}
           }
         ]
       }
@@ -14700,6 +14730,13 @@
     "config": {
       "taskName": "[Area Pod: Libraries Analyzers - PRs] Buyaa Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Libraries Analyzers - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -14724,86 +14761,55 @@
             "operator": "or",
             "operands": [
               {
-                "operator": "and",
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "code-fixer"
+                }
+              },
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "code-analyzer"
+                }
+              }
+            ]
+          },
+          {
+            "name": "isAssignedToUser",
+            "parameters": {
+              "user": "buyaa-n"
+            }
+          },
+          {
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "not",
                 "operands": [
                   {
-                    "name": "isInProjectColumn",
+                    "name": "isInProject",
                     "parameters": {
                       "projectName": "Area Pod: Libraries Analyzers - PRs",
-                      "columnName": "Needs Champion",
                       "isOrgProject": true
-                    }
-                  },
-                  {
-                    "name": "isAction",
-                    "parameters": {
-                      "action": "assigned"
-                    }
-                  },
-                  {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "buyaa-n"
                     }
                   }
                 ]
               },
               {
-                "operator": "and",
-                "operands": [
-                  {
-                    "operator": "or",
-                    "operands": [
-                      {
-                        "name": "hasLabel",
-                        "parameters": {
-                          "label": "code-fixer"
-                        }
-                      },
-                      {
-                        "name": "hasLabel",
-                        "parameters": {
-                          "label": "code-analyzer"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "operator": "not",
-                    "operands": [
-                      {
-                        "name": "isInProject",
-                        "parameters": {
-                          "projectName": "Area Pod: Libraries Analyzers - PRs",
-                          "isOrgProject": true
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "isActivitySender",
-                    "parameters": {
-                      "user": "buyaa-n"
-                    }
-                  },
-                  {
-                    "operator": "or",
-                    "operands": [
-                      {
-                        "name": "isAction",
-                        "parameters": {
-                          "action": "opened"
-                        }
-                      },
-                      {
-                        "name": "isAction",
-                        "parameters": {
-                          "action": "reopened"
-                        }
-                      }
-                    ]
-                  }
-                ]
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Libraries Analyzers - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Libraries Analyzers - PRs",
+                  "columnName": "Done",
+                  "isOrgProject": true
+                }
               }
             ]
           }
@@ -14820,6 +14826,13 @@
     "config": {
       "taskName": "[Area Pod: Libraries Analyzers - PRs] Carlos Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Libraries Analyzers - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -14844,86 +14857,55 @@
             "operator": "or",
             "operands": [
               {
-                "operator": "and",
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "code-fixer"
+                }
+              },
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "code-analyzer"
+                }
+              }
+            ]
+          },
+          {
+            "name": "isAssignedToUser",
+            "parameters": {
+              "user": "carlossanlop"
+            }
+          },
+          {
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "not",
                 "operands": [
                   {
-                    "name": "isInProjectColumn",
+                    "name": "isInProject",
                     "parameters": {
                       "projectName": "Area Pod: Libraries Analyzers - PRs",
-                      "columnName": "Needs Champion",
                       "isOrgProject": true
-                    }
-                  },
-                  {
-                    "name": "isAction",
-                    "parameters": {
-                      "action": "assigned"
-                    }
-                  },
-                  {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "carlossanlop"
                     }
                   }
                 ]
               },
               {
-                "operator": "and",
-                "operands": [
-                  {
-                    "operator": "or",
-                    "operands": [
-                      {
-                        "name": "hasLabel",
-                        "parameters": {
-                          "label": "code-fixer"
-                        }
-                      },
-                      {
-                        "name": "hasLabel",
-                        "parameters": {
-                          "label": "code-analyzer"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "operator": "not",
-                    "operands": [
-                      {
-                        "name": "isInProject",
-                        "parameters": {
-                          "projectName": "Area Pod: Libraries Analyzers - PRs",
-                          "isOrgProject": true
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "isActivitySender",
-                    "parameters": {
-                      "user": "carlossanlop"
-                    }
-                  },
-                  {
-                    "operator": "or",
-                    "operands": [
-                      {
-                        "name": "isAction",
-                        "parameters": {
-                          "action": "opened"
-                        }
-                      },
-                      {
-                        "name": "isAction",
-                        "parameters": {
-                          "action": "reopened"
-                        }
-                      }
-                    ]
-                  }
-                ]
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Libraries Analyzers - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Libraries Analyzers - PRs",
+                  "columnName": "Done",
+                  "isOrgProject": true
+                }
               }
             ]
           }
