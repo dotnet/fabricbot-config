@@ -21,7 +21,8 @@ const repos = [
   "fabricbot-config",
   "runtime",
   "dotnet-api-docs",
-  "machinelearning"
+  "machinelearning",
+  "roslyn-analyzers"
 ];
 
 const commonIssueAndPullRequestTasks = [
@@ -38,7 +39,12 @@ const commonIssueAndPullRequestTasks = [
 const repoWideTasks = {
   "fabricbot-config": commonIssueAndPullRequestTasks,
   "runtime": commonIssueAndPullRequestTasks,
-  "machinelearning": commonIssueAndPullRequestTasks
+  "machinelearning": commonIssueAndPullRequestTasks,
+  "roslyn-analyzers": [
+    ...issueAndPullRequestTasks.trackUntriaged(),
+    ...issueAndPullRequestTasks.assignTeamAuthor(),
+    ...issueAndPullRequestTasks.addCommunityContributionLabel(),
+  ]
 };
 
 const areaPodTriagedLabels = {
