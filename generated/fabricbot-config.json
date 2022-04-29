@@ -149,20 +149,12 @@
             }
           },
           {
-            "operator": "or",
+            "operator": "not",
             "operands": [
               {
                 "name": "activitySenderHasPermissions",
                 "parameters": {
-                  "association": "OWNER",
-                  "permissions": "admin"
-                }
-              },
-              {
-                "name": "activitySenderHasPermissions",
-                "parameters": {
-                  "association": "MEMBER",
-                  "permissions": "write"
+                  "permissions": "read"
                 }
               }
             ]
@@ -171,9 +163,7 @@
       },
       "eventType": "pull_request",
       "eventNames": [
-        "pull_request",
-        "issues",
-        "project_card"
+        "pull_request"
       ],
       "taskName": "Assign Team PRs to author",
       "actions": [
@@ -214,7 +204,6 @@
                   {
                     "name": "activitySenderHasPermissions",
                     "parameters": {
-                      "association": "OWNER",
                       "permissions": "admin"
                     }
                   }
@@ -226,7 +215,17 @@
                   {
                     "name": "activitySenderHasPermissions",
                     "parameters": {
-                      "association": "MEMBER",
+                      "permissions": "maintain"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "activitySenderHasPermissions",
+                    "parameters": {
                       "permissions": "write"
                     }
                   }
@@ -304,9 +303,7 @@
       },
       "eventType": "pull_request",
       "eventNames": [
-        "pull_request",
-        "issues",
-        "project_card"
+        "pull_request"
       ],
       "taskName": "Label community PRs",
       "actions": [
@@ -340,8 +337,7 @@
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "Needs-author-action notification",
       "actions": [
@@ -365,11 +361,16 @@
         "operator": "and",
         "operands": [
           {
-            "name": "activitySenderHasPermissions",
-            "parameters": {
-              "state": "changes_requested",
-              "permissions": "write"
-            }
+            "operator": "not",
+            "operands": [
+              {
+                "name": "activitySenderHasPermissions",
+                "parameters": {
+                  "state": "changes_requested",
+                  "permissions": "read"
+                }
+              }
+            ]
           },
           {
             "name": "isAction",
@@ -483,9 +484,7 @@
       },
       "eventType": "pull_request",
       "eventNames": [
-        "pull_request",
-        "issues",
-        "project_card"
+        "pull_request"
       ],
       "taskName": "Pushing changes to PR branch removes the needs-author-action label",
       "actions": [
@@ -975,9 +974,7 @@
       },
       "eventType": "pull_request",
       "eventNames": [
-        "pull_request",
-        "issues",
-        "project_card"
+        "pull_request"
       ],
       "taskName": "Remove `no-recent-activity` label from PRs when modified",
       "actions": [
