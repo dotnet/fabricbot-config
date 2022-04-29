@@ -37,53 +37,5 @@
     "eventNames": [
       "issues"
     ]
-  },
-  {
-    "taskSource": "fabricbot-config",
-    "taskType": "trigger",
-    "capabilityId": "IssueResponder",
-    "subCapability": "IssuesOnlyResponder",
-    "version": "1.0",
-    "config": {
-      "conditions": {
-        "operator": "and",
-        "operands": [
-          {
-            "operator": "or",
-            "operands": [
-              {
-                "name": "isAction",
-                "parameters": {
-                  "action": "closed"
-                }
-              },
-              {
-                "name": "addedToMilestone",
-                "parameters": {}
-              }
-            ]
-          },
-          {
-            "name": "hasLabel",
-            "parameters": {
-              "label": "untriaged"
-            }
-          }
-        ]
-      },
-      "eventType": "issue",
-      "eventNames": [
-        "issues"
-      ],
-      "taskName": "Remove untriaged label from issues when closed or added to a milestone",
-      "actions": [
-        {
-          "name": "removeLabel",
-          "parameters": {
-            "label": "untriaged"
-          }
-        }
-      ]
-    }
   }
 ]
