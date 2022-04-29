@@ -61,6 +61,14 @@ module.exports = ({podName, podAreas, podMembers}) => podMembers.map(({name, use
               "name": "isInProjectColumn",
               "parameters": {
                 "projectName": `Area Pod: ${podName} - PRs`,
+                "columnName": "Needs Champion",
+                "isOrgProject": true
+              }
+            },
+            {
+              "name": "isInProjectColumn",
+              "parameters": {
+                "projectName": `Area Pod: ${podName} - PRs`,
                 "columnName": "Done",
                 "isOrgProject": true
               }

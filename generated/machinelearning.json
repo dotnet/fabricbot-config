@@ -2369,6 +2369,14 @@
                 "name": "isInProjectColumn",
                 "parameters": {
                   "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -2440,6 +2448,14 @@
                 "name": "isInProjectColumn",
                 "parameters": {
                   "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -2506,6 +2522,14 @@
                     }
                   }
                 ]
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
               },
               {
                 "name": "isInProjectColumn",

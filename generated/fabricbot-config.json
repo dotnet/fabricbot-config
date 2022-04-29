@@ -2224,6 +2224,14 @@
                 "name": "isInProjectColumn",
                 "parameters": {
                   "projectName": "Area Pod: Eric / Jeff - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Eric / Jeff - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -2290,6 +2298,14 @@
                     }
                   }
                 ]
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Eric / Jeff - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
               },
               {
                 "name": "isInProjectColumn",

@@ -2728,6 +2728,14 @@
                 "name": "isInProjectColumn",
                 "parameters": {
                   "projectName": "Area Pod: Adam / David - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Adam / David - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -2841,6 +2849,14 @@
                     }
                   }
                 ]
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Adam / David - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
               },
               {
                 "name": "isInProjectColumn",
@@ -4620,6 +4636,14 @@
                 "name": "isInProjectColumn",
                 "parameters": {
                   "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -4757,6 +4781,14 @@
                     }
                   }
                 ]
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
               },
               {
                 "name": "isInProjectColumn",
@@ -4904,6 +4936,14 @@
                 "name": "isInProjectColumn",
                 "parameters": {
                   "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -5041,6 +5081,14 @@
                     }
                   }
                 ]
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
               },
               {
                 "name": "isInProjectColumn",
@@ -6330,6 +6378,14 @@
                 "name": "isInProjectColumn",
                 "parameters": {
                   "projectName": "Area Pod: Carlos / Viktor - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Carlos / Viktor - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -6449,6 +6505,14 @@
                     }
                   }
                 ]
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Carlos / Viktor - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
               },
               {
                 "name": "isInProjectColumn",
@@ -7749,6 +7813,14 @@
                 "name": "isInProjectColumn",
                 "parameters": {
                   "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -7855,6 +7927,14 @@
                 "name": "isInProjectColumn",
                 "parameters": {
                   "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -7956,6 +8036,14 @@
                     }
                   }
                 ]
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
               },
               {
                 "name": "isInProjectColumn",
@@ -9204,6 +9292,14 @@
                 "name": "isInProjectColumn",
                 "parameters": {
                   "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -9304,6 +9400,14 @@
                 "name": "isInProjectColumn",
                 "parameters": {
                   "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -9399,6 +9503,14 @@
                     }
                   }
                 ]
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
               },
               {
                 "name": "isInProjectColumn",
@@ -10324,6 +10436,14 @@
                 "name": "isInProjectColumn",
                 "parameters": {
                   "projectName": "Area Pod: Eric / Jeff - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Eric / Jeff - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -10401,6 +10521,14 @@
                     }
                   }
                 ]
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Eric / Jeff - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
               },
               {
                 "name": "isInProjectColumn",
@@ -12117,6 +12245,14 @@
                 "name": "isInProjectColumn",
                 "parameters": {
                   "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -12271,6 +12407,14 @@
                 "name": "isInProjectColumn",
                 "parameters": {
                   "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -12420,6 +12564,14 @@
                     }
                   }
                 ]
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
               },
               {
                 "name": "isInProjectColumn",
@@ -13553,6 +13705,14 @@
                 "name": "isInProjectColumn",
                 "parameters": {
                   "projectName": "Area Pod: Jeremy / Levi - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Jeremy / Levi - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -13654,6 +13814,14 @@
                     }
                   }
                 ]
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Jeremy / Levi - PRs",
+                  "columnName": "Needs Champion",
+                  "isOrgProject": true
+                }
               },
               {
                 "name": "isInProjectColumn",
