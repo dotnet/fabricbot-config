@@ -1,4 +1,4 @@
-module.exports = ({podName, users}) => users.flatMap((user) => [
+module.exports = ({podName, podMembers}) => podMembers.flatMap(({name, user}) => [
   {
     "taskType": "trigger",
     "capabilityId": "IssueResponder",
@@ -26,13 +26,13 @@ module.exports = ({podName, users}) => users.flatMap((user) => [
       "eventNames": [
         "issues"
       ],
-      "taskName": `[Area Pod: ${podName} - Issue Triage] Issue Updated`,
+      "taskName": `[Area Pod: ${podName} - Issue Triage] ${name} Updated Issue`,
       "actions": [
         {
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": `Area Pod: ${podName} - Issue Triage`,
-            "columnName": `Triage: ${user}`,
+            "columnName": `Triage: ${name}`,
             "isOrgProject": true
           }
         }
@@ -66,13 +66,13 @@ module.exports = ({podName, users}) => users.flatMap((user) => [
       "eventNames": [
         "issue_comment"
       ],
-      "taskName": `[Area Pod: ${podName} - Issue Triage] Comment Added`,
+      "taskName": `[Area Pod: ${podName} - Issue Triage] ${name} Commented`,
       "actions": [
         {
           "name": "moveToProjectColumn",
           "parameters": {
             "projectName": `Area Pod: ${podName} - Issue Triage`,
-            "columnName": `Triage: ${user}`,
+            "columnName": `Triage: ${name}`,
             "isOrgProject": true
           }
         }

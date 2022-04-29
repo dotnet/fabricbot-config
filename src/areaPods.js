@@ -74,7 +74,10 @@ const podAreas = {
 module.exports = [
   {
     podName: "Adam / David",
-    users: [ "adamsitnik", "jozkee" ],
+    podMembers: [
+      { name: "Adam", user: "adamsitnik" },
+      { name: "David", user: "jozkee" }
+    ],
     repos: {
       "runtime": podAreas["adam-david"],
       "dotnet-api-docs": podAreas["adam-david"]
@@ -82,7 +85,12 @@ module.exports = [
   },
   {
     podName: "Buyaa / Jose / Steve",
-    users: [ "buyaa-n", "joperezr", "steveharter" ],
+    podMembers: [
+      { name: "Buyaa", user: "buyaa-n" },
+      { name: "Jose", user: "joperezr" },
+      { name: "Steve H", user: "steveharter" },
+      { name: "Stephen T", user: "stephentoub" }
+    ],
     repos: {
       "runtime": podAreas["buyaa-jose-steve"],
       "dotnet-api-docs": podAreas["buyaa-jose-steve"]
@@ -90,7 +98,10 @@ module.exports = [
   },
   {
     podName: "Carlos / Viktor",
-    users: [ "carlossanlop", "viktorhofer" ],
+    podMembers: [
+      { name: "Carlos", user: "carlossanlop" },
+      { name: "Viktor", user: "viktorhofer" }
+    ],
     repos: {
       "runtime": podAreas["carlos-viktor"],
       "dotnet-api-docs": podAreas["carlos-viktor"]
@@ -98,7 +109,11 @@ module.exports = [
   },
   {
     podName: "Drew / Michael / Tanner",
-    users: [ "dakersnar", "michaelgsharp", "tannergooding" ],
+    podMembers: [
+      { name: "Drew", user: "dakersnar" },
+      { name: "Michael", user: "michaelgsharp" },
+      { name: "Tanner", user: "tannergooding" }
+    ],
     repos: {
       "machinelearning": true,
       "runtime": podAreas["drew-michael-tanner"],
@@ -107,7 +122,11 @@ module.exports = [
   },
   {
     podName: "Eirik / Krzysztof / Layomi",
-    users: [ "eiriktsarpalis", "krwq", "layomia" ],
+    podMembers: [
+      { name: "Eirik", user: "eiriktsarpalis" },
+      { name: "Krzysztof", user: "krwq" },
+      { name: "Layomi", user: "layomia" }
+    ],
     repos: {
       "runtime": podAreas["eirik-krzysztof-layomi"],
       "dotnet-api-docs": podAreas["eirik-krzysztof-layomi"]
@@ -115,7 +134,10 @@ module.exports = [
   },
   {
     podName: "Eric / Jeff",
-    users: [ "ericstj", "jeffhandley" ],
+    podMembers: [
+      { name: "Eric", user: "ericstj" },
+      { name: "Jeff", user: "jeffhandley" }
+    ],
     repos: {
       "fabricbot-config": true,
       "runtime": podAreas["eric-jeff"],
@@ -124,7 +146,11 @@ module.exports = [
   },
   {
     podName: "Eric / Maryam / Tarek",
-    users: [ "eerhardt", "maryamariyan", "tarekgh" ],
+    podMembers: [
+      { name: "Eric", user: "eerhardt" },
+      { name: "Maryam", user: "maryamariyan" },
+      { name: "Tarek", user: "tarekgh" }
+    ],
     repos: {
       "runtime": podAreas["eric-maryam-tarek"],
       "dotnet-api-docs": podAreas["eric-maryam-tarek"]
@@ -132,7 +158,10 @@ module.exports = [
   },
   {
     podName: "Jeremy / Levi",
-    users: [ "bartonjs", "GrabYourPitchForks" ],
+    podMembers: [
+      { name: "Jeremy", user: "bartonjs" },
+      { name: "Levi", user: "GrabYourPitchForks" }
+    ],
     repos: {
       "runtime": podAreas["jeremy-levi"],
       "dotnet-api-docs": podAreas["jeremy-levi"]

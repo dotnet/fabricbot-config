@@ -1,4 +1,4 @@
-module.exports = ({podName, users}) => users.map((user) => ({
+module.exports = ({podName, podAreas, podMembers}) => podMembers.map(({name, user}) => ({
   "taskType": "trigger",
   "capabilityId": "IssueResponder",
   "subCapability": "PullRequestResponder",
@@ -8,12 +8,12 @@ module.exports = ({podName, users}) => users.map((user) => ({
       "operator": "and",
       "operands": [
         {
-          "name": "isInProjectColumn",
-          "parameters": {
-            "projectName": `Area Pod: ${podName} - PRs`,
-            "columnName": "Needs Champion",
-            "isOrgProject": true
-          }
+          "name": "isAssignedToUser",
+          "parameters": { user }
+        },
+        {
+          "name": "isOpen",
+          "parameters": {}
         },
         {
           "operator": "or",
@@ -22,31 +22,44 @@ module.exports = ({podName, users}) => users.map((user) => ({
               "operator": "and",
               "operands": [
                 {
+                  "name": "isInProjectColumn",
+                  "parameters": {
+                    "projectName": `Area Pod: ${podName} - PRs`,
+                    "columnName": "Needs Champion",
+                    "isOrgProject": true
+                  }
+                },
+                {
                   "name": "isAction",
                   "parameters": {
                     "action": "assigned"
                   }
                 },
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": { user }
-                }
               ]
             },
             {
               "operator": "and",
               "operands": [
+                (Array.isArray(podAreas) && {
+                  "operator": "or",
+                  "operands": podAreas.map(label => ({
+                    "name": "hasLabel",
+                    "parameters": { label }
+                  }))
+                }),
                 {
-                  "name": "isAction",
-                  "parameters": {
-                    "action": "opened"
-                  }
-                },
-                {
-                  "name": "isActivitySender",
-                  "parameters": { user }
+                  "operator": "not",
+                  "operands": [
+                    {
+                      "name": "isInProject",
+                      "parameters": {
+                        "projectName": `Area Pod: ${podName} - PRs`,
+                        "isOrgProject": true
+                      }
+                    }
+                  ]
                 }
-              ]
+              ].filter(op => !!op) // We will have a falsy element in the array of we're not filtering by area label
             }
           ]
         }
@@ -54,17 +67,15 @@ module.exports = ({podName, users}) => users.map((user) => ({
     },
     "eventType": "pull_request",
     "eventNames": [
-      "pull_request",
-      "issues",
-      "project_card"
+      "pull_request"
     ],
-    "taskName": `[Area Pod: ${podName} - PRs] Champion Assigned`,
+    "taskName": `[Area Pod: ${podName} - PRs] ${name} Assigned as Champion`,
     "actions": [
       {
-        "name": "moveToProjectColumn",
+        "name": "addToProject",
         "parameters": {
           "projectName": `Area Pod: ${podName} - PRs`,
-          "columnName": `Champion: ${user}`,
+          "columnName": `Champion: ${name}`,
           "isOrgProject": true
         }
       }

@@ -1,4 +1,4 @@
-module.exports = ({podName, podAreas}) => [{
+module.exports = ({podName, podAreas, podMembers}) => [{
   "taskType": "trigger",
   "capabilityId": "IssueResponder",
   "subCapability": "PullRequestResponder",
@@ -27,6 +27,13 @@ module.exports = ({podName, podAreas}) => [{
           ]
         },
         {
+          "operator": "not",
+          "operands": podMembers.map(({user}) => ({
+            "name": "isAssignedToUser",
+            "parameters": { user }
+          }))
+        },
+        {
           "name": "isOpen",
           "parameters": {}
         }
@@ -34,8 +41,7 @@ module.exports = ({podName, podAreas}) => [{
     },
     "eventType": "pull_request",
     "eventNames": [
-      "pull_request",
-      "issues"
+      "pull_request"
     ],
     "taskName": `[Area Pod: ${podName} - PRs] Needs Champion`,
     "actions": [
