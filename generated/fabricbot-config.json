@@ -1750,6 +1750,178 @@
     "taskSource": "fabricbot-config",
     "taskType": "trigger",
     "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "ericstj"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues"
+      ],
+      "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Eric Updated Issue",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+            "columnName": "Triage: Eric",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssueCommentResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "ericstj"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issue_comment"
+      ],
+      "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Eric Commented",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+            "columnName": "Triage: Eric",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "jeffhandley"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues"
+      ],
+      "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Jeff Updated Issue",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+            "columnName": "Triage: Jeff",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssueCommentResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "jeffhandley"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issue_comment"
+      ],
+      "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Jeff Commented",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+            "columnName": "Triage: Jeff",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
@@ -1832,6 +2004,23 @@
             ]
           },
           {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "ericstj"
+                }
+              },
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "jeffhandley"
+                }
+              }
+            ]
+          },
+          {
             "name": "isOpen",
             "parameters": {}
           }
@@ -1839,8 +2028,7 @@
       },
       "eventType": "pull_request",
       "eventNames": [
-        "pull_request",
-        "issues"
+        "pull_request"
       ],
       "taskName": "[Area Pod: Eric / Jeff - PRs] Needs Champion",
       "actions": [
@@ -1849,6 +2037,166 @@
           "parameters": {
             "projectName": "Area Pod: Eric / Jeff - PRs",
             "columnName": "Needs Champion",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "PullRequestResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isAssignedToUser",
+            "parameters": {
+              "user": "ericstj"
+            }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isInProjectColumn",
+                    "parameters": {
+                      "projectName": "Area Pod: Eric / Jeff - PRs",
+                      "columnName": "Needs Champion",
+                      "isOrgProject": true
+                    }
+                  },
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isInProject",
+                        "parameters": {
+                          "projectName": "Area Pod: Eric / Jeff - PRs",
+                          "isOrgProject": true
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "eventType": "pull_request",
+      "eventNames": [
+        "pull_request"
+      ],
+      "taskName": "[Area Pod: Eric / Jeff - PRs] Eric Assigned as Champion",
+      "actions": [
+        {
+          "name": "addToProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - PRs",
+            "columnName": "Champion: Eric",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "PullRequestResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isAssignedToUser",
+            "parameters": {
+              "user": "jeffhandley"
+            }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isInProjectColumn",
+                    "parameters": {
+                      "projectName": "Area Pod: Eric / Jeff - PRs",
+                      "columnName": "Needs Champion",
+                      "isOrgProject": true
+                    }
+                  },
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isInProject",
+                        "parameters": {
+                          "projectName": "Area Pod: Eric / Jeff - PRs",
+                          "isOrgProject": true
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "eventType": "pull_request",
+      "eventNames": [
+        "pull_request"
+      ],
+      "taskName": "[Area Pod: Eric / Jeff - PRs] Jeff Assigned as Champion",
+      "actions": [
+        {
+          "name": "addToProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - PRs",
+            "columnName": "Champion: Jeff",
             "isOrgProject": true
           }
         }

@@ -1750,6 +1750,264 @@
     "taskSource": "fabricbot-config",
     "taskType": "trigger",
     "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "dakersnar"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues"
+      ],
+      "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Drew Updated Issue",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+            "columnName": "Triage: Drew",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssueCommentResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "dakersnar"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issue_comment"
+      ],
+      "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Drew Commented",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+            "columnName": "Triage: Drew",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "michaelgsharp"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues"
+      ],
+      "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Michael Updated Issue",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+            "columnName": "Triage: Michael",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssueCommentResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "michaelgsharp"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issue_comment"
+      ],
+      "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Michael Commented",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+            "columnName": "Triage: Michael",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "tannergooding"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues"
+      ],
+      "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Tanner Updated Issue",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+            "columnName": "Triage: Tanner",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssueCommentResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": {
+              "user": "tannergooding"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issue_comment"
+      ],
+      "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Tanner Commented",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
+            "columnName": "Triage: Tanner",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
@@ -1832,6 +2090,29 @@
             ]
           },
           {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "dakersnar"
+                }
+              },
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "michaelgsharp"
+                }
+              },
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "tannergooding"
+                }
+              }
+            ]
+          },
+          {
             "name": "isOpen",
             "parameters": {}
           }
@@ -1839,8 +2120,7 @@
       },
       "eventType": "pull_request",
       "eventNames": [
-        "pull_request",
-        "issues"
+        "pull_request"
       ],
       "taskName": "[Area Pod: Drew / Michael / Tanner - PRs] Needs Champion",
       "actions": [
@@ -1849,6 +2129,246 @@
           "parameters": {
             "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
             "columnName": "Needs Champion",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "PullRequestResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isAssignedToUser",
+            "parameters": {
+              "user": "dakersnar"
+            }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isInProjectColumn",
+                    "parameters": {
+                      "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                      "columnName": "Needs Champion",
+                      "isOrgProject": true
+                    }
+                  },
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isInProject",
+                        "parameters": {
+                          "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                          "isOrgProject": true
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "eventType": "pull_request",
+      "eventNames": [
+        "pull_request"
+      ],
+      "taskName": "[Area Pod: Drew / Michael / Tanner - PRs] Drew Assigned as Champion",
+      "actions": [
+        {
+          "name": "addToProject",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+            "columnName": "Champion: Drew",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "PullRequestResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isAssignedToUser",
+            "parameters": {
+              "user": "michaelgsharp"
+            }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isInProjectColumn",
+                    "parameters": {
+                      "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                      "columnName": "Needs Champion",
+                      "isOrgProject": true
+                    }
+                  },
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isInProject",
+                        "parameters": {
+                          "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                          "isOrgProject": true
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "eventType": "pull_request",
+      "eventNames": [
+        "pull_request"
+      ],
+      "taskName": "[Area Pod: Drew / Michael / Tanner - PRs] Michael Assigned as Champion",
+      "actions": [
+        {
+          "name": "addToProject",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+            "columnName": "Champion: Michael",
+            "isOrgProject": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "PullRequestResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isAssignedToUser",
+            "parameters": {
+              "user": "tannergooding"
+            }
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isInProjectColumn",
+                    "parameters": {
+                      "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                      "columnName": "Needs Champion",
+                      "isOrgProject": true
+                    }
+                  },
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "assigned"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isInProject",
+                        "parameters": {
+                          "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                          "isOrgProject": true
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "eventType": "pull_request",
+      "eventNames": [
+        "pull_request"
+      ],
+      "taskName": "[Area Pod: Drew / Michael / Tanner - PRs] Tanner Assigned as Champion",
+      "actions": [
+        {
+          "name": "addToProject",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+            "columnName": "Champion: Tanner",
             "isOrgProject": true
           }
         }
