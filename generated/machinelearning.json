@@ -2290,12 +2290,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "dakersnar"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -2318,6 +2312,12 @@
                     "parameters": {
                       "action": "assigned"
                     }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "dakersnar"
+                    }
                   }
                 ]
               },
@@ -2332,6 +2332,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "dakersnar"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -2370,12 +2393,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "michaelgsharp"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -2398,6 +2415,12 @@
                     "parameters": {
                       "action": "assigned"
                     }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "michaelgsharp"
+                    }
                   }
                 ]
               },
@@ -2412,6 +2435,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "michaelgsharp"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -2450,12 +2496,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "tannergooding"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -2478,6 +2518,12 @@
                     "parameters": {
                       "action": "assigned"
                     }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "tannergooding"
+                    }
                   }
                 ]
               },
@@ -2492,6 +2538,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "tannergooding"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]

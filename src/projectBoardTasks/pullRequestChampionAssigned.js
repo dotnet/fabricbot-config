@@ -8,10 +8,6 @@ module.exports = ({podName, podAreas, podMembers}) => podMembers.map(({name, use
       "operator": "and",
       "operands": [
         {
-          "name": "isAssignedToUser",
-          "parameters": { user }
-        },
-        {
           "name": "isOpen",
           "parameters": {}
         },
@@ -35,6 +31,10 @@ module.exports = ({podName, podAreas, podMembers}) => podMembers.map(({name, use
                     "action": "assigned"
                   }
                 },
+                {
+                  "name": "isAssignedToUser",
+                  "parameters": { user }
+                }
               ]
             },
             {
@@ -55,6 +55,27 @@ module.exports = ({podName, podAreas, podMembers}) => podMembers.map(({name, use
                       "parameters": {
                         "projectName": `Area Pod: ${podName} - PRs`,
                         "isOrgProject": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "isActivitySender",
+                  "parameters": { user },
+                },
+                {
+                  "operator": "or",
+                  "operands": [
+                    {
+                      "name": "isAction",
+                      "parameters": {
+                        "action": "opened"
+                      }
+                    },
+                    {
+                      "name": "isAction",
+                      "parameters": {
+                        "action": "reopened"
                       }
                     }
                   ]
