@@ -2231,16 +2231,8 @@
         "operator": "and",
         "operands": [
           {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "isInProject",
-                "parameters": {
-                  "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
-                  "isOrgProject": true
-                }
-              }
-            ]
+            "name": "isOpen",
+            "parameters": {}
           },
           {
             "operator": "not",
@@ -2266,8 +2258,29 @@
             ]
           },
           {
-            "name": "isOpen",
-            "parameters": {}
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInProject",
+                    "parameters": {
+                      "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                      "isOrgProject": true
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                  "columnName": "Done",
+                  "isOrgProject": true
+                }
+              }
+            ]
           }
         ]
       }
@@ -2303,72 +2316,33 @@
             "parameters": {}
           },
           {
+            "name": "isAssignedToUser",
+            "parameters": {
+              "user": "dakersnar"
+            }
+          },
+          {
             "operator": "or",
             "operands": [
               {
-                "operator": "and",
+                "operator": "not",
                 "operands": [
                   {
-                    "name": "isInProjectColumn",
+                    "name": "isInProject",
                     "parameters": {
                       "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
-                      "columnName": "Needs Champion",
                       "isOrgProject": true
-                    }
-                  },
-                  {
-                    "name": "isAction",
-                    "parameters": {
-                      "action": "assigned"
-                    }
-                  },
-                  {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "dakersnar"
                     }
                   }
                 ]
               },
               {
-                "operator": "and",
-                "operands": [
-                  {
-                    "operator": "not",
-                    "operands": [
-                      {
-                        "name": "isInProject",
-                        "parameters": {
-                          "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
-                          "isOrgProject": true
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "isActivitySender",
-                    "parameters": {
-                      "user": "dakersnar"
-                    }
-                  },
-                  {
-                    "operator": "or",
-                    "operands": [
-                      {
-                        "name": "isAction",
-                        "parameters": {
-                          "action": "opened"
-                        }
-                      },
-                      {
-                        "name": "isAction",
-                        "parameters": {
-                          "action": "reopened"
-                        }
-                      }
-                    ]
-                  }
-                ]
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                  "columnName": "Done",
+                  "isOrgProject": true
+                }
               }
             ]
           }
@@ -2406,72 +2380,33 @@
             "parameters": {}
           },
           {
+            "name": "isAssignedToUser",
+            "parameters": {
+              "user": "michaelgsharp"
+            }
+          },
+          {
             "operator": "or",
             "operands": [
               {
-                "operator": "and",
+                "operator": "not",
                 "operands": [
                   {
-                    "name": "isInProjectColumn",
+                    "name": "isInProject",
                     "parameters": {
                       "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
-                      "columnName": "Needs Champion",
                       "isOrgProject": true
-                    }
-                  },
-                  {
-                    "name": "isAction",
-                    "parameters": {
-                      "action": "assigned"
-                    }
-                  },
-                  {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "michaelgsharp"
                     }
                   }
                 ]
               },
               {
-                "operator": "and",
-                "operands": [
-                  {
-                    "operator": "not",
-                    "operands": [
-                      {
-                        "name": "isInProject",
-                        "parameters": {
-                          "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
-                          "isOrgProject": true
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "isActivitySender",
-                    "parameters": {
-                      "user": "michaelgsharp"
-                    }
-                  },
-                  {
-                    "operator": "or",
-                    "operands": [
-                      {
-                        "name": "isAction",
-                        "parameters": {
-                          "action": "opened"
-                        }
-                      },
-                      {
-                        "name": "isAction",
-                        "parameters": {
-                          "action": "reopened"
-                        }
-                      }
-                    ]
-                  }
-                ]
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                  "columnName": "Done",
+                  "isOrgProject": true
+                }
               }
             ]
           }
@@ -2509,72 +2444,33 @@
             "parameters": {}
           },
           {
+            "name": "isAssignedToUser",
+            "parameters": {
+              "user": "tannergooding"
+            }
+          },
+          {
             "operator": "or",
             "operands": [
               {
-                "operator": "and",
+                "operator": "not",
                 "operands": [
                   {
-                    "name": "isInProjectColumn",
+                    "name": "isInProject",
                     "parameters": {
                       "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
-                      "columnName": "Needs Champion",
                       "isOrgProject": true
-                    }
-                  },
-                  {
-                    "name": "isAction",
-                    "parameters": {
-                      "action": "assigned"
-                    }
-                  },
-                  {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "tannergooding"
                     }
                   }
                 ]
               },
               {
-                "operator": "and",
-                "operands": [
-                  {
-                    "operator": "not",
-                    "operands": [
-                      {
-                        "name": "isInProject",
-                        "parameters": {
-                          "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
-                          "isOrgProject": true
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "isActivitySender",
-                    "parameters": {
-                      "user": "tannergooding"
-                    }
-                  },
-                  {
-                    "operator": "or",
-                    "operands": [
-                      {
-                        "name": "isAction",
-                        "parameters": {
-                          "action": "opened"
-                        }
-                      },
-                      {
-                        "name": "isAction",
-                        "parameters": {
-                          "action": "reopened"
-                        }
-                      }
-                    ]
-                  }
-                ]
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+                  "columnName": "Done",
+                  "isOrgProject": true
+                }
               }
             ]
           }
