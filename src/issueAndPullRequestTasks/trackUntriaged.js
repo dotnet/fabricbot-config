@@ -6,6 +6,16 @@ module.exports = () => [
     "version": "1.0",
     "config": {
       "taskName": "Add untriaged label to new/reopened issues without a milestone",
+      "actions": [
+        {
+          "name": "addLabel",
+          "parameters": {
+            "label": "untriaged"
+          }
+        }
+      ],
+      "eventType": "issue",
+      "eventNames": ["issues"],
       "conditions": {
         "operator": "and",
         "operands": [
@@ -55,19 +65,7 @@ module.exports = () => [
             ]
           }
         ]
-      },
-      "actions": [
-        {
-          "name": "addLabel",
-          "parameters": {
-            "label": "untriaged"
-          }
-        }
-      ],
-      "eventType": "issue",
-      "eventNames": [
-        "issues"
-      ]
+      }
     }
   },
   {
@@ -76,6 +74,17 @@ module.exports = () => [
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
+      "taskName": "Remove untriaged label from issues when closed or added to a milestone",
+      "actions": [
+        {
+          "name": "removeLabel",
+          "parameters": {
+            "label": "untriaged"
+          }
+        }
+      ],
+      "eventType": "issue",
+      "eventNames": ["issues"],
       "conditions": {
         "operator": "and",
         "operands": [
@@ -101,20 +110,7 @@ module.exports = () => [
             }
           }
         ]
-      },
-      "eventType": "issue",
-      "eventNames": [
-        "issues"
-      ],
-      "taskName": "Remove untriaged label from issues when closed or added to a milestone",
-      "actions": [
-        {
-          "name": "removeLabel",
-          "parameters": {
-            "label": "untriaged"
-          }
-        }
-      ]
+      }
     }
   }
 ];

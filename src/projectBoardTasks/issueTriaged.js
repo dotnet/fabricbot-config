@@ -5,13 +5,29 @@ module.exports = ({podName, triagedLabels}) => [{
   "capabilityId": "IssueResponder",
   "subCapability": "IssuesOnlyResponder",
   "version": "1.0",
-  "config":
-  {
-    "conditions":
-    {
+  "config": {
+    "taskName": `[Area Pod: ${podName} - Issue Triage] Triaged`,
+    "actions": [
+      {
+        "name": "addToProject",
+        "parameters": {
+          "projectName": `Area Pod: ${podName} - Issue Triage`,
+          "columnName": "Triaged",
+          "isOrgProject": true
+        }
+      },
+      {
+        "name": "removeLabel",
+        "parameters": {
+          "label": "untriaged"
+        }
+      }
+    ],
+    "eventType": "issue",
+    "eventNames": ["issues"],
+    "conditions": {
       "operator": "and",
-      "operands":
-      [
+      "operands": [
         {
           "name": "isInProject",
           "parameters": {
@@ -24,30 +40,6 @@ module.exports = ({podName, triagedLabels}) => [{
           "operands": isTriaged(triagedLabels)
         }
       ]
-    },
-    "eventType": "issue",
-    "eventNames":
-    [
-      "issues"
-    ],
-    "taskName": `[Area Pod: ${podName} - Issue Triage] Triaged`,
-    "actions":
-    [
-      {
-        "name": "addToProject",
-        "parameters":
-        {
-          "projectName": `Area Pod: ${podName} - Issue Triage`,
-          "columnName": "Triaged",
-          "isOrgProject": true
-        }
-      },
-      {
-        "name": "removeLabel",
-        "parameters": {
-          "label": "untriaged"
-        }
-      }
-    ]
+    }
   }
 }];

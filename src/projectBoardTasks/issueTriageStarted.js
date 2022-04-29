@@ -7,28 +7,6 @@ module.exports = ({podName, podMembers, triagedLabels}) => podMembers.flatMap(({
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
-      "conditions": {
-        "operator": "and",
-        "operands": [
-          {
-            "name": "isInProjectColumn",
-            "parameters": {
-              "projectName": `Area Pod: ${podName} - Issue Triage`,
-              "isOrgProject": true,
-              "columnName": "Needs Triage"
-            }
-          },
-          {
-            "name": "isActivitySender",
-            "parameters": { user }
-          },
-          ...isNotTriaged(triagedLabels)
-        ]
-      },
-      "eventType": "issue",
-      "eventNames": [
-        "issues"
-      ],
       "taskName": `[Area Pod: ${podName} - Issue Triage] ${name} Updated Issue`,
       "actions": [
         {
@@ -39,15 +17,9 @@ module.exports = ({podName, podMembers, triagedLabels}) => podMembers.flatMap(({
             "isOrgProject": true
           }
         }
-      ]
-    }
-  },
-  {
-    "taskType": "trigger",
-    "capabilityId": "IssueResponder",
-    "subCapability": "IssueCommentResponder",
-    "version": "1.0",
-    "config": {
+      ],
+      "eventType": "issue",
+      "eventNames": ["issues"],
       "conditions": {
         "operator": "and",
         "operands": [
@@ -65,11 +37,15 @@ module.exports = ({podName, podMembers, triagedLabels}) => podMembers.flatMap(({
           },
           ...isNotTriaged(triagedLabels)
         ]
-      },
-      "eventType": "issue",
-      "eventNames": [
-        "issue_comment"
-      ],
+      }
+    }
+  },
+  {
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssueCommentResponder",
+    "version": "1.0",
+    "config": {
       "taskName": `[Area Pod: ${podName} - Issue Triage] ${name} Commented`,
       "actions": [
         {
@@ -80,7 +56,27 @@ module.exports = ({podName, podMembers, triagedLabels}) => podMembers.flatMap(({
             "isOrgProject": true
           }
         }
-      ]
+      ],
+      "eventType": "issue",
+      "eventNames": ["issue_comment"],
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProjectColumn",
+            "parameters": {
+              "projectName": `Area Pod: ${podName} - Issue Triage`,
+              "isOrgProject": true,
+              "columnName": "Needs Triage"
+            }
+          },
+          {
+            "name": "isActivitySender",
+            "parameters": { user }
+          },
+          ...isNotTriaged(triagedLabels)
+        ]
+      }
     }
   }
 ]);

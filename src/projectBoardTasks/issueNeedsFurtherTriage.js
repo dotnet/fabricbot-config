@@ -3,13 +3,34 @@ module.exports = ({podName, podAreas}) => [{
   "capabilityId": "IssueResponder",
   "subCapability": "IssueCommentResponder",
   "version": "1.0",
-  "config":
-  {
-    "conditions":
-    {
+  "config": {
+    "taskName": `[Area Pod: ${podName} - Issue Triage] Needs Further Triage`,
+    "actions": [
+      // Archived cards need to be removed/added instead of just added.
+      // There's no means for detecting/handling archive state, so this
+      // workaround is applied for all cards that need to be moved to
+      // the "Needs Triage" column.
+      {
+        "name": "removeFromProject",
+        "parameters": {
+          "projectName": `Area Pod: ${podName} - Issue Triage`,
+          "isOrgProject": true
+        }
+      },
+      {
+        "name": "addToProject",
+        "parameters": {
+          "projectName": `Area Pod: ${podName} - Issue Triage`,
+          "columnName": "Needs Triage",
+          "isOrgProject": true
+        }
+      }
+    ],
+    "eventType": "issue",
+    "eventNames": ["issue_comment"],
+    "conditions": {
       "operator": "and",
-      "operands":
-      [
+      "operands": [
         (Array.isArray(podAreas) && {
           "operator": "or",
           "operands": podAreas.map(label => ({
@@ -19,12 +40,10 @@ module.exports = ({podName, podAreas}) => [{
         }),
         {
           "operator": "not",
-          "operands":
-          [
+          "operands": [
             {
               "name": "isCloseAndComment",
-              "parameters":
-              {}
+              "parameters": {}
             }
           ]
         },
@@ -36,16 +55,13 @@ module.exports = ({podName, podAreas}) => [{
         },
         {
           "operator": "or",
-          "operands":
-          [
+          "operands": [
             {
               "operator": "not",
-              "operands":
-              [
+              "operands": [
                 {
                   "name": "isInProject",
-                  "parameters":
-                  {
+                  "parameters": {
                     "projectName": `Area Pod: ${podName} - Issue Triage`,
                     "isOrgProject": true
                   }
@@ -54,8 +70,7 @@ module.exports = ({podName, podAreas}) => [{
             },
             {
               "name": "isInProjectColumn",
-              "parameters":
-              {
+              "parameters": {
                 "projectName": `Area Pod: ${podName} - Issue Triage`,
                 "columnName": "Triaged",
                 "isOrgProject": true
@@ -64,36 +79,6 @@ module.exports = ({podName, podAreas}) => [{
           ]
         }
       ].filter(op => !!op) // We will have a falsy element in the array of we're not filtering by area label
-    },
-    "eventType": "issue",
-    "eventNames":
-    [
-      "issue_comment"
-    ],
-    "taskName": `[Area Pod: ${podName} - Issue Triage] Needs Further Triage`,
-    "actions":
-    [
-      // Archived cards need to be removed/added instead of just added.
-      // There's no means for detecting/handling archive state, so this
-      // workaround is applied for all cards that need to be moved to
-      // the "Needs Triage" column.
-      {
-        "name": "removeFromProject",
-        "parameters":
-        {
-          "projectName": `Area Pod: ${podName} - Issue Triage`,
-          "isOrgProject": true
-        }
-      },
-      {
-        "name": "addToProject",
-        "parameters":
-        {
-          "projectName": `Area Pod: ${podName} - Issue Triage`,
-          "columnName": "Needs Triage",
-          "isOrgProject": true
-        }
-      }
-    ]
+    }
   }
 }];
