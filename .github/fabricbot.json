@@ -8,18 +8,19 @@
     "config": {
       "taskName": "Add untriaged label to new/reopened issues without a milestone",
       "conditions": {
-        "operator": "and",
+        "operator": "or",
         "operands": [
           {
-            "operator": "or",
-            "operands": [
-              {
-                "name": "isAction",
-                "parameters": {
-                  "action": "opened"
-                }
-              }
-            ]
+            "name": "isAction",
+            "parameters": {
+              "action": "opened"
+            }
+          },
+          {
+            "name": "isAction",
+            "parameters": {
+              "action": "reopened"
+            }
           }
         ]
       }
