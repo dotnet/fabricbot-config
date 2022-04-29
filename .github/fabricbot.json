@@ -18,22 +18,8 @@
                 "parameters": {
                   "action": "opened"
                 }
-              },
-              {
-                "name": "isAction",
-                "parameters": {
-                  "action": "reopened"
-                }
-              },
-              {
-                "name": "removedFromMilestone",
-                "parameters": {}
               }
             ]
-          },
-          {
-            "name": "isOpen",
-            "parameters": {}
           },
           {
             "operator": "not",
@@ -41,17 +27,6 @@
               {
                 "name": "isInMilestone",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "untriaged"
-                }
               }
             ]
           }
