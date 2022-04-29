@@ -18,8 +18,7 @@ module.exports = () => [
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": "Needs-author-action notification",
       "actions": [
@@ -42,11 +41,16 @@ module.exports = () => [
         "operator": "and",
         "operands": [
           {
-            "name": "activitySenderHasPermissions",
-            "parameters": {
-              "state": "changes_requested",
-              "permissions": "write"
-            }
+            "operator": "not",
+            "operands": [
+              {
+                "name": "activitySenderHasPermissions",
+                "parameters": {
+                  "state": "changes_requested",
+                  "permissions": "read"
+                }
+              }
+            ]
           },
           {
             "name": "isAction",
@@ -158,9 +162,7 @@ module.exports = () => [
       },
       "eventType": "pull_request",
       "eventNames": [
-        "pull_request",
-        "issues",
-        "project_card"
+        "pull_request"
       ],
       "taskName": "Pushing changes to PR branch removes the needs-author-action label",
       "actions": [

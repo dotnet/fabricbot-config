@@ -15,20 +15,12 @@ module.exports = () => [
             }
           },
           {
-            "operator": "or",
+            "operator": "not",
             "operands": [
               {
                 "name": "activitySenderHasPermissions",
                 "parameters": {
-                  "association": "OWNER",
-                  "permissions": "admin"
-                }
-              },
-              {
-                "name": "activitySenderHasPermissions",
-                "parameters": {
-                  "association": "MEMBER",
-                  "permissions": "write"
+                  "permissions": "read"
                 }
               }
             ]
@@ -37,9 +29,7 @@ module.exports = () => [
       },
       "eventType": "pull_request",
       "eventNames": [
-        "pull_request",
-        "issues",
-        "project_card"
+        "pull_request"
       ],
       "taskName": "Assign Team PRs to author",
       "actions": [

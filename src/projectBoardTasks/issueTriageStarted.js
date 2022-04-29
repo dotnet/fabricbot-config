@@ -24,8 +24,7 @@ module.exports = ({podName, users}) => users.flatMap((user) => [
       },
       "eventType": "issue",
       "eventNames": [
-        "issues",
-        "project_card"
+        "issues"
       ],
       "taskName": `[Area Pod: ${podName} - Issue Triage] Issue Updated`,
       "actions": [

@@ -23,7 +23,6 @@ module.exports = () => [
                   {
                     "name": "activitySenderHasPermissions",
                     "parameters": {
-                      "association": "OWNER",
                       "permissions": "admin"
                     }
                   }
@@ -35,7 +34,17 @@ module.exports = () => [
                   {
                     "name": "activitySenderHasPermissions",
                     "parameters": {
-                      "association": "MEMBER",
+                      "permissions": "maintain"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "activitySenderHasPermissions",
+                    "parameters": {
                       "permissions": "write"
                     }
                   }
@@ -113,9 +122,7 @@ module.exports = () => [
       },
       "eventType": "pull_request",
       "eventNames": [
-        "pull_request",
-        "issues",
-        "project_card"
+        "pull_request"
       ],
       "taskName": "Label community PRs",
       "actions": [

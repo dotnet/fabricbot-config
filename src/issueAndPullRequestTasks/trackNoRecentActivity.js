@@ -364,9 +364,7 @@ module.exports = (days) => [
       },
       "eventType": "pull_request",
       "eventNames": [
-        "pull_request",
-        "issues",
-        "project_card"
+        "pull_request"
       ],
       "taskName": "Remove `no-recent-activity` label from PRs when modified",
       "actions": [
