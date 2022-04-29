@@ -166,5 +166,16 @@ module.exports = [
       "runtime": podAreas["jeremy-levi"],
       "dotnet-api-docs": podAreas["jeremy-levi"]
     }
+  },
+  {
+    podName: "Libraries Analyzers",
+    podMembers: [
+      { name: "Buyaa", user: "buyaa-n" },
+      { name: "Carlos", user: "carlossanlop" }
+    ],
+    repos: {
+      "runtime": ["code-fixer", "code-analyzer"],
+      "roslyn-analyzers": ["Area-Microsoft.NetCore.Analyzers"]
+    }
   }
 ];
