@@ -2081,6 +2081,13 @@
       "taskName": "[Area Pod: Eric / Jeff - PRs] Needs Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Eric / Jeff - PRs",
@@ -2101,19 +2108,29 @@
             "parameters": {}
           },
           {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "ericstj"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "ericstj"
+                    }
+                  }
+                ]
               },
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "jeffhandley"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "jeffhandley"
+                    }
+                  }
+                ]
               }
             ]
           },
@@ -2155,6 +2172,13 @@
     "config": {
       "taskName": "[Area Pod: Eric / Jeff - PRs] Eric Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -2219,6 +2243,13 @@
     "config": {
       "taskName": "[Area Pod: Eric / Jeff - PRs] Jeff Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {

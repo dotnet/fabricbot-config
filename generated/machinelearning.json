@@ -2215,6 +2215,13 @@
       "taskName": "[Area Pod: Drew / Michael / Tanner - PRs] Needs Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
@@ -2235,25 +2242,40 @@
             "parameters": {}
           },
           {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "dakersnar"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "dakersnar"
+                    }
+                  }
+                ]
               },
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "michaelgsharp"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "michaelgsharp"
+                    }
+                  }
+                ]
               },
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "tannergooding"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "tannergooding"
+                    }
+                  }
+                ]
               }
             ]
           },
@@ -2295,6 +2317,13 @@
     "config": {
       "taskName": "[Area Pod: Drew / Michael / Tanner - PRs] Drew Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -2360,6 +2389,13 @@
       "taskName": "[Area Pod: Drew / Michael / Tanner - PRs] Michael Assigned as Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
@@ -2423,6 +2459,13 @@
     "config": {
       "taskName": "[Area Pod: Drew / Michael / Tanner - PRs] Tanner Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {

@@ -2491,6 +2491,13 @@
       "taskName": "[Area Pod: Adam / David - PRs] Needs Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Adam / David - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Adam / David - PRs",
@@ -2558,19 +2565,29 @@
             ]
           },
           {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "adamsitnik"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "adamsitnik"
+                    }
+                  }
+                ]
               },
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "jozkee"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "jozkee"
+                    }
+                  }
+                ]
               }
             ]
           },
@@ -2612,6 +2629,13 @@
     "config": {
       "taskName": "[Area Pod: Adam / David - PRs] Adam Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Adam / David - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -2723,6 +2747,13 @@
     "config": {
       "taskName": "[Area Pod: Adam / David - PRs] David Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Adam / David - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -4282,6 +4313,13 @@
       "taskName": "[Area Pod: Buyaa / Jose / Steve - PRs] Needs Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
@@ -4373,31 +4411,51 @@
             ]
           },
           {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "buyaa-n"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "buyaa-n"
+                    }
+                  }
+                ]
               },
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "joperezr"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "joperezr"
+                    }
+                  }
+                ]
               },
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "steveharter"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "steveharter"
+                    }
+                  }
+                ]
               },
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "stephentoub"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "stephentoub"
+                    }
+                  }
+                ]
               }
             ]
           },
@@ -4439,6 +4497,13 @@
     "config": {
       "taskName": "[Area Pod: Buyaa / Jose / Steve - PRs] Buyaa Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -4575,6 +4640,13 @@
       "taskName": "[Area Pod: Buyaa / Jose / Steve - PRs] Jose Assigned as Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
@@ -4710,6 +4782,13 @@
       "taskName": "[Area Pod: Buyaa / Jose / Steve - PRs] Steve H Assigned as Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
@@ -4844,6 +4923,13 @@
     "config": {
       "taskName": "[Area Pod: Buyaa / Jose / Steve - PRs] Stephen T Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -5995,6 +6081,13 @@
       "taskName": "[Area Pod: Carlos / Viktor - PRs] Needs Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Carlos / Viktor - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Carlos / Viktor - PRs",
@@ -6068,19 +6161,29 @@
             ]
           },
           {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "carlossanlop"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "carlossanlop"
+                    }
+                  }
+                ]
               },
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "viktorhofer"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "viktorhofer"
+                    }
+                  }
+                ]
               }
             ]
           },
@@ -6122,6 +6225,13 @@
     "config": {
       "taskName": "[Area Pod: Carlos / Viktor - PRs] Carlos Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Carlos / Viktor - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -6239,6 +6349,13 @@
     "config": {
       "taskName": "[Area Pod: Carlos / Viktor - PRs] Viktor Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Carlos / Viktor - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -7408,6 +7525,13 @@
       "taskName": "[Area Pod: Drew / Michael / Tanner - PRs] Needs Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
@@ -7463,25 +7587,40 @@
             ]
           },
           {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "dakersnar"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "dakersnar"
+                    }
+                  }
+                ]
               },
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "michaelgsharp"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "michaelgsharp"
+                    }
+                  }
+                ]
               },
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "tannergooding"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "tannergooding"
+                    }
+                  }
+                ]
               }
             ]
           },
@@ -7523,6 +7662,13 @@
     "config": {
       "taskName": "[Area Pod: Drew / Michael / Tanner - PRs] Drew Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -7623,6 +7769,13 @@
       "taskName": "[Area Pod: Drew / Michael / Tanner - PRs] Michael Assigned as Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
@@ -7721,6 +7874,13 @@
     "config": {
       "taskName": "[Area Pod: Drew / Michael / Tanner - PRs] Tanner Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -8832,6 +8992,13 @@
       "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - PRs] Needs Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
@@ -8881,25 +9048,40 @@
             ]
           },
           {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "eiriktsarpalis"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "eiriktsarpalis"
+                    }
+                  }
+                ]
               },
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "krwq"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "krwq"
+                    }
+                  }
+                ]
               },
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "layomia"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "layomia"
+                    }
+                  }
+                ]
               }
             ]
           },
@@ -8941,6 +9123,13 @@
     "config": {
       "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - PRs] Eirik Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -9035,6 +9224,13 @@
       "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - PRs] Krzysztof Assigned as Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
@@ -9127,6 +9323,13 @@
     "config": {
       "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - PRs] Layomi Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -9956,6 +10159,13 @@
       "taskName": "[Area Pod: Eric / Jeff - PRs] Needs Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Eric / Jeff - PRs",
@@ -9987,19 +10197,29 @@
             ]
           },
           {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "ericstj"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "ericstj"
+                    }
+                  }
+                ]
               },
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "jeffhandley"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "jeffhandley"
+                    }
+                  }
+                ]
               }
             ]
           },
@@ -10041,6 +10261,13 @@
     "config": {
       "taskName": "[Area Pod: Eric / Jeff - PRs] Eric Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -10116,6 +10343,13 @@
     "config": {
       "taskName": "[Area Pod: Eric / Jeff - PRs] Jeff Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -11563,6 +11797,13 @@
       "taskName": "[Area Pod: Eric / Maryam / Tarek - PRs] Needs Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
@@ -11666,25 +11907,40 @@
             ]
           },
           {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "eerhardt"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "eerhardt"
+                    }
+                  }
+                ]
               },
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "maryamariyan"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "maryamariyan"
+                    }
+                  }
+                ]
               },
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "tarekgh"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "tarekgh"
+                    }
+                  }
+                ]
               }
             ]
           },
@@ -11726,6 +11982,13 @@
     "config": {
       "taskName": "[Area Pod: Eric / Maryam / Tarek - PRs] Eric Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -11874,6 +12137,13 @@
       "taskName": "[Area Pod: Eric / Maryam / Tarek - PRs] Maryam Assigned as Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
@@ -12020,6 +12290,13 @@
     "config": {
       "taskName": "[Area Pod: Eric / Maryam / Tarek - PRs] Tarek Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -13063,6 +13340,13 @@
       "taskName": "[Area Pod: Jeremy / Levi - PRs] Needs Champion",
       "actions": [
         {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Jeremy / Levi - PRs",
+            "isOrgProject": true
+          }
+        },
+        {
           "name": "addToProject",
           "parameters": {
             "projectName": "Area Pod: Jeremy / Levi - PRs",
@@ -13118,19 +13402,29 @@
             ]
           },
           {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "bartonjs"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "bartonjs"
+                    }
+                  }
+                ]
               },
               {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "GrabYourPitchForks"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "GrabYourPitchForks"
+                    }
+                  }
+                ]
               }
             ]
           },
@@ -13172,6 +13466,13 @@
     "config": {
       "taskName": "[Area Pod: Jeremy / Levi - PRs] Jeremy Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Jeremy / Levi - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {
@@ -13271,6 +13572,13 @@
     "config": {
       "taskName": "[Area Pod: Jeremy / Levi - PRs] Levi Assigned as Champion",
       "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Jeremy / Levi - PRs",
+            "isOrgProject": true
+          }
+        },
         {
           "name": "addToProject",
           "parameters": {

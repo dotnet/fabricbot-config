@@ -7,6 +7,13 @@ module.exports = ({podName, podAreas, podMembers}) => podMembers.map(({name, use
     "taskName": `[Area Pod: ${podName} - PRs] ${name} Assigned as Champion`,
     "actions": [
       {
+        "name": "removeFromProject",
+        "parameters": {
+          "projectName": `Area Pod: ${podName} - PRs`,
+          "isOrgProject": true
+        }
+      },
+      {
         "name": "addToProject",
         "parameters": {
           "projectName": `Area Pod: ${podName} - PRs`,
