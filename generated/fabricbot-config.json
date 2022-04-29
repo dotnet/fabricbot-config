@@ -2150,12 +2150,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "ericstj"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -2178,6 +2172,12 @@
                     "parameters": {
                       "action": "assigned"
                     }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "ericstj"
+                    }
                   }
                 ]
               },
@@ -2192,6 +2192,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Eric / Jeff - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "ericstj"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -2230,12 +2253,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "jeffhandley"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -2258,6 +2275,12 @@
                     "parameters": {
                       "action": "assigned"
                     }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "jeffhandley"
+                    }
                   }
                 ]
               },
@@ -2272,6 +2295,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Eric / Jeff - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "jeffhandley"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]

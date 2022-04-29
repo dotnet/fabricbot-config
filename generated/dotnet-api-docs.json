@@ -1045,12 +1045,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "adamsitnik"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -1072,6 +1066,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "adamsitnik"
                     }
                   }
                 ]
@@ -1134,6 +1134,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Adam / David - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "adamsitnik"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -1172,12 +1195,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "jozkee"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -1199,6 +1216,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "jozkee"
                     }
                   }
                 ]
@@ -1261,6 +1284,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Adam / David - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "jozkee"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -2798,12 +2844,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "buyaa-n"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -2825,6 +2865,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "buyaa-n"
                     }
                   }
                 ]
@@ -2911,6 +2957,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "buyaa-n"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -2949,12 +3018,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "joperezr"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -2976,6 +3039,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "joperezr"
                     }
                   }
                 ]
@@ -3062,6 +3131,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "joperezr"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -3100,12 +3192,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "steveharter"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -3127,6 +3213,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "steveharter"
                     }
                   }
                 ]
@@ -3213,6 +3305,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "steveharter"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -3251,12 +3366,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "stephentoub"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -3278,6 +3387,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "stephentoub"
                     }
                   }
                 ]
@@ -3364,6 +3479,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Buyaa / Jose / Steve - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "stephentoub"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -4483,12 +4621,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "carlossanlop"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -4510,6 +4642,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "carlossanlop"
                     }
                   }
                 ]
@@ -4578,6 +4716,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Carlos / Viktor - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "carlossanlop"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -4616,12 +4777,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "viktorhofer"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -4643,6 +4798,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "viktorhofer"
                     }
                   }
                 ]
@@ -4711,6 +4872,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Carlos / Viktor - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "viktorhofer"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -5832,12 +6016,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "dakersnar"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -5859,6 +6037,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "dakersnar"
                     }
                   }
                 ]
@@ -5909,6 +6093,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "dakersnar"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -5947,12 +6154,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "michaelgsharp"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -5974,6 +6175,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "michaelgsharp"
                     }
                   }
                 ]
@@ -6024,6 +6231,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "michaelgsharp"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -6062,12 +6292,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "tannergooding"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -6089,6 +6313,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "tannergooding"
                     }
                   }
                 ]
@@ -6139,6 +6369,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Drew / Michael / Tanner - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "tannergooding"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -7214,12 +7467,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "eiriktsarpalis"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -7241,6 +7488,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "eiriktsarpalis"
                     }
                   }
                 ]
@@ -7285,6 +7538,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "eiriktsarpalis"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -7323,12 +7599,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "krwq"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -7350,6 +7620,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "krwq"
                     }
                   }
                 ]
@@ -7394,6 +7670,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "krwq"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -7432,12 +7731,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "layomia"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -7459,6 +7752,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "layomia"
                     }
                   }
                 ]
@@ -7503,6 +7802,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Eirik / Krzysztof / Layomi - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "layomia"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -8300,12 +8622,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "ericstj"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -8327,6 +8643,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "ericstj"
                     }
                   }
                 ]
@@ -8353,6 +8675,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Eric / Jeff - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "ericstj"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -8391,12 +8736,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "jeffhandley"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -8418,6 +8757,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "jeffhandley"
                     }
                   }
                 ]
@@ -8444,6 +8789,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Eric / Jeff - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "jeffhandley"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -9933,12 +10301,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "eerhardt"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -9960,6 +10322,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "eerhardt"
                     }
                   }
                 ]
@@ -10058,6 +10426,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "eerhardt"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -10096,12 +10487,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "maryamariyan"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -10123,6 +10508,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "maryamariyan"
                     }
                   }
                 ]
@@ -10221,6 +10612,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "maryamariyan"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -10259,12 +10673,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "tarekgh"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -10286,6 +10694,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "tarekgh"
                     }
                   }
                 ]
@@ -10384,6 +10798,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Eric / Maryam / Tarek - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "tarekgh"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -11365,12 +11802,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "bartonjs"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -11392,6 +11823,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "bartonjs"
                     }
                   }
                 ]
@@ -11442,6 +11879,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Jeremy / Levi - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "bartonjs"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
@@ -11480,12 +11940,6 @@
         "operator": "and",
         "operands": [
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "GrabYourPitchForks"
-            }
-          },
-          {
             "name": "isOpen",
             "parameters": {}
           },
@@ -11507,6 +11961,12 @@
                     "name": "isAction",
                     "parameters": {
                       "action": "assigned"
+                    }
+                  },
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "GrabYourPitchForks"
                     }
                   }
                 ]
@@ -11557,6 +12017,29 @@
                         "parameters": {
                           "projectName": "Area Pod: Jeremy / Levi - PRs",
                           "isOrgProject": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "GrabYourPitchForks"
+                    }
+                  },
+                  {
+                    "operator": "or",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      },
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "reopened"
                         }
                       }
                     ]
