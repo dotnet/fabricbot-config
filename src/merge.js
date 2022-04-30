@@ -19,25 +19,27 @@ if (!path.isAbsolute(repositoryConfig)) {
 }
 
 const generatedExists = fs.existsSync(generatedConfig);
-const publishedExists = fs.existsSync(repositoryConfig);
 
-if (!generatedExists || !publishedExists) {
-    if (!generatedExists) {
-        console.error("Generated config file could not be found: " + generatedConfig);
-    }
-
-    if (!publishedExists) {
-        console.error("Repository config file could not be found: " + repositoryConfig);
-    }
-
+if (!generatedExists) {
+    console.error("Generated config file could not be found: " + generatedConfig);
     process.exit(1);
 }
 
 const generatedTasks = require(generatedConfig);
-const repositoryTasks = require(repositoryConfig);
+let repositoryTasks = [];
+
+if (fs.existsSync(repositoryConfig)) {
+    repositoryTasks = require(repositoryConfig);
+} else {
+    const repoDir = path.dirname(repositoryConfig);
+
+    if (!fs.existsSync(repoDir)) {
+        fs.mkdirSync(repoDir);
+    }
+}
 
 // Generated tasks use the taskSource of "fabricbot-config"
-// And a previous version of generated tasks used the taskName convention of "[Area Pod:"
+// But a previous version of generated tasks used the taskName convention of "[Area Pod:"
 const nonGeneratedTasks = repositoryTasks
     .filter(task => !task.taskSource || task.taskSource != "fabricbot-config")
     .filter(task => !task.config.taskName || task.config.taskName.indexOf("[Area Pod:") != 0);

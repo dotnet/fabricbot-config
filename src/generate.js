@@ -54,8 +54,8 @@ const repoWideTasks = {
 const areaPodTriagedLabels = {
   "fabricbot-config": ["needs-author-action"],
   "runtime":          ["needs-author-action", "api-ready-for-review"],
-  "dotnet-api-docs":  ["needs-author-action"],
-  "machinelearning":  ["needs-author-action"]
+  "machinelearning":  ["needs-author-action"],
+  "dotnet-api-docs":  ["needs-author-action"]
 };
 
 for (const repo of repos) {
