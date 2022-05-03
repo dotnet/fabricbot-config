@@ -2078,7 +2078,117 @@
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Jeff - PRs] Needs Champion",
+      "taskName": "[Area Pod: Eric / Jeff - PRs] New PR Needs Champion",
+      "actions": [
+        {
+          "name": "addToProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - PRs",
+            "columnName": "Needs Champion",
+            "isOrgProject": true
+          }
+        }
+      ],
+      "eventType": "pull_request",
+      "eventNames": [
+        "pull_request"
+      ],
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isAction",
+            "parameters": {
+              "action": "opened"
+            }
+          },
+          [
+            [
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "ericstj"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "ericstj"
+                    }
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": {
+                      "user": "jeffhandley"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "jeffhandley"
+                    }
+                  }
+                ]
+              }
+            ]
+          ],
+          {
+            "operator": "or",
+            "operands": [
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInProject",
+                    "parameters": {
+                      "projectName": "Area Pod: Eric / Jeff - PRs",
+                      "isOrgProject": true
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Eric / Jeff - PRs",
+                  "columnName": "Done",
+                  "isOrgProject": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "PullRequestResponder",
+    "version": "1.0",
+    "config": {
+      "taskName": "[Area Pod: Eric / Jeff - PRs] Updated PR Needs Champion",
       "actions": [
         {
           "name": "removeFromProject",
@@ -2108,80 +2218,40 @@
             "parameters": {}
           },
           {
-            "operator": "and",
+            "operator": "not",
             "operands": [
               {
-                "operator": "and",
-                "operands": [
-                  {
-                    "operator": "not",
-                    "operands": [
-                      {
-                        "name": "isAssignedToUser",
-                        "parameters": {
-                          "user": "ericstj"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "operator": "not",
-                    "operands": [
-                      {
-                        "name": "isAssignedToUser",
-                        "parameters": {
-                          "user": "jeffhandley"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "operator": "or",
-                "operands": [
-                  {
-                    "operator": "not",
-                    "operands": [
-                      {
-                        "name": "isAction",
-                        "parameters": {
-                          "action": "opened"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "operator": "and",
-                    "operands": [
-                      {
-                        "operator": "not",
-                        "operands": [
-                          {
-                            "name": "isActivitySender",
-                            "parameters": {
-                              "user": "ericstj"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "operator": "not",
-                        "operands": [
-                          {
-                            "name": "isActivitySender",
-                            "parameters": {
-                              "user": "jeffhandley"
-                            }
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
+                "name": "isAction",
+                "parameters": {
+                  "action": "opened"
+                }
               }
             ]
           },
+          [
+            {
+              "operator": "not",
+              "operands": [
+                {
+                  "name": "isAssignedToUser",
+                  "parameters": {
+                    "user": "ericstj"
+                  }
+                }
+              ]
+            },
+            {
+              "operator": "not",
+              "operands": [
+                {
+                  "name": "isAssignedToUser",
+                  "parameters": {
+                    "user": "jeffhandley"
+                  }
+                }
+              ]
+            }
+          ],
           {
             "operator": "or",
             "operands": [
