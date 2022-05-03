@@ -2200,10 +2200,32 @@
             "parameters": {}
           },
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "ericstj"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "ericstj"
+                }
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "ericstj"
+                    }
+                  }
+                ]
+              }
+            ]
           },
           {
             "operator": "or",
@@ -2279,10 +2301,32 @@
             "parameters": {}
           },
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "jeffhandley"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "jeffhandley"
+                }
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "jeffhandley"
+                    }
+                  }
+                ]
+              }
+            ]
           },
           {
             "operator": "or",

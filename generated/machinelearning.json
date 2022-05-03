@@ -2345,10 +2345,32 @@
             "parameters": {}
           },
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "dakersnar"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "dakersnar"
+                }
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "dakersnar"
+                    }
+                  }
+                ]
+              }
+            ]
           },
           {
             "operator": "or",
@@ -2424,10 +2446,32 @@
             "parameters": {}
           },
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "michaelgsharp"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "michaelgsharp"
+                }
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "michaelgsharp"
+                    }
+                  }
+                ]
+              }
+            ]
           },
           {
             "operator": "or",
@@ -2503,10 +2547,32 @@
             "parameters": {}
           },
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "tannergooding"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "tannergooding"
+                }
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "tannergooding"
+                    }
+                  }
+                ]
+              }
+            ]
           },
           {
             "operator": "or",

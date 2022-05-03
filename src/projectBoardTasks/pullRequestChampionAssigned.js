@@ -39,8 +39,28 @@ module.exports = ({podName, podAreas, podMembers}) => podMembers.map(({name, use
           }))
         }),
         {
-          "name": "isAssignedToUser",
-          "parameters": { user },
+          "operator": "or",
+          "operands": [
+            {
+              "name": "isAssignedToUser",
+              "parameters": { user },
+            },
+            {
+              "operator": "and",
+              "operands": [
+                {
+                  "name": "isAction",
+                  "parameters": {
+                    "action": "opened"
+                  }
+                },
+                {
+                  "name": "isActivitySender",
+                  "parameters": { user }
+                }
+              ]
+            }
+          ]
         },
         {
           "operator": "or",

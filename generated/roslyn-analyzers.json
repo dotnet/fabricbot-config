@@ -951,10 +951,32 @@
             ]
           },
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "buyaa-n"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "buyaa-n"
+                }
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "buyaa-n"
+                    }
+                  }
+                ]
+              }
+            ]
           },
           {
             "operator": "or",
@@ -1041,10 +1063,32 @@
             ]
           },
           {
-            "name": "isAssignedToUser",
-            "parameters": {
-              "user": "carlossanlop"
-            }
+            "operator": "or",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "carlossanlop"
+                }
+              },
+              {
+                "operator": "and",
+                "operands": [
+                  {
+                    "name": "isAction",
+                    "parameters": {
+                      "action": "opened"
+                    }
+                  },
+                  {
+                    "name": "isActivitySender",
+                    "parameters": {
+                      "user": "carlossanlop"
+                    }
+                  }
+                ]
+              }
+            ]
           },
           {
             "operator": "or",
