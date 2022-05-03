@@ -2732,30 +2732,28 @@
               }
             ]
           },
-          [
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "adamsitnik"
-                  }
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "adamsitnik"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "jozkee"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "jozkee"
                 }
-              ]
-            }
-          ],
+              }
+            ]
+          },
           {
             "operator": "or",
             "operands": [
@@ -4875,52 +4873,50 @@
               }
             ]
           },
-          [
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "buyaa-n"
-                  }
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "buyaa-n"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "joperezr"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "joperezr"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "steveharter"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "steveharter"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "stephentoub"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "stephentoub"
                 }
-              ]
-            }
-          ],
+              }
+            ]
+          },
           {
             "operator": "or",
             "operands": [
@@ -6916,30 +6912,28 @@
               }
             ]
           },
-          [
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "carlossanlop"
-                  }
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "carlossanlop"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "viktorhofer"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "viktorhofer"
                 }
-              ]
-            }
-          ],
+              }
+            ]
+          },
           {
             "operator": "or",
             "operands": [
@@ -8579,41 +8573,39 @@
               }
             ]
           },
-          [
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "dakersnar"
-                  }
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "dakersnar"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "michaelgsharp"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "michaelgsharp"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "tannergooding"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "tannergooding"
                 }
-              ]
-            }
-          ],
+              }
+            ]
+          },
           {
             "operator": "or",
             "operands": [
@@ -10301,41 +10293,39 @@
               }
             ]
           },
-          [
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "eiriktsarpalis"
-                  }
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "eiriktsarpalis"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "krwq"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "krwq"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "layomia"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "layomia"
                 }
-              ]
-            }
-          ],
+              }
+            ]
+          },
           {
             "operator": "or",
             "operands": [
@@ -11669,30 +11659,28 @@
               }
             ]
           },
-          [
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "ericstj"
-                  }
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "ericstj"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "jeffhandley"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "jeffhandley"
                 }
-              ]
-            }
-          ],
+              }
+            ]
+          },
           {
             "operator": "or",
             "operands": [
@@ -13664,41 +13652,39 @@
               }
             ]
           },
-          [
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "eerhardt"
-                  }
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "eerhardt"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "maryamariyan"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "maryamariyan"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "tarekgh"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "tarekgh"
                 }
-              ]
-            }
-          ],
+              }
+            ]
+          },
           {
             "operator": "or",
             "operands": [
@@ -15402,30 +15388,28 @@
               }
             ]
           },
-          [
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "bartonjs"
-                  }
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "bartonjs"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "GrabYourPitchForks"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "GrabYourPitchForks"
                 }
-              ]
-            }
-          ],
+              }
+            ]
+          },
           {
             "operator": "or",
             "operands": [
@@ -16693,30 +16677,28 @@
               }
             ]
           },
-          [
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "buyaa-n"
-                  }
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "buyaa-n"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "carlossanlop"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "carlossanlop"
                 }
-              ]
-            }
-          ],
+              }
+            ]
+          },
           {
             "operator": "or",
             "operands": [

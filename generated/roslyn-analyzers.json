@@ -979,30 +979,28 @@
               }
             ]
           },
-          [
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "buyaa-n"
-                  }
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "buyaa-n"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "carlossanlop"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "carlossanlop"
                 }
-              ]
-            }
-          ],
+              }
+            ]
+          },
           {
             "operator": "or",
             "operands": [

@@ -2386,41 +2386,39 @@
               }
             ]
           },
-          [
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "dakersnar"
-                  }
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "dakersnar"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "michaelgsharp"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "michaelgsharp"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "tannergooding"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "tannergooding"
                 }
-              ]
-            }
-          ],
+              }
+            ]
+          },
           {
             "operator": "or",
             "operands": [

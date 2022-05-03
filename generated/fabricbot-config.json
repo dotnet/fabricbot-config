@@ -2228,30 +2228,28 @@
               }
             ]
           },
-          [
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "ericstj"
-                  }
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "ericstj"
                 }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isAssignedToUser",
-                  "parameters": {
-                    "user": "jeffhandley"
-                  }
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isAssignedToUser",
+                "parameters": {
+                  "user": "jeffhandley"
                 }
-              ]
-            }
-          ],
+              }
+            ]
+          },
           {
             "operator": "or",
             "operands": [

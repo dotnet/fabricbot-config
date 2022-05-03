@@ -144,7 +144,7 @@ module.exports = ({podName, podAreas, podMembers}) => [
             }))
           }),
           // And it's not assigned to a pod member already
-          podMembers.map(({user}) => ({
+          ...podMembers.map(({user}) => ({
             "operator": "not",
             "operands": [
               {
