@@ -2111,24 +2111,72 @@
             "operator": "and",
             "operands": [
               {
-                "operator": "not",
+                "operator": "and",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "ericstj"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "ericstj"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "jeffhandley"
+                        }
+                      }
+                    ]
                   }
                 ]
               },
               {
-                "operator": "not",
+                "operator": "or",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "jeffhandley"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "and",
+                    "operands": [
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "ericstj"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "jeffhandley"
+                            }
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }

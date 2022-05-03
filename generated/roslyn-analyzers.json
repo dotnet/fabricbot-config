@@ -851,24 +851,72 @@
             "operator": "and",
             "operands": [
               {
-                "operator": "not",
+                "operator": "and",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "buyaa-n"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "buyaa-n"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "carlossanlop"
+                        }
+                      }
+                    ]
                   }
                 ]
               },
               {
-                "operator": "not",
+                "operator": "or",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "carlossanlop"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "and",
+                    "operands": [
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "buyaa-n"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "carlossanlop"
+                            }
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }

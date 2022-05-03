@@ -27,10 +27,12 @@ module.exports = ({podName, podAreas, podMembers}) => podMembers.map(({name, use
     "conditions": {
       "operator": "and",
       "operands": [
+        // The PR is open
         {
           "name": "isOpen",
           "parameters": {}
         },
+        // And it has one of the pod's area labels
         (Array.isArray(podAreas) && {
           "operator": "or",
           "operands": podAreas.map(label => ({
@@ -38,13 +40,16 @@ module.exports = ({podName, podAreas, podMembers}) => podMembers.map(({name, use
             "parameters": { label }
           }))
         }),
+        // (It belongs on the area pod board, and...)
         {
           "operator": "or",
           "operands": [
+            // It's assigned to the pod member
             {
               "name": "isAssignedToUser",
               "parameters": { user },
             },
+            // Or it was just opened by the pod member (in which case it won't be assigned yet)
             {
               "operator": "and",
               "operands": [
@@ -62,9 +67,11 @@ module.exports = ({podName, podAreas, podMembers}) => podMembers.map(({name, use
             }
           ]
         },
+        // (The PR should be assigned to a pod member as champion, and...)
         {
           "operator": "or",
           "operands": [
+            // It's not yet in the project
             {
               "operator": "not",
               "operands": [
@@ -77,6 +84,7 @@ module.exports = ({podName, podAreas, podMembers}) => podMembers.map(({name, use
                 }
               ]
             },
+            // Or it's in the Needs Champion column
             {
               "name": "isInProjectColumn",
               "parameters": {
@@ -85,6 +93,7 @@ module.exports = ({podName, podAreas, podMembers}) => podMembers.map(({name, use
                 "isOrgProject": true
               }
             },
+            // Or it's in the Done column
             {
               "name": "isInProjectColumn",
               "parameters": {

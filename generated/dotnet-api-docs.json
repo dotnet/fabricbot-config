@@ -1459,24 +1459,72 @@
             "operator": "and",
             "operands": [
               {
-                "operator": "not",
+                "operator": "and",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "adamsitnik"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "adamsitnik"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "jozkee"
+                        }
+                      }
+                    ]
                   }
                 ]
               },
               {
-                "operator": "not",
+                "operator": "or",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "jozkee"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "and",
+                    "operands": [
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "adamsitnik"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "jozkee"
+                            }
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -3271,46 +3319,116 @@
             "operator": "and",
             "operands": [
               {
-                "operator": "not",
+                "operator": "and",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "buyaa-n"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "buyaa-n"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "joperezr"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "steveharter"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "stephentoub"
+                        }
+                      }
+                    ]
                   }
                 ]
               },
               {
-                "operator": "not",
+                "operator": "or",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "joperezr"
-                    }
-                  }
-                ]
-              },
-              {
-                "operator": "not",
-                "operands": [
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "steveharter"
-                    }
-                  }
-                ]
-              },
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "stephentoub"
-                    }
+                    "operator": "and",
+                    "operands": [
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "buyaa-n"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "joperezr"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "steveharter"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "stephentoub"
+                            }
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -5091,24 +5209,72 @@
             "operator": "and",
             "operands": [
               {
-                "operator": "not",
+                "operator": "and",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "carlossanlop"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "carlossanlop"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "viktorhofer"
+                        }
+                      }
+                    ]
                   }
                 ]
               },
               {
-                "operator": "not",
+                "operator": "or",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "viktorhofer"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "and",
+                    "operands": [
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "carlossanlop"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "viktorhofer"
+                            }
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -6505,35 +6671,94 @@
             "operator": "and",
             "operands": [
               {
-                "operator": "not",
+                "operator": "and",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "dakersnar"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "dakersnar"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "michaelgsharp"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "tannergooding"
+                        }
+                      }
+                    ]
                   }
                 ]
               },
               {
-                "operator": "not",
+                "operator": "or",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "michaelgsharp"
-                    }
-                  }
-                ]
-              },
-              {
-                "operator": "not",
-                "operands": [
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "tannergooding"
-                    }
+                    "operator": "and",
+                    "operands": [
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "dakersnar"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "michaelgsharp"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "tannergooding"
+                            }
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -7984,35 +8209,94 @@
             "operator": "and",
             "operands": [
               {
-                "operator": "not",
+                "operator": "and",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "eiriktsarpalis"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "eiriktsarpalis"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "krwq"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "layomia"
+                        }
+                      }
+                    ]
                   }
                 ]
               },
               {
-                "operator": "not",
+                "operator": "or",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "krwq"
-                    }
-                  }
-                ]
-              },
-              {
-                "operator": "not",
-                "operands": [
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "layomia"
-                    }
+                    "operator": "and",
+                    "operands": [
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "eiriktsarpalis"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "krwq"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "layomia"
+                            }
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -9173,24 +9457,72 @@
             "operator": "and",
             "operands": [
               {
-                "operator": "not",
+                "operator": "and",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "ericstj"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "ericstj"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "jeffhandley"
+                        }
+                      }
+                    ]
                   }
                 ]
               },
               {
-                "operator": "not",
+                "operator": "or",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "jeffhandley"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "and",
+                    "operands": [
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "ericstj"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "jeffhandley"
+                            }
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -10871,35 +11203,94 @@
             "operator": "and",
             "operands": [
               {
-                "operator": "not",
+                "operator": "and",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "eerhardt"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "eerhardt"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "maryamariyan"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "tarekgh"
+                        }
+                      }
+                    ]
                   }
                 ]
               },
               {
-                "operator": "not",
+                "operator": "or",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "maryamariyan"
-                    }
-                  }
-                ]
-              },
-              {
-                "operator": "not",
-                "operands": [
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "tarekgh"
-                    }
+                    "operator": "and",
+                    "operands": [
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "eerhardt"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "maryamariyan"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "tarekgh"
+                            }
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -12406,24 +12797,72 @@
             "operator": "and",
             "operands": [
               {
-                "operator": "not",
+                "operator": "and",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "bartonjs"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "bartonjs"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "GrabYourPitchForks"
+                        }
+                      }
+                    ]
                   }
                 ]
               },
               {
-                "operator": "not",
+                "operator": "or",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "GrabYourPitchForks"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "and",
+                    "operands": [
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "bartonjs"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "GrabYourPitchForks"
+                            }
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }

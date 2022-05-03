@@ -27,10 +27,12 @@ module.exports = ({podName, podAreas, podMembers}) => [{
     "conditions": {
       "operator": "and",
       "operands": [
+        // The PR is open
         {
           "name": "isOpen",
           "parameters": {}
         },
+        // And it has one of the pod's area labels
         (Array.isArray(podAreas) && {
           "operator": "or",
           "operands": podAreas.map(label => ({
@@ -40,19 +42,58 @@ module.exports = ({podName, podAreas, podMembers}) => [{
         }),
         {
           "operator": "and",
-          "operands": podMembers.map(({user}) => ({
-            "operator": "not",
-            "operands": [
-              {
-                "name": "isAssignedToUser",
-                "parameters": { user }
-              }
-            ]
-          }))
+          // And it's not assigned to any of the pod members
+          "operands": [
+            {
+              "operator": "and",
+              "operands": podMembers.map(({user}) => ({
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isAssignedToUser",
+                    "parameters": { user }
+                  }
+                ]
+              }))
+            },
+            // (It belongs to this pod, and it's not yet assigned to a pod member, and...)
+            {
+              "operator": "or",
+              "operands": [
+                // The PR was either not being opened right now (in which case it wouldn't have an assignee yet)
+                {
+                  "operator": "not",
+                  "operands": [
+                    {
+                      "name": "isAction",
+                      "parameters": {
+                        "action": "opened"
+                      }
+                    }
+                  ]
+                },
+                // Or (it was just opened), and it was not opened by any of the pod members
+                {
+                  "operator": "and",
+                  "operands": podMembers.map(({user}) => ({
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isActivitySender",
+                        "parameters": { user }
+                      }
+                    ]
+                  }))
+                }
+              ]
+            }
+          ]
         },
+        // (The PR belongs to the pod, it's not yet assigned to a pod member, nor was it just opened by a pod member, and...)
         {
           "operator": "or",
           "operands": [
+            // It's not yet in the project
             {
               "operator": "not",
               "operands": [
@@ -65,6 +106,7 @@ module.exports = ({podName, podAreas, podMembers}) => [{
                 }
               ]
             },
+            // Or it's in the project, but it's in the Done column
             {
               "name": "isInProjectColumn",
               "parameters": {

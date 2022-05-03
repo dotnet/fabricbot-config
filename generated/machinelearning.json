@@ -2245,35 +2245,94 @@
             "operator": "and",
             "operands": [
               {
-                "operator": "not",
+                "operator": "and",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "dakersnar"
-                    }
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "dakersnar"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "michaelgsharp"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAssignedToUser",
+                        "parameters": {
+                          "user": "tannergooding"
+                        }
+                      }
+                    ]
                   }
                 ]
               },
               {
-                "operator": "not",
+                "operator": "or",
                 "operands": [
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "michaelgsharp"
-                    }
-                  }
-                ]
-              },
-              {
-                "operator": "not",
-                "operands": [
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "isAction",
+                        "parameters": {
+                          "action": "opened"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "name": "isAssignedToUser",
-                    "parameters": {
-                      "user": "tannergooding"
-                    }
+                    "operator": "and",
+                    "operands": [
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "dakersnar"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "michaelgsharp"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "not",
+                        "operands": [
+                          {
+                            "name": "isActivitySender",
+                            "parameters": {
+                              "user": "tannergooding"
+                            }
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
