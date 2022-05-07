@@ -3,9 +3,7 @@
 name: Label Testing Issues
 on:
   issues:
-    types:
-      - opened
-      - reopened
+    types: [opened, reopened, edited, transferred]
 permissions:
   issues: write
 jobs:
@@ -40,7 +38,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ISSUE_ID: ${{ github.event.issue.node_id }}
-      if: ${{ env.LABEL_ID != '' && env.LABEL_ID != 'null' }}
+      if: ${{ env.LABEL_ID != '' && env.LABEL_ID != 'null' && startsWith(github.event.issue.title, '[Testing]') }}
       run: |
         gh api graphql -f query='
          mutation($issue: ID!, $label: ID!) {
