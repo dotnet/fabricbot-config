@@ -43,7 +43,7 @@ jobs:
       if: ${{ env.LABEL_ID != '' && env.LABEL_ID != 'null' }}
       run: |
         gh api graphql -f query='
-         mutation($issue: ID!, ID!) {
+         mutation($issue: ID!, $label: ID!) {
            addLabelsToLabelable(input: {labelableId: $issue, labelIds: [$label]}) {
              clientMutationId
            }
