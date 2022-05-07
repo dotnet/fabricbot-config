@@ -29,7 +29,7 @@ jobs:
                 title
               }
             }
-          }' -f org=$ORGANIZATION -f repo=$REPOSITORY -f issue=$ISSUE_NUMBER -f label="$LABEL_NAME" > data.json
+          }' -f org=$ORGANIZATION -f repo=$REPOSITORY -F issue=$ISSUE_NUMBER -f label="$LABEL_NAME" > data.json
         
         cat data.json
         echo 'LABEL_ID='$(jq -r '.data.repository.label.id' data.json) >> $GITHUB_ENV
