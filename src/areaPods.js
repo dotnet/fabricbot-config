@@ -21,7 +21,7 @@ const podAreas = {
     "area-System.Threading.Tasks",
     "area-System.DirectoryServices"
   ],
-  "carlos-viktor": [
+  "carlos-viktor-akhil": [
     "area-Infrastructure-libraries",
     "area-Microsoft.Win32",
     "area-System.Diagnostics.EventLog",
@@ -97,14 +97,15 @@ module.exports = [
     }
   },
   {
-    podName: "Carlos / Viktor",
+    podName: "Carlos / Viktor / Akhil",
     podMembers: [
       { name: "Carlos", user: "carlossanlop" },
-      { name: "Viktor", user: "viktorhofer" }
+      { name: "Viktor", user: "viktorhofer" },
+      { name: "Akhil", user: "smasher164" }
     ],
     repos: {
-      "runtime": podAreas["carlos-viktor"],
-      "dotnet-api-docs": podAreas["carlos-viktor"]
+      "runtime": podAreas["carlos-viktor-akhil"],
+      "dotnet-api-docs": podAreas["carlos-viktor-akhil"]
     }
   },
   {
