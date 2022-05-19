@@ -88,8 +88,7 @@ module.exports = [
     podMembers: [
       { name: "Buyaa", user: "buyaa-n" },
       { name: "Jose", user: "joperezr" },
-      { name: "Steve H", user: "steveharter" },
-      { name: "Stephen T", user: "stephentoub" }
+      { name: "Steve H", user: "steveharter" }
     ],
     repos: {
       "runtime": podAreas["buyaa-jose-steve"],
