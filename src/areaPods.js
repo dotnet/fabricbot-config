@@ -174,8 +174,7 @@ module.exports = [
       { name: "Carlos", user: "carlossanlop" }
     ],
     repos: {
-      "runtime": ["code-fixer", "code-analyzer"],
-      "roslyn-analyzers": ["Area-Microsoft.NetCore.Analyzers"]
+      "runtime": ["code-fixer", "code-analyzer"]
     }
   }
 ];
