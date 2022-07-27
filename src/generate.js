@@ -42,6 +42,7 @@ const repoWideTasks = {
   "dotnet-api-docs": [
     ...issueAndPullRequestTasks.trackUntriaged(),
     ...issueAndPullRequestTasks.assignTeamAuthor(),
+    ...issueAndPullRequestTasks.addCommunityContributionLabel(),
     ...issueAndPullRequestTasks.trackNeedsAuthorAction()
   ]
 };
