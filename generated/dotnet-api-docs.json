@@ -594,10 +594,9 @@
       "taskName": "[Area Pod: Adam / David - Issue Triage] Moved to Another Area",
       "actions": [
         {
-          "name": "addToProject",
+          "name": "removeFromProject",
           "parameters": {
             "projectName": "Area Pod: Adam / David - Issue Triage",
-            "columnName": "Triaged",
             "isOrgProject": true
           }
         }
@@ -609,19 +608,6 @@
       "conditions": {
         "operator": "and",
         "operands": [
-          {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "isInProjectColumn",
-                "parameters": {
-                  "projectName": "Area Pod: Adam / David - Issue Triage",
-                  "columnName": "Triaged",
-                  "isOrgProject": true
-                }
-              }
-            ]
-          },
           {
             "operator": "and",
             "operands": [
@@ -2117,10 +2103,9 @@
       "taskName": "[Area Pod: Buyaa / Jose / Steve - Issue Triage] Moved to Another Area",
       "actions": [
         {
-          "name": "addToProject",
+          "name": "removeFromProject",
           "parameters": {
             "projectName": "Area Pod: Buyaa / Jose / Steve - Issue Triage",
-            "columnName": "Triaged",
             "isOrgProject": true
           }
         }
@@ -2132,19 +2117,6 @@
       "conditions": {
         "operator": "and",
         "operands": [
-          {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "isInProjectColumn",
-                "parameters": {
-                  "projectName": "Area Pod: Buyaa / Jose / Steve - Issue Triage",
-                  "columnName": "Triaged",
-                  "isOrgProject": true
-                }
-              }
-            ]
-          },
           {
             "operator": "and",
             "operands": [
@@ -4237,10 +4209,9 @@
       "taskName": "[Area Pod: Akhil / Carlos / Viktor - Issue Triage] Moved to Another Area",
       "actions": [
         {
-          "name": "addToProject",
+          "name": "removeFromProject",
           "parameters": {
             "projectName": "Area Pod: Akhil / Carlos / Viktor - Issue Triage",
-            "columnName": "Triaged",
             "isOrgProject": true
           }
         }
@@ -4252,19 +4223,6 @@
       "conditions": {
         "operator": "and",
         "operands": [
-          {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "isInProjectColumn",
-                "parameters": {
-                  "projectName": "Area Pod: Akhil / Carlos / Viktor - Issue Triage",
-                  "columnName": "Triaged",
-                  "isOrgProject": true
-                }
-              }
-            ]
-          },
           {
             "operator": "and",
             "operands": [
@@ -6147,10 +6105,9 @@
       "taskName": "[Area Pod: Drew / Michael / Tanner - Issue Triage] Moved to Another Area",
       "actions": [
         {
-          "name": "addToProject",
+          "name": "removeFromProject",
           "parameters": {
             "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
-            "columnName": "Triaged",
             "isOrgProject": true
           }
         }
@@ -6162,19 +6119,6 @@
       "conditions": {
         "operator": "and",
         "operands": [
-          {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "isInProjectColumn",
-                "parameters": {
-                  "projectName": "Area Pod: Drew / Michael / Tanner - Issue Triage",
-                  "columnName": "Triaged",
-                  "isOrgProject": true
-                }
-              }
-            ]
-          },
           {
             "operator": "and",
             "operands": [
@@ -7847,10 +7791,9 @@
       "taskName": "[Area Pod: Eirik / Krzysztof / Layomi - Issue Triage] Moved to Another Area",
       "actions": [
         {
-          "name": "addToProject",
+          "name": "removeFromProject",
           "parameters": {
             "projectName": "Area Pod: Eirik / Krzysztof / Layomi - Issue Triage",
-            "columnName": "Triaged",
             "isOrgProject": true
           }
         }
@@ -7862,19 +7805,6 @@
       "conditions": {
         "operator": "and",
         "operands": [
-          {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "isInProjectColumn",
-                "parameters": {
-                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi - Issue Triage",
-                  "columnName": "Triaged",
-                  "isOrgProject": true
-                }
-              }
-            ]
-          },
           {
             "operator": "and",
             "operands": [
@@ -9477,10 +9407,9 @@
       "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Moved to Another Area",
       "actions": [
         {
-          "name": "addToProject",
+          "name": "removeFromProject",
           "parameters": {
             "projectName": "Area Pod: Eric / Jeff - Issue Triage",
-            "columnName": "Triaged",
             "isOrgProject": true
           }
         }
@@ -9492,19 +9421,6 @@
       "conditions": {
         "operator": "and",
         "operands": [
-          {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "isInProjectColumn",
-                "parameters": {
-                  "projectName": "Area Pod: Eric / Jeff - Issue Triage",
-                  "columnName": "Triaged",
-                  "isOrgProject": true
-                }
-              }
-            ]
-          },
           {
             "operator": "and",
             "operands": [
@@ -10616,10 +10532,9 @@
       "taskName": "[Area Pod: Eric / Maryam / Tarek - Issue Triage] Moved to Another Area",
       "actions": [
         {
-          "name": "addToProject",
+          "name": "removeFromProject",
           "parameters": {
             "projectName": "Area Pod: Eric / Maryam / Tarek - Issue Triage",
-            "columnName": "Triaged",
             "isOrgProject": true
           }
         }
@@ -10631,19 +10546,6 @@
       "conditions": {
         "operator": "and",
         "operands": [
-          {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "isInProjectColumn",
-                "parameters": {
-                  "projectName": "Area Pod: Eric / Maryam / Tarek - Issue Triage",
-                  "columnName": "Triaged",
-                  "isOrgProject": true
-                }
-              }
-            ]
-          },
           {
             "operator": "and",
             "operands": [
@@ -12558,10 +12460,9 @@
       "taskName": "[Area Pod: Jeremy / Levi - Issue Triage] Moved to Another Area",
       "actions": [
         {
-          "name": "addToProject",
+          "name": "removeFromProject",
           "parameters": {
             "projectName": "Area Pod: Jeremy / Levi - Issue Triage",
-            "columnName": "Triaged",
             "isOrgProject": true
           }
         }
@@ -12573,19 +12474,6 @@
       "conditions": {
         "operator": "and",
         "operands": [
-          {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "isInProjectColumn",
-                "parameters": {
-                  "projectName": "Area Pod: Jeremy / Levi - Issue Triage",
-                  "columnName": "Triaged",
-                  "isOrgProject": true
-                }
-              }
-            ]
-          },
           {
             "operator": "and",
             "operands": [
