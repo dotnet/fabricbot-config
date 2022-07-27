@@ -147,7 +147,7 @@ module.exports = [
   {
     podName: "Eric / Maryam / Tarek",
     podMembers: [
-      { name: "Eric", user: "eerhardt" },
+      { name: "Eric", user: "eerhardt", autoTriage: false, autoChampion: false },
       { name: "Maryam", user: "maryamariyan" },
       { name: "Tarek", user: "tarekgh" }
     ],
