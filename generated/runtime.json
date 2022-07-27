@@ -859,6 +859,12 @@
           "parameters": {
             "label": "no-recent-activity"
           }
+        },
+        {
+          "name": "removeLabel",
+          "parameters": {
+            "label": "backlog-cleanup-candidate"
+          }
         }
       ],
       "eventType": "issue",
@@ -914,6 +920,12 @@
           "parameters": {
             "label": "no-recent-activity"
           }
+        },
+        {
+          "name": "removeLabel",
+          "parameters": {
+            "label": "backlog-cleanup-candidate"
+          }
         }
       ],
       "eventType": "issue",
@@ -946,6 +958,12 @@
           "name": "removeLabel",
           "parameters": {
             "label": "no-recent-activity"
+          }
+        },
+        {
+          "name": "removeLabel",
+          "parameters": {
+            "label": "backlog-cleanup-candidate"
           }
         }
       ],
@@ -995,6 +1013,12 @@
           "parameters": {
             "label": "no-recent-activity"
           }
+        },
+        {
+          "name": "removeLabel",
+          "parameters": {
+            "label": "backlog-cleanup-candidate"
+          }
         }
       ],
       "eventType": "pull_request",
@@ -1031,6 +1055,12 @@
           "name": "removeLabel",
           "parameters": {
             "label": "no-recent-activity"
+          }
+        },
+        {
+          "name": "removeLabel",
+          "parameters": {
+            "label": "backlog-cleanup-candidate"
           }
         }
       ],

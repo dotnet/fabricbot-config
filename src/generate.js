@@ -24,21 +24,37 @@ const repos = [
   "machinelearning"
 ];
 
-const commonIssueAndPullRequestTasks = [
-  ...issueAndPullRequestTasks.trackUntriaged(),
-  ...issueAndPullRequestTasks.addInPrLabel(),
-  ...issueAndPullRequestTasks.assignTeamAuthor(),
-  ...issueAndPullRequestTasks.addCommunityContributionLabel(),
-  ...issueAndPullRequestTasks.trackNeedsAuthorAction(),
-  ...issueAndPullRequestTasks.trackNoRecentActivity(14),
-  ...issueAndPullRequestTasks.trackInactiveDrafts(30),
-  ...issueAndPullRequestTasks.trackStaleIssuesAndPullRequests(30),
-];
-
 const repoWideTasks = {
-  "fabricbot-config": commonIssueAndPullRequestTasks,
-  "runtime": commonIssueAndPullRequestTasks,
-  "machinelearning": commonIssueAndPullRequestTasks,
+  "fabricbot-config": [
+    ...issueAndPullRequestTasks.trackUntriaged(),
+    ...issueAndPullRequestTasks.addInPrLabel(),
+    ...issueAndPullRequestTasks.assignTeamAuthor(),
+    ...issueAndPullRequestTasks.addCommunityContributionLabel(),
+    ...issueAndPullRequestTasks.trackNeedsAuthorAction(),
+    ...issueAndPullRequestTasks.trackNoRecentActivity(14),
+    ...issueAndPullRequestTasks.trackInactiveDrafts(30),
+    ...issueAndPullRequestTasks.trackStaleIssuesAndPullRequests(30),
+  ],
+  "runtime": [
+    ...issueAndPullRequestTasks.trackUntriaged(),
+    ...issueAndPullRequestTasks.addInPrLabel(),
+    ...issueAndPullRequestTasks.assignTeamAuthor(),
+    ...issueAndPullRequestTasks.addCommunityContributionLabel(),
+    ...issueAndPullRequestTasks.trackNeedsAuthorAction(),
+    ...issueAndPullRequestTasks.trackNoRecentActivity(14, ['backlog-cleanup-candidate']),
+    ...issueAndPullRequestTasks.trackInactiveDrafts(30),
+    ...issueAndPullRequestTasks.trackStaleIssuesAndPullRequests(30),
+  ],
+  "machinelearning": [
+    ...issueAndPullRequestTasks.trackUntriaged(),
+    ...issueAndPullRequestTasks.addInPrLabel(),
+    ...issueAndPullRequestTasks.assignTeamAuthor(),
+    ...issueAndPullRequestTasks.addCommunityContributionLabel(),
+    ...issueAndPullRequestTasks.trackNeedsAuthorAction(),
+    ...issueAndPullRequestTasks.trackNoRecentActivity(14),
+    ...issueAndPullRequestTasks.trackInactiveDrafts(30),
+    ...issueAndPullRequestTasks.trackStaleIssuesAndPullRequests(30),
+  ],
   "dotnet-api-docs": [
     ...issueAndPullRequestTasks.trackUntriaged(),
     ...issueAndPullRequestTasks.assignTeamAuthor(),

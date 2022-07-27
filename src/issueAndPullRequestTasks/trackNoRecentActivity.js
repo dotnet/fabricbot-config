@@ -1,4 +1,4 @@
-module.exports = (days) => [
+module.exports = (days, labelsToRemoveWithActivity) => [
   {
     "taskType": "scheduled",
     "capabilityId": "ScheduledSearch",
@@ -248,14 +248,12 @@ module.exports = (days) => [
     "version": "1.0",
     "config": {
       "taskName": "Remove `no-recent-activity` label from issues when issue is modified",
-      "actions": [
-        {
-          "name": "removeLabel",
-          "parameters": {
-            "label": "no-recent-activity"
-          }
+      "actions": (['no-recent-activity', ...(labelsToRemoveWithActivity || [])]).map(label => ({
+        "name": "removeLabel",
+        "parameters": {
+          label
         }
-      ],
+      })),
       "eventType": "issue",
       "eventNames": ["issues"],
       "conditions": {
@@ -300,14 +298,12 @@ module.exports = (days) => [
     "version": "1.0",
     "config": {
       "taskName": "Remove `no-recent-activity` label when an issue is commented on",
-      "actions": [
-        {
-          "name": "removeLabel",
-          "parameters": {
-            "label": "no-recent-activity"
-          }
+      "actions": (['no-recent-activity', ...(labelsToRemoveWithActivity || [])]).map(label => ({
+        "name": "removeLabel",
+        "parameters": {
+          label
         }
-      ],
+      })),
       "eventType": "issue",
       "eventNames": ["issue_comment"],
       "conditions": {
@@ -330,14 +326,12 @@ module.exports = (days) => [
     "version": "1.0",
     "config": {
       "taskName": "Remove `no-recent-activity` label from PRs when modified",
-      "actions": [
-        {
-          "name": "removeLabel",
-          "parameters": {
-            "label": "no-recent-activity"
-          }
+      "actions": (['no-recent-activity', ...(labelsToRemoveWithActivity || [])]).map(label => ({
+        "name": "removeLabel",
+        "parameters": {
+          label
         }
-      ],
+      })),
       "eventType": "pull_request",
       "eventNames": ["pull_request"],
       "conditions": {
@@ -375,14 +369,12 @@ module.exports = (days) => [
     "version": "1.0",
     "config": {
       "taskName": "Remove `no-recent-activity` label from PRs when commented on",
-      "actions": [
-        {
-          "name": "removeLabel",
-          "parameters": {
-            "label": "no-recent-activity"
-          }
+      "actions": (['no-recent-activity', ...(labelsToRemoveWithActivity || [])]).map(label => ({
+        "name": "removeLabel",
+        "parameters": {
+          label
         }
-      ],
+      })),
       "eventType": "pull_request",
       "eventNames": ["issue_comment"],
       "conditions": {
@@ -409,14 +401,12 @@ module.exports = (days) => [
     "version": "1.0",
     "config": {
       "taskName": "Remove `no-recent-activity` label from PRs when new review is added",
-      "actions": [
-        {
-          "name": "removeLabel",
-          "parameters": {
-            "label": "no-recent-activity"
-          }
+      "actions": (['no-recent-activity', ...(labelsToRemoveWithActivity || [])]).map(label => ({
+        "name": "removeLabel",
+        "parameters": {
+          label
         }
-      ],
+      })),
       "eventType": "pull_request",
       "eventNames": ["pull_request_review"],
       "conditions": {
