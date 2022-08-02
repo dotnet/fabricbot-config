@@ -8,10 +8,9 @@ module.exports = ({podName, podAreas}) => (Array.isArray(podAreas) ? [{
     "taskName": `[Area Pod: ${podName} - Issue Triage] Moved to Another Area`,
     "actions": [
       {
-        "name": "addToProject",
+        "name": "removeFromProject",
         "parameters": {
           "projectName": `Area Pod: ${podName} - Issue Triage`,
-          "columnName": "Triaged",
           "isOrgProject": true
         }
       }
@@ -21,19 +20,6 @@ module.exports = ({podName, podAreas}) => (Array.isArray(podAreas) ? [{
     "conditions": {
       "operator": "and",
       "operands": [
-        {
-          "operator": "not",
-          "operands": [
-            {
-              "name": "isInProjectColumn",
-              "parameters": {
-                "projectName": `Area Pod: ${podName} - Issue Triage`,
-                "columnName": "Triaged",
-                "isOrgProject": true
-              }
-            }
-          ]
-        },
         {
           "operator": "and",
           "operands": podAreas.map(label => ({

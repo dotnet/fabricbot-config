@@ -1,6 +1,11 @@
 const isNotTriaged = require("../rules/isNotTriaged");
 
-module.exports = ({podName, podMembers, triagedLabels}) => podMembers.flatMap(({name, user}) => [
+module.exports = ({podName, podMembers, triagedLabels}) => podMembers
+  // The `autoTriage` property is optional and defaults to true
+  // If explicitly set to false, the pod member does not want to
+  // be automatically assigned as the triager when they update issues
+  .filter(member => member.autoTriage !== false)
+  .flatMap(({name, user}) => [
   {
     "taskType": "trigger",
     "capabilityId": "IssueResponder",

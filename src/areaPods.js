@@ -147,7 +147,7 @@ module.exports = [
   {
     podName: "Eric / Maryam / Tarek",
     podMembers: [
-      { name: "Eric", user: "eerhardt" },
+      { name: "Eric", user: "eerhardt", autoTriage: false, autoChampion: false },
       { name: "Maryam", user: "maryamariyan" },
       { name: "Tarek", user: "tarekgh" }
     ],
@@ -174,8 +174,7 @@ module.exports = [
       { name: "Carlos", user: "carlossanlop" }
     ],
     repos: {
-      "runtime": ["code-fixer", "code-analyzer"],
-      "roslyn-analyzers": ["Area-Microsoft.NetCore.Analyzers"]
+      "runtime": ["code-fixer", "code-analyzer"]
     }
   }
 ];

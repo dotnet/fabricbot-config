@@ -1,4 +1,9 @@
-module.exports = ({podName, podAreas, podMembers}) => podMembers.map(({name, user}) => ({
+module.exports = ({podName, podAreas, podMembers}) => podMembers
+  // The `autoChampion` property is optional and defaults to true
+  // If explicitly set to false, the pod member does not want to
+  // be automatically assigned as the champion when they update PRs
+  .filter(member => member.autoChampion !== false)
+  .map(({name, user}) => ({
   "taskType": "trigger",
   "capabilityId": "IssueResponder",
   "subCapability": "PullRequestResponder",
