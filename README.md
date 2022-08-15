@@ -1,6 +1,6 @@
 # .NET FabricBot Configuration
 
-Several of the [dotnet organization](https://github.com/dotnet) repositories use a utility called FabricBot to automate our GitHub issue/PR practices. FabricBot is configured through `.github/fabricbot.json` files within the repositories. This `dotnet/fabricbot-config` repository contains scripts used to generate/maintain those configurations.
+Several of the [dotnet organization](https://github.com/dotnet) repositories use a utility called [FabricBot](https://docs.opensource.microsoft.com/tools/fabricbot/) to automate our GitHub issue/PR practices. FabricBot is configured through `.github/fabricbot.json` files within the repositories. This `dotnet/fabricbot-config` repository contains scripts used to generate/maintain those configurations.
 
 ## Area Pod Configurations
 
