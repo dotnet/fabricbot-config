@@ -47,7 +47,7 @@ const podAreas = {
   "eric-jeff": [
     "area-Meta"
   ],
-  "eric-maryam-tarek": [
+  "eric-maryam-nick-tarek": [
     "area-DependencyModel",
     "area-Extensions-Caching",
     "area-Extensions-Configuration",
@@ -145,15 +145,16 @@ module.exports = [
     }
   },
   {
-    podName: "Eric / Maryam / Tarek",
+    podName: "Eric / Maryam / Nick / Tarek",
     podMembers: [
       { name: "Eric", user: "eerhardt", autoTriage: false, autoChampion: false },
       { name: "Maryam", user: "maryamariyan" },
+      { name: "Nick", user: "Nick-Stanton" },
       { name: "Tarek", user: "tarekgh" }
     ],
     repos: {
-      "runtime": podAreas["eric-maryam-tarek"],
-      "dotnet-api-docs": podAreas["eric-maryam-tarek"]
+      "runtime": podAreas["eric-maryam-nick-tarek"],
+      "dotnet-api-docs": podAreas["eric-maryam-nick-tarek"]
     }
   },
   {
