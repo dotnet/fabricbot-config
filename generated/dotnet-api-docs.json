@@ -10529,12 +10529,12 @@
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage] Moved to Another Area",
+      "taskName": "[Area Pod: Maryam / Nick / Tarek - Issue Triage] Moved to Another Area",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
             "isOrgProject": true
           }
         }
@@ -10703,7 +10703,7 @@
           {
             "name": "isInProject",
             "parameters": {
-              "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+              "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
               "isOrgProject": true
             }
           }
@@ -10718,19 +10718,19 @@
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage] Needs Triage",
+      "taskName": "[Area Pod: Maryam / Nick / Tarek - Issue Triage] Needs Triage",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
             "isOrgProject": true
           }
         },
         {
           "name": "addToProject",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
             "columnName": "Needs Triage",
             "isOrgProject": true
           }
@@ -10952,7 +10952,7 @@
                   {
                     "name": "isInProject",
                     "parameters": {
-                      "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+                      "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
                       "isOrgProject": true
                     }
                   }
@@ -10961,7 +10961,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+                  "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
                   "isOrgProject": true,
                   "columnName": "Triaged"
                 }
@@ -10979,19 +10979,19 @@
     "subCapability": "IssueCommentResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage] Needs Further Triage",
+      "taskName": "[Area Pod: Maryam / Nick / Tarek - Issue Triage] Needs Further Triage",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
             "isOrgProject": true
           }
         },
         {
           "name": "addToProject",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
             "columnName": "Needs Triage",
             "isOrgProject": true
           }
@@ -11111,7 +11111,7 @@
                   {
                     "name": "isInProject",
                     "parameters": {
-                      "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+                      "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
                       "isOrgProject": true
                     }
                   }
@@ -11120,7 +11120,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+                  "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
                   "columnName": "Triaged",
                   "isOrgProject": true
                 }
@@ -11138,12 +11138,12 @@
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage] Triaged",
+      "taskName": "[Area Pod: Maryam / Nick / Tarek - Issue Triage] Triaged",
       "actions": [
         {
           "name": "addToProject",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
             "columnName": "Triaged",
             "isOrgProject": true
           }
@@ -11165,7 +11165,7 @@
           {
             "name": "isInProject",
             "parameters": {
-              "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+              "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
               "isOrgProject": true
             }
           },
@@ -11201,12 +11201,12 @@
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage] Maryam Updated Issue",
+      "taskName": "[Area Pod: Maryam / Nick / Tarek - Issue Triage] Maryam Updated Issue",
       "actions": [
         {
           "name": "moveToProjectColumn",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
             "columnName": "Triage: Maryam",
             "isOrgProject": true
           }
@@ -11222,7 +11222,7 @@
           {
             "name": "isInProjectColumn",
             "parameters": {
-              "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+              "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
               "isOrgProject": true,
               "columnName": "Needs Triage"
             }
@@ -11268,12 +11268,12 @@
     "subCapability": "IssueCommentResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage] Maryam Commented",
+      "taskName": "[Area Pod: Maryam / Nick / Tarek - Issue Triage] Maryam Commented",
       "actions": [
         {
           "name": "moveToProjectColumn",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
             "columnName": "Triage: Maryam",
             "isOrgProject": true
           }
@@ -11289,7 +11289,7 @@
           {
             "name": "isInProjectColumn",
             "parameters": {
-              "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+              "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
               "isOrgProject": true,
               "columnName": "Needs Triage"
             }
@@ -11335,12 +11335,12 @@
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage] Nick Updated Issue",
+      "taskName": "[Area Pod: Maryam / Nick / Tarek - Issue Triage] Nick Updated Issue",
       "actions": [
         {
           "name": "moveToProjectColumn",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
             "columnName": "Triage: Nick",
             "isOrgProject": true
           }
@@ -11356,7 +11356,7 @@
           {
             "name": "isInProjectColumn",
             "parameters": {
-              "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+              "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
               "isOrgProject": true,
               "columnName": "Needs Triage"
             }
@@ -11402,12 +11402,12 @@
     "subCapability": "IssueCommentResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage] Nick Commented",
+      "taskName": "[Area Pod: Maryam / Nick / Tarek - Issue Triage] Nick Commented",
       "actions": [
         {
           "name": "moveToProjectColumn",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
             "columnName": "Triage: Nick",
             "isOrgProject": true
           }
@@ -11423,7 +11423,7 @@
           {
             "name": "isInProjectColumn",
             "parameters": {
-              "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+              "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
               "isOrgProject": true,
               "columnName": "Needs Triage"
             }
@@ -11469,12 +11469,12 @@
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage] Tarek Updated Issue",
+      "taskName": "[Area Pod: Maryam / Nick / Tarek - Issue Triage] Tarek Updated Issue",
       "actions": [
         {
           "name": "moveToProjectColumn",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
             "columnName": "Triage: Tarek",
             "isOrgProject": true
           }
@@ -11490,7 +11490,7 @@
           {
             "name": "isInProjectColumn",
             "parameters": {
-              "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+              "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
               "isOrgProject": true,
               "columnName": "Needs Triage"
             }
@@ -11536,12 +11536,12 @@
     "subCapability": "IssueCommentResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage] Tarek Commented",
+      "taskName": "[Area Pod: Maryam / Nick / Tarek - Issue Triage] Tarek Commented",
       "actions": [
         {
           "name": "moveToProjectColumn",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
             "columnName": "Triage: Tarek",
             "isOrgProject": true
           }
@@ -11557,7 +11557,7 @@
           {
             "name": "isInProjectColumn",
             "parameters": {
-              "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - Issue Triage",
+              "projectName": "Area Pod: Maryam / Nick / Tarek - Issue Triage",
               "isOrgProject": true,
               "columnName": "Needs Triage"
             }
@@ -11603,12 +11603,12 @@
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Maryam / Nick / Tarek - PRs] Closed, Merged, or Moved",
+      "taskName": "[Area Pod: Maryam / Nick / Tarek - PRs] Closed, Merged, or Moved",
       "actions": [
         {
           "name": "moveToProjectColumn",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
             "columnName": "Done",
             "isOrgProject": true
           }
@@ -11624,7 +11624,7 @@
           {
             "name": "isInProject",
             "parameters": {
-              "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+              "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
               "isOrgProject": true
             }
           },
@@ -11634,7 +11634,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+                  "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -11814,12 +11814,12 @@
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Maryam / Nick / Tarek - PRs] New PR Needs Champion",
+      "taskName": "[Area Pod: Maryam / Nick / Tarek - PRs] New PR Needs Champion",
       "actions": [
         {
           "name": "addToProject",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
             "columnName": "Needs Champion",
             "isOrgProject": true
           }
@@ -11929,30 +11929,6 @@
                   {
                     "name": "isAssignedToUser",
                     "parameters": {
-                      "user": "eerhardt"
-                    }
-                  }
-                ]
-              },
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "isActivitySender",
-                    "parameters": {
-                      "user": "eerhardt"
-                    }
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "isAssignedToUser",
-                    "parameters": {
                       "user": "maryamariyan"
                     }
                   }
@@ -12028,7 +12004,7 @@
                   {
                     "name": "isInProject",
                     "parameters": {
-                      "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+                      "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
                       "isOrgProject": true
                     }
                   }
@@ -12037,7 +12013,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+                  "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -12055,19 +12031,19 @@
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Maryam / Nick / Tarek - PRs] Updated PR Needs Champion",
+      "taskName": "[Area Pod: Maryam / Nick / Tarek - PRs] Updated PR Needs Champion",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
             "isOrgProject": true
           }
         },
         {
           "name": "addToProject",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
             "columnName": "Needs Champion",
             "isOrgProject": true
           }
@@ -12184,17 +12160,6 @@
               {
                 "name": "isAssignedToUser",
                 "parameters": {
-                  "user": "eerhardt"
-                }
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "isAssignedToUser",
-                "parameters": {
                   "user": "maryamariyan"
                 }
               }
@@ -12231,7 +12196,7 @@
                   {
                     "name": "isInProject",
                     "parameters": {
-                      "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+                      "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
                       "isOrgProject": true
                     }
                   }
@@ -12240,7 +12205,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+                  "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -12258,19 +12223,19 @@
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Maryam / Nick / Tarek - PRs] Maryam Assigned as Champion",
+      "taskName": "[Area Pod: Maryam / Nick / Tarek - PRs] Maryam Assigned as Champion",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
             "isOrgProject": true
           }
         },
         {
           "name": "addToProject",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
             "columnName": "Champion: Maryam",
             "isOrgProject": true
           }
@@ -12407,7 +12372,7 @@
                   {
                     "name": "isInProject",
                     "parameters": {
-                      "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+                      "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
                       "isOrgProject": true
                     }
                   }
@@ -12416,7 +12381,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+                  "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
                   "columnName": "Needs Champion",
                   "isOrgProject": true
                 }
@@ -12424,7 +12389,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+                  "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -12442,19 +12407,19 @@
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Maryam / Nick / Tarek - PRs] Nick Assigned as Champion",
+      "taskName": "[Area Pod: Maryam / Nick / Tarek - PRs] Nick Assigned as Champion",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
             "isOrgProject": true
           }
         },
         {
           "name": "addToProject",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
             "columnName": "Champion: Nick",
             "isOrgProject": true
           }
@@ -12591,7 +12556,7 @@
                   {
                     "name": "isInProject",
                     "parameters": {
-                      "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+                      "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
                       "isOrgProject": true
                     }
                   }
@@ -12600,7 +12565,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+                  "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
                   "columnName": "Needs Champion",
                   "isOrgProject": true
                 }
@@ -12608,7 +12573,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+                  "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -12626,19 +12591,19 @@
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eric / Maryam / Nick / Tarek - PRs] Tarek Assigned as Champion",
+      "taskName": "[Area Pod: Maryam / Nick / Tarek - PRs] Tarek Assigned as Champion",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
             "isOrgProject": true
           }
         },
         {
           "name": "addToProject",
           "parameters": {
-            "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+            "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
             "columnName": "Champion: Tarek",
             "isOrgProject": true
           }
@@ -12775,7 +12740,7 @@
                   {
                     "name": "isInProject",
                     "parameters": {
-                      "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+                      "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
                       "isOrgProject": true
                     }
                   }
@@ -12784,7 +12749,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+                  "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
                   "columnName": "Needs Champion",
                   "isOrgProject": true
                 }
@@ -12792,7 +12757,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eric / Maryam / Nick / Tarek - PRs",
+                  "projectName": "Area Pod: Maryam / Nick / Tarek - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
