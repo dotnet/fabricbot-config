@@ -8,7 +8,7 @@ const podAreas = {
     "area-System.Linq.Parallel",
     "area-System.Memory"
   ],
-  "buyaa-jose-steve": [
+  "buyaa-steve": [
     "area-System.CodeDom",
     "area-System.Configuration",
     "area-System.Reflection",
@@ -84,15 +84,14 @@ module.exports = [
     },
   },
   {
-    podName: "Buyaa / Jose / Steve",
+    podName: "Buyaa / Steve",
     podMembers: [
       { name: "Buyaa", user: "buyaa-n" },
-      { name: "Jose", user: "joperezr" },
       { name: "Steve H", user: "steveharter" }
     ],
     repos: {
-      "runtime": podAreas["buyaa-jose-steve"],
-      "dotnet-api-docs": podAreas["buyaa-jose-steve"]
+      "runtime": podAreas["buyaa-steve"],
+      "dotnet-api-docs": podAreas["buyaa-steve"]
     }
   },
   {
