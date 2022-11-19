@@ -1,86 +1,84 @@
 const podAreas = {
-  "adam-david": [
+  "adam-david-jeremy": [
+    "area-Extensions-Caching",
     "area-Extensions-FileSystem",
     "area-System.Console",
     "area-System.Diagnostics.Process",
+    "area-System.Formats.Asn1",
+    "area-System.Formats.Cbor",
     "area-System.IO",
-    "area-System.IO.Compression",
     "area-System.Linq.Parallel",
-    "area-System.Memory"
+    "area-System.Security"
   ],
   "buyaa-steve": [
+    "area-Extensions-DependencyInjection",
+    "area-Extensions-Hosting",
     "area-System.CodeDom",
+    "area-System.ComponentModel",
+    "area-System.ComponentModel.Composition",
+    "area-System.Composition",
     "area-System.Configuration",
     "area-System.Reflection",
     "area-System.Reflection.Emit",
     "area-System.Reflection.Metadata",
     "area-System.Resources",
-    "area-System.Runtime.CompilerServices",
     "area-System.Text.RegularExpressions",
-    "area-System.Threading.Channels",
-    "area-System.Threading.Tasks",
     "area-System.DirectoryServices"
   ],
   "akhil-carlos-viktor": [
+    "area-DependencyModel",
     "area-Infrastructure-libraries",
     "area-Microsoft.Win32",
     "area-System.Diagnostics.EventLog",
     "area-System.Diagnostics.PerformanceCounter",
     "area-System.Diagnostics.TraceSource",
     "area-System.Drawing",
+    "area-System.IO.Compression",
     "area-System.Management",
     "area-System.ServiceProcess"
   ],
   "drew-michael-tanner": [
     "area-System.Buffers",
+    "area-System.Memory",
     "area-System.Numerics",
     "area-System.Numerics.Tensors",
     "area-System.Runtime",
-    "area-System.Runtime.Intrinsics"
+    "area-System.Runtime.CompilerServices",
+    "area-System.Runtime.Intrinsics",
+    "area-System.Threading.Channels",
+    "area-System.Threading.Tasks"
   ],
-  "eirik-krzysztof-layomi": [
+  "eirik-krzysztof-layomi-tarek": [
+    "area-Extensions-Configuration",
+    "area-Extensions-Logging",
+    "area-Extensions-Options",
+    "area-Extensions-Primitives",
+    "area-System.Diagnostics.Activity",
+    "area-System.Globalization",
     "area-System.Collections",
+    "area-System.ComponentModel.DataAnnotations",
     "area-System.Linq",
+    "area-System.Text.Encoding",
+    "area-System.Text.Encodings.Web",
     "area-System.Text.Json",
     "area-System.Xml"
   ],
   "eric-jeff": [
     "area-Meta"
-  ],
-  "maryam-nick-tarek": [
-    "area-DependencyModel",
-    "area-Extensions-Caching",
-    "area-Extensions-Configuration",
-    "area-Extensions-DependencyInjection",
-    "area-Extensions-Hosting",
-    "area-Extensions-Logging",
-    "area-Extensions-Options",
-    "area-Extensions-Primitives",
-    "area-System.ComponentModel",
-    "area-System.ComponentModel.Composition",
-    "area-System.Composition",
-    "area-System.Diagnostics.Activity",
-    "area-System.Globalization"
-  ],
-  "jeremy-levi": [
-    "area-System.Formats.Asn1",
-    "area-System.Formats.Cbor",
-    "area-System.Security",
-    "area-System.Text.Encoding",
-    "area-System.Text.Encodings.Web"
   ]
 };
 
 module.exports = [
   {
-    podName: "Adam / David",
+    podName: "Adam / David / Jeremy",
     podMembers: [
       { name: "Adam", user: "adamsitnik" },
-      { name: "David", user: "jozkee" }
+      { name: "David", user: "jozkee" },
+      { name: "Jeremy", user: "bartonjs" }
     ],
     repos: {
-      "runtime": podAreas["adam-david"],
-      "dotnet-api-docs": podAreas["adam-david"]
+      "runtime": podAreas["adam-david-jeremy"],
+      "dotnet-api-docs": podAreas["adam-david-jeremy"]
     },
   },
   {
@@ -120,15 +118,16 @@ module.exports = [
     }
   },
   {
-    podName: "Eirik / Krzysztof / Layomi",
+    podName: "Eirik / Krzysztof / Layomi / Tarek",
     podMembers: [
       { name: "Eirik", user: "eiriktsarpalis" },
       { name: "Krzysztof", user: "krwq" },
-      { name: "Layomi", user: "layomia" }
+      { name: "Layomi", user: "layomia" },
+      { name: "Tarek", user: "tarekgh" }
     ],
     repos: {
-      "runtime": podAreas["eirik-krzysztof-layomi"],
-      "dotnet-api-docs": podAreas["eirik-krzysztof-layomi"]
+      "runtime": podAreas["eirik-krzysztof-layomi-tarek"],
+      "dotnet-api-docs": podAreas["eirik-krzysztof-layomi-tarek"]
     }
   },
   {
@@ -141,29 +140,6 @@ module.exports = [
       "fabricbot-config": true,
       "runtime": podAreas["eric-jeff"],
       "dotnet-api-docs": podAreas["eric-jeff"]
-    }
-  },
-  {
-    podName: "Maryam / Nick / Tarek",
-    podMembers: [
-      { name: "Maryam", user: "maryamariyan" },
-      { name: "Nick", user: "Nick-Stanton" },
-      { name: "Tarek", user: "tarekgh" }
-    ],
-    repos: {
-      "runtime": podAreas["maryam-nick-tarek"],
-      "dotnet-api-docs": podAreas["maryam-nick-tarek"]
-    }
-  },
-  {
-    podName: "Jeremy / Levi",
-    podMembers: [
-      { name: "Jeremy", user: "bartonjs" },
-      { name: "Levi", user: "GrabYourPitchForks" }
-    ],
-    repos: {
-      "runtime": podAreas["jeremy-levi"],
-      "dotnet-api-docs": podAreas["jeremy-levi"]
     }
   },
   {
