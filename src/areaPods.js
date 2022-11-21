@@ -33,6 +33,7 @@ const podAreas = {
     "area-System.Diagnostics.PerformanceCounter",
     "area-System.Diagnostics.TraceSource",
     "area-System.Drawing",
+    "area-System.Formats.Tar",
     "area-System.IO.Compression",
     "area-System.Management",
     "area-System.ServiceProcess"

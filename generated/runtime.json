@@ -5627,6 +5627,17 @@
                   {
                     "name": "hasLabel",
                     "parameters": {
+                      "label": "area-System.Formats.Tar"
+                    }
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
                       "label": "area-System.IO.Compression"
                     }
                   }
@@ -5759,6 +5770,12 @@
                       {
                         "name": "hasLabel",
                         "parameters": {
+                          "label": "area-System.Formats.Tar"
+                        }
+                      },
+                      {
+                        "name": "hasLabel",
+                        "parameters": {
                           "label": "area-System.IO.Compression"
                         }
                       },
@@ -5841,6 +5858,12 @@
                     "name": "labelAdded",
                     "parameters": {
                       "label": "area-System.Drawing"
+                    }
+                  },
+                  {
+                    "name": "labelAdded",
+                    "parameters": {
+                      "label": "area-System.Formats.Tar"
                     }
                   },
                   {
@@ -5973,6 +5996,12 @@
                 "name": "hasLabel",
                 "parameters": {
                   "label": "area-System.Drawing"
+                }
+              },
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "area-System.Formats.Tar"
                 }
               },
               {
@@ -6719,6 +6748,17 @@
                       {
                         "name": "hasLabel",
                         "parameters": {
+                          "label": "area-System.Formats.Tar"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "hasLabel",
+                        "parameters": {
                           "label": "area-System.IO.Compression"
                         }
                       }
@@ -6828,6 +6868,12 @@
                 "name": "hasLabel",
                 "parameters": {
                   "label": "area-System.Drawing"
+                }
+              },
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "area-System.Formats.Tar"
                 }
               },
               {
@@ -7048,6 +7094,12 @@
               {
                 "name": "hasLabel",
                 "parameters": {
+                  "label": "area-System.Formats.Tar"
+                }
+              },
+              {
+                "name": "hasLabel",
+                "parameters": {
                   "label": "area-System.IO.Compression"
                 }
               },
@@ -7206,6 +7258,12 @@
                 "name": "hasLabel",
                 "parameters": {
                   "label": "area-System.Drawing"
+                }
+              },
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "area-System.Formats.Tar"
                 }
               },
               {
@@ -7377,6 +7435,12 @@
               {
                 "name": "hasLabel",
                 "parameters": {
+                  "label": "area-System.Formats.Tar"
+                }
+              },
+              {
+                "name": "hasLabel",
+                "parameters": {
                   "label": "area-System.IO.Compression"
                 }
               },
@@ -7538,6 +7602,12 @@
                 "name": "hasLabel",
                 "parameters": {
                   "label": "area-System.Drawing"
+                }
+              },
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "area-System.Formats.Tar"
                 }
               },
               {
