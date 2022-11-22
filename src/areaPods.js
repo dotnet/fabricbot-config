@@ -60,6 +60,7 @@ const podAreas = {
     "area-System.Collections",
     "area-System.ComponentModel.DataAnnotations",
     "area-System.DateTime",
+    "area-System.IO.Ports",
     "area-System.Linq",
     "area-System.Text.Encoding",
     "area-System.Text.Encodings.Web",
