@@ -7,6 +7,7 @@ const podAreas = {
     "area-System.Formats.Asn1",
     "area-System.Formats.Cbor",
     "area-System.IO",
+    "area-System.IO.Hashing",
     "area-System.Linq.Parallel",
     "area-System.Security"
   ],
@@ -58,6 +59,7 @@ const podAreas = {
     "area-System.Globalization",
     "area-System.Collections",
     "area-System.ComponentModel.DataAnnotations",
+    "area-System.DateTime",
     "area-System.Linq",
     "area-System.Text.Encoding",
     "area-System.Text.Encodings.Web",
