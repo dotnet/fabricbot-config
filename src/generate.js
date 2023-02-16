@@ -70,10 +70,46 @@ const areaPodTriagedLabels = {
   "dotnet-api-docs":  ["needs-author-action"]
 };
 
+const ownersAreas = {
+  Architecture: "architectures",
+  OS: "operatingSystems",
+  Areas: "areas",
+  Trimming: "trimming"
+};
+
+const generateAreasNotifications = async function(repo) {
+  return await fetch(`https://raw.githubusercontent.com/dotnet/${repo}/main/docs/area-owners.json`)
+  .then(r => {
+    if (r.ok)
+      return r.json();
+  })
+  .then(json => {
+    if (!json)
+      return;
+
+    let results = []
+    for (const scope in ownersAreas) {
+      var data = json[ownersAreas[scope]]
+      if (!data)
+        continue;
+
+      data = data.
+        filter(entry => entry["owners"].length > 0 && entry["owners"][0] != []).
+        sort((a, b) => a["label"].localeCompare(b["label"], 'en-US'));
+
+      results.push(issueAndPullRequestTasks.areaNotification(scope, data));
+    }
+    return results;
+  })
+};
+
+(async() => {
 for (const repo of repos) {
+  const notifications = await generateAreasNotifications(repo) || [];
+
   const generatedTasks = [
     ...(repoWideTasks[repo] || []),
-
+    ...notifications.flatMap(l => l),
     // Area Pod Project Board Tasks
     ...areaPods
       // Filter to the area pods that have areas in this repo
@@ -98,3 +134,4 @@ for (const repo of repos) {
   fs.writeFileSync(generatedConfigPath, generatedJson);
   console.log(`Generated tasks written to ${generatedConfigPath}`);
 }
+})()

@@ -6,5 +6,6 @@ module.exports = {
     trackNeedsAuthorAction: require("./trackNeedsAuthorAction"),
     trackNoRecentActivity: require("./trackNoRecentActivity"),
     trackStaleIssuesAndPullRequests: require("./trackStaleIssuesAndPullRequests"),
-    trackUntriaged: require("./trackUntriaged")
+    trackUntriaged: require("./trackUntriaged"),
+    areaNotification: require("./areaNotification")
 };
