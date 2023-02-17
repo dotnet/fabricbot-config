@@ -12685,6 +12685,17 @@
                     }
                   }
                 ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-area-label"
+                    }
+                  }
+                ]
               }
             ]
           },
@@ -12751,6 +12762,12 @@
                         "parameters": {
                           "label": "area-Meta"
                         }
+                      },
+                      {
+                        "name": "hasLabel",
+                        "parameters": {
+                          "label": "needs-area-label"
+                        }
                       }
                     ]
                   },
@@ -12783,6 +12800,12 @@
                     "name": "labelAdded",
                     "parameters": {
                       "label": "area-Meta"
+                    }
+                  },
+                  {
+                    "name": "labelAdded",
+                    "parameters": {
+                      "label": "needs-area-label"
                     }
                   }
                 ]
@@ -12861,6 +12884,12 @@
                 "name": "hasLabel",
                 "parameters": {
                   "label": "area-Meta"
+                }
+              },
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-area-label"
                 }
               }
             ]
@@ -13360,6 +13389,17 @@
                         }
                       }
                     ]
+                  },
+                  {
+                    "operator": "not",
+                    "operands": [
+                      {
+                        "name": "hasLabel",
+                        "parameters": {
+                          "label": "needs-area-label"
+                        }
+                      }
+                    ]
                   }
                 ]
               }
@@ -13407,6 +13447,12 @@
                 "name": "hasLabel",
                 "parameters": {
                   "label": "area-Meta"
+                }
+              },
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-area-label"
                 }
               }
             ]
@@ -13545,6 +13591,12 @@
                 "parameters": {
                   "label": "area-Meta"
                 }
+              },
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-area-label"
+                }
               }
             ]
           },
@@ -13642,6 +13694,12 @@
                 "name": "hasLabel",
                 "parameters": {
                   "label": "area-Meta"
+                }
+              },
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-area-label"
                 }
               }
             ]
@@ -13754,6 +13812,12 @@
                 "name": "hasLabel",
                 "parameters": {
                   "label": "area-Meta"
+                }
+              },
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "needs-area-label"
                 }
               }
             ]
