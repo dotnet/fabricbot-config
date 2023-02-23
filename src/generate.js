@@ -71,10 +71,10 @@ const areaPodTriagedLabels = {
 };
 
 const ownersAreas = {
+  Area: "areas",
+  "Operating System": "operatingSystems",
   Architecture: "architectures",
-  OS: "operatingSystems",
-  Areas: "areas",
-  Trimming: "trimming"
+  "Trimming Label": "trimming"
 };
 
 const generateAreasNotifications = async function(repo) {
@@ -87,29 +87,37 @@ const generateAreasNotifications = async function(repo) {
     if (!json)
       return;
 
-    let results = []
+    let resultsJson = [];
+    let markdown = [];
     for (const scope in ownersAreas) {
       var data = json[ownersAreas[scope]]
       if (!data)
         continue;
 
-      data = data.
-        filter(entry => entry["owners"].length > 0 && entry["owners"][0] != []).
-        sort((a, b) => a["label"].localeCompare(b["label"], 'en-US'));
+      data = data.sort((a, b) => a["label"].localeCompare(b["label"], 'en-US'));
 
-      results.push(issueAndPullRequestTasks.areaNotification(scope, data));
+      let jsonData = data.filter(entry => (entry["owners"].concat(entry["mentionees"] || []))[0].length > 0);
+
+      resultsJson.push(issueAndPullRequestTasks.areaNotification(scope, jsonData));
+      markdown.push(formatAreasLikeMarkdown(scope, data));
     }
-    return results;
+    return { 'JSON': resultsJson, 'Markdown': markdown };
   })
 };
 
+function formatAreasLikeMarkdown(scope, data) {
+  return { 'Scope': scope, 'Data': data.map(entry => {
+    return { Label: entry["label"], Lead: entry["lead"], Owners: entry["owners"] || [], Notes: entry["notes"] || "" };
+  })};
+}
+
 (async() => {
 for (const repo of repos) {
-  const notifications = await generateAreasNotifications(repo) || [];
+  const notifications = await generateAreasNotifications(repo) || { 'JSON': [], 'Markdown': []};
 
   const generatedTasks = [
     ...(repoWideTasks[repo] || []),
-    ...notifications.flatMap(l => l),
+    ...notifications.JSON.flatMap(l => l),
     // Area Pod Project Board Tasks
     ...areaPods
       // Filter to the area pods that have areas in this repo
@@ -133,5 +141,37 @@ for (const repo of repos) {
 
   fs.writeFileSync(generatedConfigPath, generatedJson);
   console.log(`Generated tasks written to ${generatedConfigPath}`);
+
+  if (notifications.Markdown.length > 0) {
+    const generatedMarkdown = path.join(generatedFolder, `${repo}.md`);
+
+    let writer = fs.createWriteStream(generatedMarkdown);
+
+    const col1 = 47;
+    const col2 = 21;
+    const col3 = 52;
+    const col4 = 282;
+
+    for (const i in notifications.Markdown) {
+      let row = notifications.Markdown[i];
+
+      let scope = row.Scope;
+
+      writer.write(`## ${scope}s\n\n`);
+      writer.write(`| ${scope.padEnd(col1)}| ${"Lead".padEnd(col2)}| ${"Owners (area experts to tag in PRs and issues)".padEnd(col3)}| ${"Notes".padEnd(col4)}|\n`);
+      writer.write(`|${'-'.repeat(col1 + 1)}|${'-'.repeat(col2 + 1)}|${'-'.repeat(col3 + 1)}|${'-'.repeat(col4 + 1)}|\n`);
+
+      for (const ii in row.Data) {
+        let entry = row.Data[ii];
+        let lead = entry.Lead;
+        let owners = entry.Owners.filter(Boolean);
+        writer.write(`| ${entry.Label.padEnd(col1)}| ${(lead?.length > 0 ? '@'+lead : '').padEnd(col2)}| ${(owners?.length > 0 ? owners.map(e => '@'+e).join(' '): '' ).padEnd(col3)}| ${entry.Notes.padEnd(col4)}|\n`);
+      }
+
+      writer.write('\n');
+    }
+
+    console.log(`Generated markdown written to ${generatedMarkdown}`);
+  }
 }
 })()

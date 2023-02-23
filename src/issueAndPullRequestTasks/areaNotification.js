@@ -11,7 +11,7 @@ module.exports = (scope, data) => [
               `${element["label"]}`
             ],
             "mentionees":
-              element["owners"].map(owner => `${owner}`),
+              element["owners"].concat(element["mentionees"] || []).map(owner => `${owner}`),
           },
         ]),
         "replyTemplate": "Tagging subscribers to this area: ${mentionees}\nSee info in [area-owners.md](https://github.com/dotnet/runtime/blob/main/docs/area-owners.md) if you want to be subscribed.",
