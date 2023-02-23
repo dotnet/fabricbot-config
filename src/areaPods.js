@@ -68,7 +68,8 @@ const podAreas = {
     "area-System.Xml"
   ],
   "eric-jeff": [
-    "area-Meta"
+    "area-Meta",
+    "needs-area-label"
   ]
 };
 
