@@ -1,5 +1,5 @@
 const podAreas = {
-  "adam-david-jeremy": [
+  "adam-david": [
     "area-Extensions-Caching",
     "area-Extensions-FileSystem",
     "area-System.Console",
@@ -26,7 +26,7 @@ const podAreas = {
     "area-System.Text.RegularExpressions",
     "area-System.DirectoryServices"
   ],
-  "akhil-carlos-viktor": [
+  "carlos-viktor": [
     "area-DependencyModel",
     "area-Infrastructure-libraries",
     "area-Microsoft.Win32",
@@ -39,7 +39,7 @@ const podAreas = {
     "area-System.Management",
     "area-System.ServiceProcess"
   ],
-  "drew-michael-tanner": [
+  "michael-tanner": [
     "area-System.Buffers",
     "area-System.Memory",
     "area-System.Numerics",
@@ -75,15 +75,14 @@ const podAreas = {
 
 module.exports = [
   {
-    podName: "Adam / David / Jeremy",
+    podName: "Adam / David",
     podMembers: [
       { name: "Adam", user: "adamsitnik" },
-      { name: "David", user: "jozkee" },
-      { name: "Jeremy", user: "bartonjs" }
+      { name: "David", user: "jozkee" }
     ],
     repos: {
-      "runtime": podAreas["adam-david-jeremy"],
-      "dotnet-api-docs": podAreas["adam-david-jeremy"]
+      "runtime": podAreas["adam-david"],
+      "dotnet-api-docs": podAreas["adam-david"]
     },
   },
   {
@@ -98,28 +97,26 @@ module.exports = [
     }
   },
   {
-    podName: "Akhil / Carlos / Viktor",
+    podName: "Carlos / Viktor",
     podMembers: [
-      { name: "Akhil", user: "smasher164" },
       { name: "Carlos", user: "carlossanlop" },
       { name: "Viktor", user: "viktorhofer" }
     ],
     repos: {
-      "runtime": podAreas["akhil-carlos-viktor"],
-      "dotnet-api-docs": podAreas["akhil-carlos-viktor"]
+      "runtime": podAreas["carlos-viktor"],
+      "dotnet-api-docs": podAreas["carlos-viktor"]
     }
   },
   {
-    podName: "Drew / Michael / Tanner",
+    podName: "Michael / Tanner",
     podMembers: [
-      { name: "Drew", user: "dakersnar" },
       { name: "Michael", user: "michaelgsharp" },
       { name: "Tanner", user: "tannergooding" }
     ],
     repos: {
       "machinelearning": true,
-      "runtime": podAreas["drew-michael-tanner"],
-      "dotnet-api-docs": podAreas["drew-michael-tanner"]
+      "runtime": podAreas["michael-tanner"],
+      "dotnet-api-docs": podAreas["michael-tanner"]
     }
   },
   {
