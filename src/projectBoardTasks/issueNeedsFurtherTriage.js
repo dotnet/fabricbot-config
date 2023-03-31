@@ -1,4 +1,6 @@
-module.exports = ({podName, podAreas}) => [{
+const isNotExcluded = require("../rules/isNotExcluded");
+
+module.exports = ({podName, podAreas, exclusionLabels}) => [{
   "taskType": "trigger",
   "capabilityId": "IssueResponder",
   "subCapability": "IssueCommentResponder",
@@ -77,8 +79,9 @@ module.exports = ({podName, podAreas}) => [{
               }
             }
           ]
-        }
-      ].filter(op => !!op) // We will have a falsy element in the array of we're not filtering by area label
+        },
+        isNotExcluded(exclusionLabels)
+      ].filter(op => !!op) // We will have a falsy element in the array of we're not filtering by area label or if there are no exclusion labels
     }
   }
 }];

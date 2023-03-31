@@ -1209,26 +1209,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -1276,26 +1281,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -1343,26 +1353,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -1410,26 +1425,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -2997,26 +3017,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -3064,26 +3089,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -3131,26 +3161,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -3198,26 +3233,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -4832,26 +4872,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -4899,26 +4944,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -4966,26 +5016,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -5033,26 +5088,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -6539,26 +6599,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -6606,26 +6671,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -6673,26 +6743,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -6740,26 +6815,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -8350,26 +8430,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -8417,26 +8502,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -8484,26 +8574,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -8551,26 +8646,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -8618,26 +8718,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -8685,26 +8790,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -8752,26 +8862,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -8819,26 +8934,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -10724,26 +10844,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -10791,26 +10916,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -10858,26 +10988,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -10925,26 +11060,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }

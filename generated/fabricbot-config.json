@@ -1596,6 +1596,22 @@
                 }
               }
             ]
+          },
+          {
+            "operator": "and",
+            "operands": [
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "test-exclusion"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1670,6 +1686,22 @@
                   "columnName": "Triaged",
                   "isOrgProject": true
                 }
+              }
+            ]
+          },
+          {
+            "operator": "and",
+            "operands": [
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "test-exclusion"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -1780,26 +1812,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -1847,26 +1884,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -1914,26 +1956,31 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
+              },
               {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "needs-author-action"
-                }
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -1981,25 +2028,76 @@
             }
           },
           {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "not",
+            "operator": "and",
             "operands": [
               {
-                "name": "isInMilestone",
+                "name": "isOpen",
                 "parameters": {}
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "isInMilestone",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "needs-author-action"
+                    }
+                  }
+                ]
               }
             ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "taskName": "[Area Pod: Eric / Jeff - Issue Triage] Excluded",
+      "actions": [
+        {
+          "name": "removeFromProject",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+            "isOrgProject": true
+          }
+        }
+      ],
+      "eventType": "issue",
+      "eventNames": [
+        "issues"
+      ],
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Jeff - Issue Triage",
+              "isOrgProject": true
+            }
           },
           {
-            "operator": "not",
+            "operator": "or",
             "operands": [
               {
                 "name": "hasLabel",
                 "parameters": {
-                  "label": "needs-author-action"
+                  "label": "test-exclusion"
                 }
               }
             ]
@@ -2176,6 +2274,22 @@
                 }
               }
             ]
+          },
+          {
+            "operator": "and",
+            "operands": [
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "test-exclusion"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -2272,6 +2386,22 @@
                   "columnName": "Done",
                   "isOrgProject": true
                 }
+              }
+            ]
+          },
+          {
+            "operator": "and",
+            "operands": [
+              {
+                "operator": "not",
+                "operands": [
+                  {
+                    "name": "hasLabel",
+                    "parameters": {
+                      "label": "test-exclusion"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -2473,6 +2603,66 @@
                   "projectName": "Area Pod: Eric / Jeff - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "taskSource": "fabricbot-config",
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "PullRequestResponder",
+    "version": "1.0",
+    "config": {
+      "taskName": "[Area Pod: Eric / Jeff - PRs] Excluded",
+      "actions": [
+        {
+          "name": "moveToProjectColumn",
+          "parameters": {
+            "projectName": "Area Pod: Eric / Jeff - PRs",
+            "columnName": "Done",
+            "isOrgProject": true
+          }
+        }
+      ],
+      "eventType": "pull_request",
+      "eventNames": [
+        "pull_request"
+      ],
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "isInProject",
+            "parameters": {
+              "projectName": "Area Pod: Eric / Jeff - PRs",
+              "isOrgProject": true
+            }
+          },
+          {
+            "operator": "not",
+            "operands": [
+              {
+                "name": "isInProjectColumn",
+                "parameters": {
+                  "projectName": "Area Pod: Eric / Jeff - PRs",
+                  "columnName": "Done",
+                  "isOrgProject": true
+                }
+              }
+            ]
+          },
+          {
+            "operator": "or",
+            "operands": [
+              {
+                "name": "hasLabel",
+                "parameters": {
+                  "label": "test-exclusion"
                 }
               }
             ]

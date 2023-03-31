@@ -1,25 +1,18 @@
-const isTriaged = require("../rules/isTriaged");
+const isExcluded = require("../rules/isExcluded");
 
-module.exports = ({podName, triagedLabels}) => [{
+module.exports = ({podName, exclusionLabels}) => (exclusionLabels ? [{
   "taskType": "trigger",
   "capabilityId": "IssueResponder",
   "subCapability": "IssuesOnlyResponder",
   "version": "1.0",
   "config": {
-    "taskName": `[Area Pod: ${podName} - Issue Triage] Triaged`,
+    "taskName": `[Area Pod: ${podName} - Issue Triage] Excluded`,
     "actions": [
       {
-        "name": "addToProject",
+        "name": "removeFromProject",
         "parameters": {
           "projectName": `Area Pod: ${podName} - Issue Triage`,
-          "columnName": "Triaged",
           "isOrgProject": true
-        }
-      },
-      {
-        "name": "removeLabel",
-        "parameters": {
-          "label": "untriaged"
         }
       }
     ],
@@ -35,8 +28,8 @@ module.exports = ({podName, triagedLabels}) => [{
             "isOrgProject": true
           }
         },
-        isTriaged(triagedLabels)
+        isExcluded(exclusionLabels)
       ]
     }
   }
-}];
+}] : []);
