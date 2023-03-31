@@ -40,7 +40,7 @@ module.exports = ({podName, podMembers, triagedLabels}) => podMembers
             "name": "isActivitySender",
             "parameters": { user }
           },
-          ...isNotTriaged(triagedLabels)
+          isNotTriaged(triagedLabels)
         ]
       }
     }
@@ -79,7 +79,7 @@ module.exports = ({podName, podMembers, triagedLabels}) => podMembers
             "name": "isActivitySender",
             "parameters": { user }
           },
-          ...isNotTriaged(triagedLabels)
+          isNotTriaged(triagedLabels)
         ]
       }
     }

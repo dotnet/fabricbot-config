@@ -35,10 +35,7 @@ module.exports = ({podName, triagedLabels}) => [{
             "isOrgProject": true
           }
         },
-        {
-          "operator": "or",
-          "operands": isTriaged(triagedLabels)
-        }
+        isTriaged(triagedLabels)
       ]
     }
   }
