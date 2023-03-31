@@ -70,6 +70,20 @@ const areaPodTriagedLabels = {
   "dotnet-api-docs":  ["needs-author-action"]
 };
 
+const areaPodExclusionLabels = {
+  "runtime": [
+    "os-android",     // @steveisok; @akoeplinger
+    "os-maccatalyst", // @steveisok
+    "os-ios",         // @steveisok; @vargaz
+    "os-tizen",       // @alpencolt; @gbalykov, @hjleee, @wscho77, @clamp03
+    "os-tvos",        // @steveisok; @vargaz
+    "arch-wasm",      // @lewing; @BrzVlad
+  ],
+  "fabricbot-config": [
+    "test-exclusion"  // Allows us to test the exclusion rules within the fabricbot-config repo
+  ]
+};
+
 for (const repo of repos) {
   const generatedTasks = [
     ...(repoWideTasks[repo] || []),
@@ -83,7 +97,8 @@ for (const repo of repos) {
         podName,
         podMembers,
         podAreas: repos[repo],
-        triagedLabels: areaPodTriagedLabels[repo]
+        triagedLabels: areaPodTriagedLabels[repo],
+        exclusionLabels: areaPodExclusionLabels[repo]
       }))
       // Filter out any empty/falsy tasks (that were not applicable for a pod in this repo)
       .filter(task => !!task)

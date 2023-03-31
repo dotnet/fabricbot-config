@@ -2,24 +2,24 @@ module.exports = (triagedLabels) => ({
   "operator": "and",
   "operands": [
     {
-      name: "isOpen",
-      parameters: {}
+      "name": "isOpen",
+      "parameters": {}
     },
     {
-      operator: "not",
-      operands: [
+      "operator": "not",
+      "operands": [
         {
-          name: "isInMilestone",
-          parameters: {}
+          "name": "isInMilestone",
+          "parameters": {}
         }
       ]
     },
     ...(triagedLabels ? triagedLabels.map(label => ({
-      operator: "not",
-      operands: [
+      "operator": "not",
+      "operands": [
         {
-          name: "hasLabel",
-          parameters: { label }
+          "name": "hasLabel",
+          "parameters": { label }
         }
       ]
     })) : [])
