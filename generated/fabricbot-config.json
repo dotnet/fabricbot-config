@@ -2621,10 +2621,9 @@
       "taskName": "[Area Pod: Eric / Jeff - PRs] Excluded",
       "actions": [
         {
-          "name": "moveToProjectColumn",
+          "name": "removeFromProject",
           "parameters": {
             "projectName": "Area Pod: Eric / Jeff - PRs",
-            "columnName": "Done",
             "isOrgProject": true
           }
         }
