@@ -10,10 +10,9 @@ module.exports = ({podName, exclusionLabels}) => (exclusionLabels ? [
       "taskName": `[Area Pod: ${podName} - PRs] Excluded`,
       "actions": [
         {
-          "name": "moveToProjectColumn",
+          "name": "removeFromProject",
           "parameters": {
             "projectName": `Area Pod: ${podName} - PRs`,
-            "columnName": "Done",
             "isOrgProject": true
           }
         }

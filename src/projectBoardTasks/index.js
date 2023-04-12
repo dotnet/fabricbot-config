@@ -4,6 +4,7 @@ const issueNeedsFurtherTriage = require("./issueNeedsFurtherTriage");
 const issueTriaged = require("./issueTriaged");
 const issueTriageStarted = require("./issueTriageStarted");
 const issueExcluded = require("./issueExcluded");
+const pullRequestMovedToAnotherArea = require("./pullRequestMovedToAnotherArea");
 const pullRequestDone = require("./pullRequestDone");
 const pullRequestNeedsChampion = require("./pullRequestNeedsChampion");
 const pullRequestChampionAssigned = require("./pullRequestChampionAssigned");
@@ -16,6 +17,8 @@ module.exports = (options) => [
   ...issueTriaged(options),
   ...issueTriageStarted(options),
   ...issueExcluded(options),
+
+  ...pullRequestMovedToAnotherArea(options),
   ...pullRequestDone(options),
   ...pullRequestNeedsChampion(options),
   ...pullRequestChampionAssigned(options),
