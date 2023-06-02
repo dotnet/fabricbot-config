@@ -126,17 +126,6 @@ module.exports = () => [
           {
             "name": "isOpen",
             "parameters": {}
-          },
-          {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "untriaged"
-                }
-              }
-            ]
           }
         ]
       }
