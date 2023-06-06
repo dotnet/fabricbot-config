@@ -1,3 +1,17 @@
+const areaPodExclusionLabels = {
+  "runtime": [
+    "os-android",     // @steveisok; @akoeplinger
+    "os-maccatalyst", // @steveisok
+    "os-ios",         // @steveisok; @vargaz
+    "os-tizen",       // @alpencolt; @gbalykov, @hjleee, @wscho77, @clamp03
+    "os-tvos",        // @steveisok; @vargaz
+    "arch-wasm",      // @lewing; @BrzVlad
+  ],
+  "fabricbot-config": [
+    "test-exclusion"  // Allows us to test the exclusion rules within the fabricbot-config repo
+  ]
+};
+
 const podAreas = {
   "adam-david": [
     "area-Extensions-Caching",
@@ -84,6 +98,7 @@ module.exports = [
       "runtime": podAreas["adam-david"],
       "dotnet-api-docs": podAreas["adam-david"]
     },
+    areaPodExclusionLabels
   },
   {
     podName: "Buyaa / Steve",
@@ -94,7 +109,8 @@ module.exports = [
     repos: {
       "runtime": podAreas["buyaa-steve"],
       "dotnet-api-docs": podAreas["buyaa-steve"]
-    }
+    },
+    areaPodExclusionLabels
   },
   {
     podName: "Carlos / Viktor",
@@ -105,7 +121,8 @@ module.exports = [
     repos: {
       "runtime": podAreas["carlos-viktor"],
       "dotnet-api-docs": podAreas["carlos-viktor"]
-    }
+    },
+    areaPodExclusionLabels
   },
   {
     podName: "Michael / Tanner",
@@ -117,6 +134,10 @@ module.exports = [
       "machinelearning": true,
       "runtime": podAreas["michael-tanner"],
       "dotnet-api-docs": podAreas["michael-tanner"]
+    },
+    areaPodExclusionLabels: {
+      ...areaPodExclusionLabels,
+      runtime: areaPodExclusionLabels["runtime"].filter(label => label != "arch-wasm") // Don't exclude arch-wasm from this pod
     }
   },
   {
@@ -130,7 +151,8 @@ module.exports = [
     repos: {
       "runtime": podAreas["eirik-krzysztof-layomi-tarek"],
       "dotnet-api-docs": podAreas["eirik-krzysztof-layomi-tarek"]
-    }
+    },
+    areaPodExclusionLabels
   },
   {
     podName: "Eric / Jeff",
@@ -142,7 +164,8 @@ module.exports = [
       "fabricbot-config": true,
       "runtime": podAreas["eric-jeff"],
       "dotnet-api-docs": podAreas["eric-jeff"]
-    }
+    },
+    areaPodExclusionLabels
   },
   {
     podName: "Libraries Analyzers",
@@ -152,6 +175,7 @@ module.exports = [
     ],
     repos: {
       "runtime": ["code-fixer", "code-analyzer"]
-    }
+    },
+    areaPodExclusionLabels
   }
 ];
