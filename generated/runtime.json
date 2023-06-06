@@ -9375,17 +9375,6 @@
                     }
                   }
                 ]
-              },
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "hasLabel",
-                    "parameters": {
-                      "label": "arch-wasm"
-                    }
-                  }
-                ]
               }
             ]
           }
@@ -9578,17 +9567,6 @@
                     "name": "hasLabel",
                     "parameters": {
                       "label": "os-tvos"
-                    }
-                  }
-                ]
-              },
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "hasLabel",
-                    "parameters": {
-                      "label": "arch-wasm"
                     }
                   }
                 ]
@@ -10062,12 +10040,6 @@
                 "name": "hasLabel",
                 "parameters": {
                   "label": "os-tvos"
-                }
-              },
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "arch-wasm"
                 }
               }
             ]
@@ -10610,17 +10582,6 @@
                     }
                   }
                 ]
-              },
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "hasLabel",
-                    "parameters": {
-                      "label": "arch-wasm"
-                    }
-                  }
-                ]
               }
             ]
           }
@@ -10835,17 +10796,6 @@
                     "name": "hasLabel",
                     "parameters": {
                       "label": "os-tvos"
-                    }
-                  }
-                ]
-              },
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "hasLabel",
-                    "parameters": {
-                      "label": "arch-wasm"
                     }
                   }
                 ]
@@ -11251,12 +11201,6 @@
                 "name": "hasLabel",
                 "parameters": {
                   "label": "os-tvos"
-                }
-              },
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "arch-wasm"
                 }
               }
             ]

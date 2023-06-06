@@ -70,20 +70,6 @@ const areaPodTriagedLabels = {
   "dotnet-api-docs":  ["needs-author-action"]
 };
 
-const areaPodExclusionLabels = {
-  "runtime": [
-    "os-android",     // @steveisok; @akoeplinger
-    "os-maccatalyst", // @steveisok
-    "os-ios",         // @steveisok; @vargaz
-    "os-tizen",       // @alpencolt; @gbalykov, @hjleee, @wscho77, @clamp03
-    "os-tvos",        // @steveisok; @vargaz
-    "arch-wasm",      // @lewing; @BrzVlad
-  ],
-  "fabricbot-config": [
-    "test-exclusion"  // Allows us to test the exclusion rules within the fabricbot-config repo
-  ]
-};
-
 for (const repo of repos) {
   const generatedTasks = [
     ...(repoWideTasks[repo] || []),
@@ -93,7 +79,7 @@ for (const repo of repos) {
       // Filter to the area pods that have areas in this repo
       .filter(areaPod => !!areaPod.repos[repo])
       // Get a flat array of project board tasks for this pod in this repo
-      .flatMap(({podName, podMembers, repos}) => projectBoardTasks({
+      .flatMap(({podName, podMembers, repos, areaPodExclusionLabels}) => projectBoardTasks({
         podName,
         podMembers,
         podAreas: repos[repo],
