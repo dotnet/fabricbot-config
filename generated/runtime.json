@@ -11284,12 +11284,12 @@
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage] Moved to Another Area",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - Issue Triage] Moved to Another Area",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
             "isOrgProject": true
           }
         }
@@ -11480,7 +11480,7 @@
           {
             "name": "isInProject",
             "parameters": {
-              "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+              "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
               "isOrgProject": true
             }
           }
@@ -11495,19 +11495,19 @@
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage] Needs Triage",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - Issue Triage] Needs Triage",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
             "isOrgProject": true
           }
         },
         {
           "name": "addToProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
             "columnName": "Needs Triage",
             "isOrgProject": true
           }
@@ -11753,7 +11753,7 @@
                   {
                     "name": "isInProject",
                     "parameters": {
-                      "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+                      "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
                       "isOrgProject": true
                     }
                   }
@@ -11762,7 +11762,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+                  "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
                   "isOrgProject": true,
                   "columnName": "Triaged"
                 }
@@ -11851,19 +11851,19 @@
     "subCapability": "IssueCommentResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage] Needs Further Triage",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - Issue Triage] Needs Further Triage",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
             "isOrgProject": true
           }
         },
         {
           "name": "addToProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
             "columnName": "Needs Triage",
             "isOrgProject": true
           }
@@ -11995,7 +11995,7 @@
                   {
                     "name": "isInProject",
                     "parameters": {
-                      "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+                      "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
                       "isOrgProject": true
                     }
                   }
@@ -12004,7 +12004,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+                  "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
                   "columnName": "Triaged",
                   "isOrgProject": true
                 }
@@ -12093,12 +12093,12 @@
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage] Triaged",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - Issue Triage] Triaged",
       "actions": [
         {
           "name": "addToProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
             "columnName": "Triaged",
             "isOrgProject": true
           }
@@ -12120,7 +12120,7 @@
           {
             "name": "isInProject",
             "parameters": {
-              "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+              "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
               "isOrgProject": true
             }
           },
@@ -12162,12 +12162,12 @@
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage] Eirik Updated Issue",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - Issue Triage] Eirik Updated Issue",
       "actions": [
         {
           "name": "moveToProjectColumn",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
             "columnName": "Triage: Eirik",
             "isOrgProject": true
           }
@@ -12183,7 +12183,7 @@
           {
             "name": "isInProjectColumn",
             "parameters": {
-              "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+              "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
               "isOrgProject": true,
               "columnName": "Needs Triage"
             }
@@ -12245,12 +12245,12 @@
     "subCapability": "IssueCommentResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage] Eirik Commented",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - Issue Triage] Eirik Commented",
       "actions": [
         {
           "name": "moveToProjectColumn",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
             "columnName": "Triage: Eirik",
             "isOrgProject": true
           }
@@ -12266,7 +12266,7 @@
           {
             "name": "isInProjectColumn",
             "parameters": {
-              "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+              "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
               "isOrgProject": true,
               "columnName": "Needs Triage"
             }
@@ -12328,12 +12328,12 @@
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage] Krzysztof Updated Issue",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - Issue Triage] Krzysztof Updated Issue",
       "actions": [
         {
           "name": "moveToProjectColumn",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
             "columnName": "Triage: Krzysztof",
             "isOrgProject": true
           }
@@ -12349,7 +12349,7 @@
           {
             "name": "isInProjectColumn",
             "parameters": {
-              "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+              "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
               "isOrgProject": true,
               "columnName": "Needs Triage"
             }
@@ -12411,12 +12411,12 @@
     "subCapability": "IssueCommentResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage] Krzysztof Commented",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - Issue Triage] Krzysztof Commented",
       "actions": [
         {
           "name": "moveToProjectColumn",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
             "columnName": "Triage: Krzysztof",
             "isOrgProject": true
           }
@@ -12432,7 +12432,7 @@
           {
             "name": "isInProjectColumn",
             "parameters": {
-              "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+              "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
               "isOrgProject": true,
               "columnName": "Needs Triage"
             }
@@ -12494,178 +12494,12 @@
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage] Layomi Updated Issue",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - Issue Triage] Tarek Updated Issue",
       "actions": [
         {
           "name": "moveToProjectColumn",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
-            "columnName": "Triage: Layomi",
-            "isOrgProject": true
-          }
-        }
-      ],
-      "eventType": "issue",
-      "eventNames": [
-        "issues"
-      ],
-      "conditions": {
-        "operator": "and",
-        "operands": [
-          {
-            "name": "isInProjectColumn",
-            "parameters": {
-              "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
-              "isOrgProject": true,
-              "columnName": "Needs Triage"
-            }
-          },
-          {
-            "name": "isActivitySender",
-            "parameters": {
-              "user": "layomia"
-            }
-          },
-          {
-            "operator": "and",
-            "operands": [
-              {
-                "name": "isOpen",
-                "parameters": {}
-              },
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "isInMilestone",
-                    "parameters": {}
-                  }
-                ]
-              },
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "hasLabel",
-                    "parameters": {
-                      "label": "needs-author-action"
-                    }
-                  }
-                ]
-              },
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "hasLabel",
-                    "parameters": {
-                      "label": "api-ready-for-review"
-                    }
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "taskSource": "fabricbot-config",
-    "taskType": "trigger",
-    "capabilityId": "IssueResponder",
-    "subCapability": "IssueCommentResponder",
-    "version": "1.0",
-    "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage] Layomi Commented",
-      "actions": [
-        {
-          "name": "moveToProjectColumn",
-          "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
-            "columnName": "Triage: Layomi",
-            "isOrgProject": true
-          }
-        }
-      ],
-      "eventType": "issue",
-      "eventNames": [
-        "issue_comment"
-      ],
-      "conditions": {
-        "operator": "and",
-        "operands": [
-          {
-            "name": "isInProjectColumn",
-            "parameters": {
-              "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
-              "isOrgProject": true,
-              "columnName": "Needs Triage"
-            }
-          },
-          {
-            "name": "isActivitySender",
-            "parameters": {
-              "user": "layomia"
-            }
-          },
-          {
-            "operator": "and",
-            "operands": [
-              {
-                "name": "isOpen",
-                "parameters": {}
-              },
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "isInMilestone",
-                    "parameters": {}
-                  }
-                ]
-              },
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "hasLabel",
-                    "parameters": {
-                      "label": "needs-author-action"
-                    }
-                  }
-                ]
-              },
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "hasLabel",
-                    "parameters": {
-                      "label": "api-ready-for-review"
-                    }
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "taskSource": "fabricbot-config",
-    "taskType": "trigger",
-    "capabilityId": "IssueResponder",
-    "subCapability": "IssuesOnlyResponder",
-    "version": "1.0",
-    "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage] Tarek Updated Issue",
-      "actions": [
-        {
-          "name": "moveToProjectColumn",
-          "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
             "columnName": "Triage: Tarek",
             "isOrgProject": true
           }
@@ -12681,7 +12515,7 @@
           {
             "name": "isInProjectColumn",
             "parameters": {
-              "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+              "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
               "isOrgProject": true,
               "columnName": "Needs Triage"
             }
@@ -12743,12 +12577,12 @@
     "subCapability": "IssueCommentResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage] Tarek Commented",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - Issue Triage] Tarek Commented",
       "actions": [
         {
           "name": "moveToProjectColumn",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
             "columnName": "Triage: Tarek",
             "isOrgProject": true
           }
@@ -12764,7 +12598,7 @@
           {
             "name": "isInProjectColumn",
             "parameters": {
-              "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+              "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
               "isOrgProject": true,
               "columnName": "Needs Triage"
             }
@@ -12826,12 +12660,12 @@
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage] Excluded",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - Issue Triage] Excluded",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
             "isOrgProject": true
           }
         }
@@ -12846,7 +12680,7 @@
           {
             "name": "isInProject",
             "parameters": {
-              "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - Issue Triage",
+              "projectName": "Area Pod: Eirik / Krzysztof / Tarek - Issue Triage",
               "isOrgProject": true
             }
           },
@@ -12902,12 +12736,12 @@
     "subCapability": "IssuesOnlyResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs] Moved to Another Area",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - PRs] Moved to Another Area",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
             "isOrgProject": true
           }
         }
@@ -13098,7 +12932,7 @@
           {
             "name": "isInProject",
             "parameters": {
-              "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+              "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
               "isOrgProject": true
             }
           }
@@ -13113,12 +12947,12 @@
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs] Closed, Merged, or Moved",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - PRs] Closed, Merged, or Moved",
       "actions": [
         {
           "name": "moveToProjectColumn",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
             "columnName": "Done",
             "isOrgProject": true
           }
@@ -13134,7 +12968,7 @@
           {
             "name": "isInProject",
             "parameters": {
-              "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+              "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
               "isOrgProject": true
             }
           },
@@ -13144,7 +12978,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+                  "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -13346,12 +13180,12 @@
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs] New PR Needs Champion",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - PRs] New PR Needs Champion",
       "actions": [
         {
           "name": "addToProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
             "columnName": "Needs Champion",
             "isOrgProject": true
           }
@@ -13521,30 +13355,6 @@
                   {
                     "name": "isAssignedToUser",
                     "parameters": {
-                      "user": "layomia"
-                    }
-                  }
-                ]
-              },
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "isActivitySender",
-                    "parameters": {
-                      "user": "layomia"
-                    }
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "isAssignedToUser",
-                    "parameters": {
                       "user": "tarekgh"
                     }
                   }
@@ -13572,7 +13382,7 @@
                   {
                     "name": "isInProject",
                     "parameters": {
-                      "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+                      "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
                       "isOrgProject": true
                     }
                   }
@@ -13581,7 +13391,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+                  "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -13670,19 +13480,19 @@
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs] Updated PR Needs Champion",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - PRs] Updated PR Needs Champion",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
             "isOrgProject": true
           }
         },
         {
           "name": "addToProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
             "columnName": "Needs Champion",
             "isOrgProject": true
           }
@@ -13833,17 +13643,6 @@
               {
                 "name": "isAssignedToUser",
                 "parameters": {
-                  "user": "layomia"
-                }
-              }
-            ]
-          },
-          {
-            "operator": "not",
-            "operands": [
-              {
-                "name": "isAssignedToUser",
-                "parameters": {
                   "user": "tarekgh"
                 }
               }
@@ -13858,7 +13657,7 @@
                   {
                     "name": "isInProject",
                     "parameters": {
-                      "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+                      "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
                       "isOrgProject": true
                     }
                   }
@@ -13867,7 +13666,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+                  "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -13956,19 +13755,19 @@
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs] Eirik Assigned as Champion",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - PRs] Eirik Assigned as Champion",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
             "isOrgProject": true
           }
         },
         {
           "name": "addToProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
             "columnName": "Champion: Eirik",
             "isOrgProject": true
           }
@@ -14117,7 +13916,7 @@
                   {
                     "name": "isInProject",
                     "parameters": {
-                      "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+                      "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
                       "isOrgProject": true
                     }
                   }
@@ -14126,7 +13925,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+                  "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
                   "columnName": "Needs Champion",
                   "isOrgProject": true
                 }
@@ -14134,7 +13933,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+                  "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -14152,19 +13951,19 @@
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs] Krzysztof Assigned as Champion",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - PRs] Krzysztof Assigned as Champion",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
             "isOrgProject": true
           }
         },
         {
           "name": "addToProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
             "columnName": "Champion: Krzysztof",
             "isOrgProject": true
           }
@@ -14313,7 +14112,7 @@
                   {
                     "name": "isInProject",
                     "parameters": {
-                      "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+                      "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
                       "isOrgProject": true
                     }
                   }
@@ -14322,7 +14121,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+                  "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
                   "columnName": "Needs Champion",
                   "isOrgProject": true
                 }
@@ -14330,7 +14129,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+                  "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -14348,215 +14147,19 @@
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs] Layomi Assigned as Champion",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - PRs] Tarek Assigned as Champion",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
             "isOrgProject": true
           }
         },
         {
           "name": "addToProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
-            "columnName": "Champion: Layomi",
-            "isOrgProject": true
-          }
-        }
-      ],
-      "eventType": "pull_request",
-      "eventNames": [
-        "pull_request"
-      ],
-      "conditions": {
-        "operator": "and",
-        "operands": [
-          {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "operator": "or",
-            "operands": [
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "area-Extensions-Configuration"
-                }
-              },
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "area-Extensions-Logging"
-                }
-              },
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "area-Extensions-Options"
-                }
-              },
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "area-Extensions-Primitives"
-                }
-              },
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "area-System.Diagnostics.Activity"
-                }
-              },
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "area-System.Globalization"
-                }
-              },
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "area-System.Collections"
-                }
-              },
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "area-System.ComponentModel.DataAnnotations"
-                }
-              },
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "area-System.DateTime"
-                }
-              },
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "area-System.IO.Ports"
-                }
-              },
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "area-System.Linq"
-                }
-              },
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "area-System.Text.Encoding"
-                }
-              },
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "area-System.Text.Encodings.Web"
-                }
-              },
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "area-System.Text.Json"
-                }
-              },
-              {
-                "name": "hasLabel",
-                "parameters": {
-                  "label": "area-System.Xml"
-                }
-              }
-            ]
-          },
-          {
-            "operator": "or",
-            "operands": [
-              {
-                "name": "isAssignedToUser",
-                "parameters": {
-                  "user": "layomia"
-                }
-              },
-              {
-                "operator": "and",
-                "operands": [
-                  {
-                    "name": "isAction",
-                    "parameters": {
-                      "action": "opened"
-                    }
-                  },
-                  {
-                    "name": "isActivitySender",
-                    "parameters": {
-                      "user": "layomia"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "operator": "or",
-            "operands": [
-              {
-                "operator": "not",
-                "operands": [
-                  {
-                    "name": "isInProject",
-                    "parameters": {
-                      "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
-                      "isOrgProject": true
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "isInProjectColumn",
-                "parameters": {
-                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
-                  "columnName": "Needs Champion",
-                  "isOrgProject": true
-                }
-              },
-              {
-                "name": "isInProjectColumn",
-                "parameters": {
-                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
-                  "columnName": "Done",
-                  "isOrgProject": true
-                }
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "taskSource": "fabricbot-config",
-    "taskType": "trigger",
-    "capabilityId": "IssueResponder",
-    "subCapability": "PullRequestResponder",
-    "version": "1.0",
-    "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs] Tarek Assigned as Champion",
-      "actions": [
-        {
-          "name": "removeFromProject",
-          "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
-            "isOrgProject": true
-          }
-        },
-        {
-          "name": "addToProject",
-          "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
             "columnName": "Champion: Tarek",
             "isOrgProject": true
           }
@@ -14705,7 +14308,7 @@
                   {
                     "name": "isInProject",
                     "parameters": {
-                      "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+                      "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
                       "isOrgProject": true
                     }
                   }
@@ -14714,7 +14317,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+                  "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
                   "columnName": "Needs Champion",
                   "isOrgProject": true
                 }
@@ -14722,7 +14325,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+                  "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }
@@ -14740,12 +14343,12 @@
     "subCapability": "PullRequestResponder",
     "version": "1.0",
     "config": {
-      "taskName": "[Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs] Excluded",
+      "taskName": "[Area Pod: Eirik / Krzysztof / Tarek - PRs] Excluded",
       "actions": [
         {
           "name": "removeFromProject",
           "parameters": {
-            "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+            "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
             "isOrgProject": true
           }
         }
@@ -14760,7 +14363,7 @@
           {
             "name": "isInProject",
             "parameters": {
-              "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+              "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
               "isOrgProject": true
             }
           },
@@ -14770,7 +14373,7 @@
               {
                 "name": "isInProjectColumn",
                 "parameters": {
-                  "projectName": "Area Pod: Eirik / Krzysztof / Layomi / Tarek - PRs",
+                  "projectName": "Area Pod: Eirik / Krzysztof / Tarek - PRs",
                   "columnName": "Done",
                   "isOrgProject": true
                 }

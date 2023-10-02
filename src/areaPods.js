@@ -64,7 +64,7 @@ const podAreas = {
     "area-System.Threading.Channels",
     "area-System.Threading.Tasks"
   ],
-  "eirik-krzysztof-layomi-tarek": [
+  "eirik-krzysztof-tarek": [
     "area-Extensions-Configuration",
     "area-Extensions-Logging",
     "area-Extensions-Options",
@@ -141,16 +141,15 @@ module.exports = [
     }
   },
   {
-    podName: "Eirik / Krzysztof / Layomi / Tarek",
+    podName: "Eirik / Krzysztof / Tarek",
     podMembers: [
       { name: "Eirik", user: "eiriktsarpalis" },
       { name: "Krzysztof", user: "krwq" },
-      { name: "Layomi", user: "layomia" },
       { name: "Tarek", user: "tarekgh" }
     ],
     repos: {
-      "runtime": podAreas["eirik-krzysztof-layomi-tarek"],
-      "dotnet-api-docs": podAreas["eirik-krzysztof-layomi-tarek"]
+      "runtime": podAreas["eirik-krzysztof-tarek"],
+      "dotnet-api-docs": podAreas["eirik-krzysztof-tarek"]
     },
     areaPodExclusionLabels
   },
