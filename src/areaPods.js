@@ -160,7 +160,6 @@ module.exports = [
       { name: "Jeff", user: "jeffhandley" }
     ],
     repos: {
-      "fabricbot-config": true,
       "runtime": podAreas["eric-jeff"],
       "dotnet-api-docs": podAreas["eric-jeff"]
     },
