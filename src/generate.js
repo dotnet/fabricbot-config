@@ -9,7 +9,6 @@ const fs = require("fs");
 
 const areaPods = require("./areaPods");
 const issueAndPullRequestTasks = require("./issueAndPullRequestTasks");
-const projectBoardTasks = require("./projectBoardTasks");
 
 const generatedFolder = path.resolve(path.join(__dirname, "..", "generated"));
 
@@ -70,25 +69,9 @@ const areaPodTriagedLabels = {
   "dotnet-api-docs":  ["needs-author-action"]
 };
 
+// Generate the config files, annotating all generated tasks with a `taskSource` property
 for (const repo of repos) {
-  const generatedTasks = [
-    ...(repoWideTasks[repo] || []),
-
-    // Area Pod Project Board Tasks
-    ...areaPods
-      // Filter to the area pods that have areas in this repo
-      .filter(areaPod => !!areaPod.repos[repo])
-      // Get a flat array of project board tasks for this pod in this repo
-      .flatMap(({podName, podMembers, repos, areaPodExclusionLabels}) => projectBoardTasks({
-        podName,
-        podMembers,
-        podAreas: repos[repo],
-        triagedLabels: areaPodTriagedLabels[repo],
-        exclusionLabels: areaPodExclusionLabels[repo]
-      }))
-      // Filter out any empty/falsy tasks (that were not applicable for a pod in this repo)
-      .filter(task => !!task)
-  ].map(task => ({
+  const generatedTasks = [...(repoWideTasks[repo] || [])].map(task => ({
     "taskSource": "fabricbot-config",
     ...task
   }));
