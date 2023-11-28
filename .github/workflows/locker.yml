@@ -1,12 +1,7 @@
 name: Locker - Lock stale issues and PRs
 on:
   schedule:
-    # Every 10 minutes - https://crontab.guru/#0/10_*_*_*_*
-    - cron: '0/10 * * * *'
-
-  repository_dispatch:
-    # Events dispatched outside GitHub with "trigger-locker" event type
-    types: [trigger-locker]
+    - cron: '0 9 * * *'
 
   workflow_dispatch:
     # Manual triggering through the GitHub UI, API, or CLI
