@@ -1,0 +1,31 @@
+name: Locker - Lock stale issues and PRs
+on:
+  schedule:
+    # Every 10 minutes - https://crontab.guru/#0/10_*_*_*_*
+    - cron: '0/10 * * * *'
+
+  repository_dispatch:
+    # Events dispatched outside GitHub with "trigger-locker" event type
+    types: [trigger-locker]
+
+  workflow_dispatch:
+    # Manual triggering through the GitHub UI, API, or CLI
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Actions
+        uses: actions/checkout@v4
+        with:
+          repository: "microsoft/vscode-github-triage-actions"
+          path: ./actions
+          ref: c7bdb94
+      - name: Install Actions
+        run: npm install --production --prefix ./actions
+      - name: Run Locker
+        uses: ./actions/locker
+        with:
+          # All closed issues and PRs will be locked, regardless of updates (for testing)
+          daysSinceClose: 0
+          daysSinceUpdate: 0

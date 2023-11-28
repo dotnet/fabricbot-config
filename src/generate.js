@@ -31,8 +31,7 @@ const repoWideTasks = {
     ...issueAndPullRequestTasks.addCommunityContributionLabel(),
     ...issueAndPullRequestTasks.trackNeedsAuthorAction(),
     ...issueAndPullRequestTasks.trackNoRecentActivity(14),
-    ...issueAndPullRequestTasks.trackInactiveDrafts(30),
-    ...issueAndPullRequestTasks.trackStaleIssuesAndPullRequests(30),
+    ...issueAndPullRequestTasks.trackInactiveDrafts(30)
   ],
   "runtime": [
     ...issueAndPullRequestTasks.trackUntriaged(),
