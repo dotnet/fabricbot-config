@@ -22,7 +22,7 @@ jobs:
           path: ./actions
           ref: c7bdb94
           lfs: true
-          token: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Install Actions
         run: npm install --production --prefix ./actions
       - name: Run Locker
