@@ -26,6 +26,6 @@ jobs:
       - name: Run Locker
         uses: ./actions/locker
         with:
-          # All closed issues and PRs will be locked, regardless of updates (for testing)
-          daysSinceClose: 0
-          daysSinceUpdate: 0
+          # Close issues and PRs 30 days after closure and inactivity
+          daysSinceClose: 30
+          daysSinceUpdate: 30
