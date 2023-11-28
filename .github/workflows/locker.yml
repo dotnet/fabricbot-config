@@ -26,6 +26,5 @@ jobs:
       - name: Run Locker
         uses: ./actions/locker
         with:
-          # Close issues and PRs 30 days after closure and inactivity
-          daysSinceClose: 30
-          daysSinceUpdate: 30
+          daysSinceClose: 14
+          daysSinceUpdate: 14
