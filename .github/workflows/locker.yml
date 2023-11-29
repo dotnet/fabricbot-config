@@ -2,7 +2,6 @@ name: Locker - Lock stale issues and PRs
 on:
   schedule:
     - cron: '0 9 * * *' # Once per day, early morning PT
-    - cron: '0/5 * * * *' # Every 5 minutes (for testing)
 
   workflow_dispatch:
     # Manual triggering through the GitHub UI, API, or CLI
