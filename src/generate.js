@@ -40,8 +40,7 @@ const repoWideTasks = {
     ...issueAndPullRequestTasks.addCommunityContributionLabel(),
     ...issueAndPullRequestTasks.trackNeedsAuthorAction(),
     ...issueAndPullRequestTasks.trackNoRecentActivity(14, ['backlog-cleanup-candidate']),
-    ...issueAndPullRequestTasks.trackInactiveDrafts(30),
-    ...issueAndPullRequestTasks.trackStaleIssuesAndPullRequests(30),
+    ...issueAndPullRequestTasks.trackInactiveDrafts(30)
   ],
   "machinelearning": [
     ...issueAndPullRequestTasks.trackUntriaged(),
@@ -50,8 +49,7 @@ const repoWideTasks = {
     ...issueAndPullRequestTasks.addCommunityContributionLabel(),
     ...issueAndPullRequestTasks.trackNeedsAuthorAction(),
     ...issueAndPullRequestTasks.trackNoRecentActivity(14),
-    ...issueAndPullRequestTasks.trackInactiveDrafts(30),
-    ...issueAndPullRequestTasks.trackStaleIssuesAndPullRequests(30),
+    ...issueAndPullRequestTasks.trackInactiveDrafts(30)
   ],
   "dotnet-api-docs": [
     ...issueAndPullRequestTasks.trackUntriaged(),
