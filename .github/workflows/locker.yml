@@ -34,3 +34,4 @@ jobs:
         with:
           daysSinceClose:  ${{ fromJson(inputs.daysSinceClose  || 30) }}
           daysSinceUpdate: ${{ fromJson(inputs.daysSinceUpdate || 30) }}
+          ignoredLabel:    "Bot: Do Not Lock"
