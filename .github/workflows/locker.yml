@@ -1,7 +1,7 @@
 name: Locker - Lock stale issues and PRs
 on:
-#  schedule:
-#    - cron: '0 9 * * *' # Once per day, early morning PT
+  schedule:
+    - cron: '16 9 * * *' # Once per day, overnight PT, uncommon minute of hour
 
   workflow_dispatch:
     # Manual triggering through the GitHub UI, API, or CLI
@@ -34,4 +34,3 @@ jobs:
         with:
           daysSinceClose:  ${{ fromJson(inputs.daysSinceClose  || 0) }}
           daysSinceUpdate: ${{ fromJson(inputs.daysSinceUpdate || 0) }}
-          typeIs: issue
