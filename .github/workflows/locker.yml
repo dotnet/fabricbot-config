@@ -32,6 +32,6 @@ jobs:
       - name: Run Locker
         uses: ./actions/locker
         with:
-          daysSinceClose:  ${{ fromJson(inputs.daysSinceClose  || 30) }}
-          daysSinceUpdate: ${{ fromJson(inputs.daysSinceUpdate || 30) }}
+          daysSinceClose:  ${{ fromJson(inputs.daysSinceClose  || 0) }}
+          daysSinceUpdate: ${{ fromJson(inputs.daysSinceUpdate || 0) }}
           typeIs: pr
