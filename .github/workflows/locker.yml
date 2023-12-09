@@ -34,4 +34,4 @@ jobs:
         with:
           daysSinceClose:  ${{ fromJson(inputs.daysSinceClose  || 0) }}
           daysSinceUpdate: ${{ fromJson(inputs.daysSinceUpdate || 0) }}
-          typeIs: pr
+          typeIs: issue
