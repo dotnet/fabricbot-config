@@ -1,7 +1,7 @@
 name: Locker - Lock stale issues and PRs
 on:
-  schedule:
-    - cron: '0 9 * * *' # Once per day, early morning PT
+#  schedule:
+#    - cron: '0 9 * * *' # Once per day, early morning PT
 
   workflow_dispatch:
     # Manual triggering through the GitHub UI, API, or CLI
@@ -24,14 +24,14 @@ jobs:
       - name: Checkout Actions
         uses: actions/checkout@v4
         with:
-          repository: "microsoft/vscode-github-triage-actions"
+          repository: "jeffhandley/github-triage-actions"
           path: ./actions
-          ref: cd16cd2aad6ba2da74bb6c6f7293adddd579a90e
+          ref: jeffhandley/locker-type
       - name: Install Actions
         run: npm install --production --prefix ./actions
       - name: Run Locker
         uses: ./actions/locker
         with:
-          daysSinceClose:  ${{ fromJson(inputs.daysSinceClose  || 30) }}
-          daysSinceUpdate: ${{ fromJson(inputs.daysSinceUpdate || 30) }}
-          ignoredLabel:    "Bot: Do Not Lock"
+          daysSinceClose:  ${{ fromJson(inputs.daysSinceClose  || 0) }}
+          daysSinceUpdate: ${{ fromJson(inputs.daysSinceUpdate || 0) }}
+          typeIs: issue
