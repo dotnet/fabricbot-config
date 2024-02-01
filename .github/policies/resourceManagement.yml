@@ -89,6 +89,31 @@ configuration:
           reply: Draft Pull Request was automatically closed for 30 days of inactivity. Please [let us know](https://github.com/dotnet/runtime/blob/main/docs/area-owners.md) if you'd like to reopen it.
     eventResponderTasks:
     - if:
+      - payloadType: Issues
+      - isOpen
+      - notPartOfAnyMilestone
+      - not:
+          hasLabel:
+            label: untriaged
+      - or:
+          - isAction:
+              action: Opened
+          - isAction:
+              action: Reopened
+          - isAction:
+              action: removedFromMilestone
+      description: Add untriaged label to new/reopened issues without a milestone
+    - if:
+      - payloadType: Issues
+      - hasLabel:
+          label: untriaged
+      - or:
+        - isAction:
+            action: Closed
+        - isAction:
+            action: addedToMilestone
+      description: Remove untriaged label from issues when closed or added to a milestone
+    - if:
       - payloadType: Pull_Request
       then:
       - inPrLabel:
@@ -287,4 +312,4 @@ configuration:
           label: no-recent-activity
       description: Remove `no-recent-activity` label from PRs when new review is added
 onFailure: 
-onSuccess: 
+onSuccess:
