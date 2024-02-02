@@ -91,7 +91,7 @@ configuration:
     - if:
       - payloadType: Issues
       - isOpen
-      - notPartOfAnyMilestone
+      - isNotPartOfAnyMilestone
       - not:
           hasLabel:
             label: untriaged
