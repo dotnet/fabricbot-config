@@ -27,3 +27,11 @@ configuration:
       - removeLabel:
         label: in-pr
       description: Remove 'in-pr' label from pull requests that get closed
+    - if:
+      - payloadType: Pull_Request
+      - isAction:
+        action: Closed
+      - isMerged
+      then:
+      - addLabel:
+        label: enhancement
