@@ -1,0 +1,29 @@
+id: in-pr
+name: GitOps.PullRequestIssueManagement
+description: GitOps.PullRequestIssueManagement primitive
+owner:
+resource: repository
+disabled: false
+where:
+configuration:
+  resourceManagementConfiguration:
+    eventResponderTasks:
+    - if:
+      - payloadType: Pull_Request
+      - or:
+        - isAction:
+          action: Opened
+        - isAction:
+          action: Reopened
+      then:
+      - addLabel:
+        label: in-pr
+      description: Add 'in-pr' label to pull requests that get opened and reopened
+    - if:
+      - payloadType: Pull_Request
+      - isAction:
+        action: Closed
+      then:
+      - removeLabel:
+        label: in-pr
+      description: Remove 'in-pr' label from pull requests that get closed
