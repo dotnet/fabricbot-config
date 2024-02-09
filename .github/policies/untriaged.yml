@@ -29,7 +29,9 @@ configuration:
         - isAction:
             action: Closed
         - isPartOfAnyMilestone
+      - hasLabel:
+          label: untriaged
       then:
       - removeLabel:
-        label: untriaged
+          label: untriaged
       description: Remove untriaged label from issues when closed or added to a milestone
